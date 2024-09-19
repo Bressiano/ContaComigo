@@ -1,0 +1,2109 @@
+:root {
+    --verde: #9DBB6D;
+    --azulum: #83B6BB;
+    --azuldois: #727FB4;
+    --roxo: #9A3589;
+    --cinzafundo: #f7f7f7;
+    --cinza: #f9f9f9;
+    --azulfooter: #57628C;
+    --cinzaclaro: #fafafa;
+    --cinzainput: #e9e9e9;
+    --cinzatexto: #363636;
+    --cinzaborda: #36363636;
+    --cinzanav: #5F6368;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Reddit Sans", sans-serif;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 30px;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 22px;
+}
+
+
+body {
+    background-color: var(--cinzafundo);
+}
+
+header {
+    background-color: var(--cinzaclaro);
+}
+
+main {
+    display: flex;
+    padding: 1.5rem 8rem;
+}
+
+
+.tituloroxo {
+    color: var(--roxo);
+}
+
+.tituloverde {
+    color: var(--verde);
+}
+
+.tituloazul {
+    color: var(--azuldois);
+}
+
+.titulocinza {
+    color: var(--cinzatexto);
+}
+
+.tituloazul2 {
+    color: #1A7780;
+}
+
+.headerBV {
+    display: flex;
+    padding: 0 8rem;
+    height: 7rem;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 0.3px solid #eaeaea;
+}
+
+.headerBV img {
+    height: 50%;
+}
+
+.headerBV nav {
+    display: flex;
+}
+
+.headerBV nav p {
+    transition: all 0.5s;
+}
+
+.headerBV nav p:hover {
+    transform: scale(110%);
+}
+
+.criarconta {
+    padding: 0.7rem 1rem;
+    border-radius: calc(1rem + 16px);
+    background-color: #57628C;
+    background-image: linear-gradient(90deg, var(--roxo), var(--azuldois));
+    color: var(--cinza);
+    margin-left: 2.5rem;
+
+}
+
+.mainBV {
+    align-items: center;
+    margin-bottom: 2rem;
+    flex-direction: column;
+    padding: 0;
+}
+
+.mainBV section {
+    padding: 4rem 8rem 2rem 8rem;
+}
+
+.mainBV section h1,
+h2 {
+    display: flex;
+    justify-content: center;
+}
+
+#h1BV {
+    justify-content: flex-start;
+}
+
+.p1 h1 {
+    color: var(--roxo);
+    margin-bottom: 1.5rem;
+    font-size: 30px;
+}
+
+.mainBV p {
+    font-size: 20px;
+}
+
+.mainBV img {
+    width: 30%;
+}
+
+.p1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+@keyframes up-and-down {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-30px);
+        /* Mova 50px para cima */
+    }
+
+    100% {
+        transform: translateY(0);
+        /* Volta à posição original */
+    }
+}
+
+.secBV1 svg {
+    height: 3rem;
+    display: block;
+    margin: auto;
+    margin-bottom: 2rem;
+    animation-iteration-count: infinite;
+    animation: up-and-down 3s ease-in-out infinite;
+}
+
+.l1BV #idmain {
+    margin: auto;
+    font-size: 16px;
+    transition: all 0.5s;
+}
+
+.l1BV #idmain:hover {
+    transform: scale(110%);
+}
+
+.l1BV {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.l1BV h2 {
+    margin-bottom: 1rem;
+}
+
+.l1BV p {
+    margin-bottom: 2rem;
+}
+
+.l1BV a {
+    margin: 0;
+}
+
+.secBV2,
+.secBV4 {
+    width: 100%;
+    background-color: var(--cinzainput);
+}
+
+.content {
+    display: flex;
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+#conj {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.secBV2 p {
+    width: 40%;
+    text-align: center;
+}
+
+.secBV2 svg {
+    height: 3rem;
+    display: flex;
+}
+
+.secBV2 svg path {
+    fill: #5F6368;
+}
+
+
+#comuniBV {
+    align-items: center;
+    height: auto;
+}
+
+.cardComuni {
+    display: flex;
+    height: 17rem;
+    width: 14rem;
+    border: 0.001rem solid var(--roxo);
+    border-radius: 2rem;
+    align-items: center;
+    justify-content: center;
+    margin: 0.8rem;
+    transition: all 0.3s;
+    box-shadow: 2px 2px var(--cinzaborda);
+    flex-direction: column;
+    background-color: #eea0f5;
+    font-size: 20px;
+    font-weight: 650;
+    color: black;
+    text-align: center;
+}
+
+/* editar comunidade do leopardo */
+.leopardoicon {
+    display: flex;
+    height: 17rem;
+    width: 14rem;
+    border: 0.001rem solid var(--roxo);
+    border-radius: 2rem;
+    align-items: center;
+    justify-content: center;
+    margin: 0.8rem;
+    transition: all 0.3s;
+    box-shadow: 2px 2px var(--cinzaborda);
+    flex-direction: column;
+    background-color: #eea0f5;
+    font-size: 20px;
+    font-weight: 650;
+    color: black;
+    text-align: center;
+}
+
+.leopardoicon img{
+    height: 3.7rem;
+    margin-bottom: 1rem;
+}
+
+.leopardoicon:hover {
+    transform: scale(110%);
+}
+/**/
+
+.cardComuni img {
+    height: 5rem;
+    margin-bottom: 1rem;
+}
+
+.cardComuni:hover {
+    transform: scale(110%);
+}
+
+#depressao img {
+    width: 6rem;
+    height: auto;
+}
+
+#tdah img {
+    width: 4.5rem;
+    height: auto;
+}
+
+#tea img {
+    width: 6rem;
+    height: auto;
+}
+
+/* Os itens abaixo são a legenda que aparece no card das comunidades TDAH, TEA e TPAS */
+#tdah::after {
+    content: "(Transtorno do Déficit de Atenção com Hiperatividade)";
+    color: #363636;
+    font-size: 14px;
+    font-weight: 650;
+    width: 80%;
+
+}
+#tpas::after {
+    content: "(Transtorno de Personalidade Antissocial)";
+    color: #363636;
+    font-size: 14px;
+    font-weight: 650;
+    width: 80%;
+}
+
+#tea::after {
+    content: "(Transtorno do Espectro Autista)";
+    color: #363636;
+    font-size: 14px;
+    font-weight: 650;
+}
+
+#tpn::after{
+    content: "(Transtorno de Personalidade Narcisista)";
+    color: #363636;
+    font-size: 14px;
+    font-weight: 650;
+    width: 80%;
+}
+/**/
+
+#comuniBV {
+    display: flex;
+    flex-direction: row;
+}
+
+.secBV3 .content p {
+    width: 40%;
+    text-align: center;
+}
+
+.secBV3 .content img {
+    width: 40%;
+}
+
+.secBV4 .content>p {
+    width: 40%;
+    text-align: center;
+}
+
+.personBV {
+    display: flex;
+    background-color: var(--cinzafundo);
+    padding: 1rem;
+    border-radius: 2rem;
+    width: 40%;
+    gap: 2rem;
+    align-items: center;
+}
+
+.personBV img {
+    height: 10rem;
+    border: 1px solid var(--cinzaborda);
+    border-radius: 50%;
+    width: auto;
+}
+
+.personBV div h3 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+.personBV div p {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.secBV5 .content p {
+    width: 40%;
+    text-align: center;
+}
+
+.secBV5 .content img {
+    width: 40%;
+}
+
+.footerInicial {
+    height: 16rem;
+    background-color: var(--azulfooter);
+    color: var(--cinza);
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem 8rem;
+    align-items: flex-start;
+}
+
+.footerInicial h4 {
+    font-weight: 800;
+}
+
+#redesSociais {
+    display: flex;
+    margin-top: 0.5rem;
+    gap: 0.7rem;
+    justify-content: center;
+}
+
+#redesSociais a:hover {
+    transform: scale(1.4);
+}
+
+#redesSociais a {
+    transition: .5s;
+    width: 40px;
+}
+
+#logobranca {
+    width: 15rem;
+}
+
+.mcFooter {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+#email {
+    display: flex;
+    gap: 0.5rem;
+}
+
+
+
+.bodyCadastro {
+    display: flex;
+    margin-top: 3rem;
+    justify-content: center;
+}
+
+.mainBemVindo {
+    display: flex;
+    border: 1px solid var(--cinzaborda);
+    border-radius: 2rem;
+    background-color: var(--cinzaclaro);
+    flex-direction: column;
+    width: 35rem;
+    height: 35rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainBemVindo form {
+    padding-top: 1.8rem;
+}
+
+.mainBemVindo form div {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+}
+
+.mainBemVindo label::after {
+    content: " *";
+    color: red;
+}
+
+.mainBemVindo form input[type=email] {
+    width: 23rem;
+    height: 3.5rem;
+    border: none;
+    background-color: var(--cinzainput);
+    border-radius: 0.7rem;
+}
+
+.mainBemVindo form input[type=password] {
+    width: 23rem;
+    height: 3.5rem;
+    border: none;
+    background-color: var(--cinzainput);
+    border-radius: 0.7rem;
+}
+
+.mainBemVindo form input[placeholder] {
+    padding: 0 1.5rem;
+}
+
+.mainBemVindo p {
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem 0 0rem 0;
+    font-weight: 400;
+}
+
+.mainBemVindo a {
+    padding-left: 0.5rem;
+    font-weight: 600;
+    color: var(--verde);
+}
+
+.corbotao {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 2rem;
+    background-color: var(--verde);
+    color: var(--cinza);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.5s;
+    margin: auto;
+    margin-top: 1rem;
+}
+
+.corbotao:hover {
+    transform: scale(110%);
+}
+
+.select {
+    color: var(--roxo);
+    fill: var(--roxo);
+}
+
+.corbotaoazul {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 2rem;
+    background-color: var(--azuldois);
+    color: var(--cinza);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.5s;
+    margin: auto;
+    margin-top: 1rem;
+}
+
+.corbotaoazul:hover {
+    transform: scale(110%);
+}
+
+.mainCriarConta {
+    display: flex;
+    border: 1px solid var(--cinzaborda);
+    border-radius: 2rem;
+    background-color: var(--cinzaclaro);
+    flex-direction: column;
+    width: 35rem;
+    height: 40rem;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 0;
+}
+
+.mainCriarConta form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainCriarConta form div {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+}
+
+.mainCriarConta label::after {
+    content: " *";
+    color: red;
+}
+
+.mainCriarConta form input[type=email] {
+    width: 23rem;
+    height: 3.5rem;
+    border: none;
+    background-color: var(--cinzainput);
+    border-radius: 0.7rem;
+}
+
+.mainCriarConta form input[type=password] {
+    width: 23rem;
+    height: 3.5rem;
+    border: none;
+    background-color: var(--cinzainput);
+    border-radius: 0.7rem;
+}
+
+.mainCriarConta form input[placeholder] {
+    padding: 0 1.5rem;
+}
+
+#senhaReq {
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem 0 0.4rem 0;
+    color: #7c7c7c;
+    width: 23rem;
+    font-size: 13px;
+}
+
+#linhaBaixo {
+    color: var(--cinzatexto);
+    display: flex;
+    align-items: center;
+}
+
+#radio {
+    display: flex;
+    padding-bottom: 0.4rem;
+    align-items: center;
+    justify-content: center;
+}
+
+#radio label::after {
+    content: none;
+}
+
+
+
+.mainCriarConta a {
+    color: var(--azuldois);
+}
+
+.mainCriarConta form>a {
+    display: block;
+    margin: auto;
+    width: 6.5rem;
+    text-align: center;
+    padding: 0.7rem 1rem;
+    border-radius: calc(16px + 1.4rem);
+    border: none;
+    color: var(--cinza);
+    background-color: var(--azuldois);
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.mainCriarConta form>a:hover {
+    transform: scale(110%);
+}
+
+.etapas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.mainUsuario .etapas {
+    margin-top: 16.4rem;
+}
+
+.etapas>div {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.etapas h5 {
+    font-weight: 800;
+}
+
+.etapaAnd path {
+    stroke: #727FB4;
+}
+
+.bodyUsu {
+    display: flex;
+    margin-top: 3rem;
+    justify-content: center;
+}
+
+.mainUsuario {
+    display: flex;
+    border: 1px solid var(--cinzaborda);
+    border-radius: 2rem;
+    background-color: var(--cinzaclaro);
+    flex-direction: column;
+    width: 35rem;
+    height: 40rem;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 5rem 0;
+}
+
+.mainUsuario form div {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2rem;
+}
+
+.mainUsuario label::after {
+    content: " *";
+    color: red;
+}
+
+.mainUsuario form input[type=text] {
+    width: 23rem;
+    height: 3.5rem;
+    border: none;
+    background-color: var(--cinzainput);
+    border-radius: 0.7rem;
+}
+
+.mainUsuario form input[placeholder] {
+    padding: 0 1.5rem;
+}
+
+.mainUsuario p {
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem 0 2rem 0;
+    font-weight: 400;
+}
+
+.mainUsuario a {
+    padding-left: 0.5rem;
+    font-weight: 600;
+    color: var(--verde);
+}
+
+.mainUsuario form>a {
+    display: block;
+    margin: auto;
+    width: 6.5rem;
+    text-align: center;
+    padding: 0.7rem 1rem;
+    border-radius: calc(16px + 1.4rem);
+    border: none;
+    color: var(--cinza);
+    background-color: var(--azuldois);
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.mainUsuario form>a:hover {
+    transform: scale(110%);
+}
+
+#radioUsu label::after {
+    content: none;
+}
+
+#radioUsu label {
+    padding-right: 0.5rem;
+}
+
+.bodyPerson main {
+    display: block;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+.mainCadPerson {
+    display: flex;
+    border: 1px solid var(--cinzaborda);
+    border-radius: 2rem;
+    background-color: var(--cinzaclaro);
+    flex-direction: column;
+    width: 80%;
+    height: 48rem;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 0;
+}
+
+.mainCadPerson h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.personMain {
+    display: flex;
+    margin-top: 2rem;
+    justify-content: center;
+}
+
+.mainCadPerson a {
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.mainCadPerson a:hover {
+    transform: scale(110%);
+}
+
+.opcaoPerson {
+    display: flex;
+    gap: 1rem;
+    width: 45%;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 2rem;
+}
+
+.opcaoPerson .personagem {
+    text-align: center;
+}
+
+.personSelec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 45%;
+}
+
+.personSelec p {
+    width: 25rem;
+}
+
+.personSelec h2 {
+    margin-top: 1rem;
+}
+
+.linhaS {
+    width: 0.5px;
+    background-color: var(--cinzainput);
+    height: 25rem;
+}
+
+.butAzul {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 2rem;
+    background-color: var(--azuldois);
+    color: var(--cinza);
+    display: flex;
+    align-items: center;
+}
+
+.butPular {
+    background-color: var(--cinzaclaro);
+    border: none;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+.buttonPerson {
+    display: flex;
+    gap: 1rem;
+    height: 2.5rem;
+}
+
+.butEtp {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 6rem 2rem 6rem;
+    height: auto;
+}
+
+.butEtp .etapas {
+    margin-top: 0;
+}
+
+body header {
+    display: flex;
+    height: 7rem;
+    border-bottom: 0.3px solid #eaeaea;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8rem;
+    flex-direction: row;
+}
+
+body a {
+    color: var(--cinzanav);
+}
+
+body nav button {
+    background-color: var(--cinzaclaro);
+    border: none;
+    cursor: pointer;
+}
+
+body nav svg {
+    transition: all 0.5s;
+}
+
+body nav svg:hover {
+    transform: scale(110%);
+    fill: var(--roxo);
+}
+
+.navGeral {
+    display: flex;
+    gap: 3rem;
+}
+
+.navGeral a {
+    transition: all 0.5s;
+    font-weight: 650;
+}
+
+.navGeral a:hover {
+    transform: scale(110%);
+    color: var(--roxo);
+}
+
+.navGeral button {
+    position: relative;
+    font-size: 16px;
+    font-weight: 650;
+    color: var(--cinzanav);
+    display: flex;
+    transition: all 0.5s;
+    align-items: center;
+}
+
+.navGeral button span {
+    font-size: 12px;
+    font-weight: 900;
+    padding-left: 0.5rem;
+}
+
+.navGeral button:hover {
+    color: var(--roxo);
+    transform: scale(110%);
+
+}
+
+.desce{
+    transition: all 0s;
+}
+
+.desce:hover{
+    top: 7rem;
+}
+
+.navPessoal {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.navPessoal div {
+    /*texte*/
+    height: 2.7rem;
+    width: 2.7rem;
+    border: 1px solid var(--cinzaborda);
+    border-radius: 2.7rem;
+    transition: all 0.5s;
+}
+
+.navPessoal {
+    display: flex;
+    align-items: center;
+}
+
+.perfilNav {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
+
+.perfilNav img {
+    height: 2.7rem;
+    width: 2.7rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+
+.logoNav {
+    height: 60%;
+}
+
+.mainInicio {
+    display: flex;
+    flex-direction: column;
+}
+
+main h1,
+h2 {
+    margin-bottom: 0.5rem;
+}
+
+.cmn {
+    margin-bottom: 4rem;
+}
+
+.cmn h2 {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.comuni {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.comuni1{
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    padding: 0.7rem 0 1rem 0;
+    gap: 0.7rem;
+    overflow: auto;
+
+}
+
+.comuni a {
+    display: flex;
+    font-size: 20px;
+    font-weight: 650;
+    color: black;
+    text-align: center;
+}
+
+.sigla {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.asidepub {
+    display: flex;
+    height: 10rem;
+    width: 14rem;
+    border: 1px solid var(--cinzaborda);
+    border-radius: 2rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.asidepub p {
+    margin-bottom: 1rem;
+}
+
+.asidepub button {
+    background-color: var(--roxo);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: calc(16px + 1rem);
+    color: var(--cinzainput);
+    cursor: pointer;
+}
+
+.negrito {
+    font-weight: 700;
+}
+
+.mainProf {
+    display: flex;
+    flex-direction: column;
+}
+
+.mainProf,
+.mainPerson h1 {
+    margin-bottom: 2rem;
+}
+
+.lista {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.lista select {
+    border: none;
+    font-size: 14px;
+    padding: 0.2rem 0.2rem;
+    color: var(--cinza);
+    background-color: #1A7780;
+    cursor: pointer;
+    border-radius: 1rem;
+}
+
+.profissional {
+    border: 1px solid var(--cinzaborda);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2rem 4rem;
+    border-radius: 2rem;
+    margin-bottom: 2rem;
+    justify-content: space-between;
+    width: 45%;
+}
+
+.profissional h3 {
+    font-weight: 700;
+}
+
+.profissional h4 {
+    font-weight: 650;
+
+}
+
+.mainPerson {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16rem;
+}
+
+.todos {
+    display: flex;
+    gap: 2rem;
+}
+
+.personagem {
+    display: flex;
+    height: 10rem;
+    width: 7rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s;
+    cursor: pointer;
+    color: black;
+}
+
+.personagem:hover {
+    transform: scale(105%);
+    background-color: var(--cinzainput);
+    border-radius: 1rem;
+}
+
+.personagem img {
+    height: 50%;
+    border-radius: 50%;
+    border: 1px var(--cinzaborda) solid;
+    background-color: var(--cinzaclaro);
+}
+
+.personagem h4 {
+    text-align: center;
+    width: 70%;
+    margin-top: 0.5rem;
+}
+
+.footerPrinc {
+    height: 22rem;
+    background-color: var(--azulfooter);
+    color: var(--cinza);
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 8rem;
+    align-items: center;
+}
+
+.footerPrinc h4 {
+    font-weight: 800;
+}
+
+.footerPrinc a {
+    color: var(--cinza);
+    display: flex;
+    width: 10rem;
+    margin: 0.5rem;
+}
+
+.footerPrinc>div {
+    display: flex;
+    height: 16rem;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.mcFooter {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+
+
+
+.copyright {
+    background-color: #333A55;
+    color: var(--cinza);
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.migalhadepao {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    margin: 0.7rem 0 2rem 0;
+}
+
+.migalhadepao a {
+    font-weight: 600;
+    color: var(--roxo);
+}
+
+.select {
+    color: var(--roxo);
+}
+
+.bth1 {
+    display: flex;
+    margin-bottom: 1rem;
+    gap: 3rem;
+    align-items: center;
+}
+
+.bth1 h1 {
+    margin: 0;
+}
+
+.bth1 svg {
+    height: 1.4rem;
+
+}
+
+.bth1 button {
+    border: none;
+    background-color: var(--cinzafundo);
+    height: 1.4rem;
+    cursor: pointer;
+    width: 1.4rem;
+}
+
+.selectsvg svg {
+    fill: var(--roxo);
+}
+
+.asideConfig>section {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    width: 15rem;
+}
+
+.asideConfig {
+    display: flex;
+    flex-direction: row;
+}
+
+.asideConfig h5 {
+    font-size: 14px;
+    font-weight: 800;
+    color: var(--cinzatexto);
+}
+
+.asideConfig button {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    padding: 0.3rem 0 0.3rem 0.4rem;
+}
+
+.asideConfig button:hover {
+    background-color: var(--cinzaborda);
+}
+
+.asideConfig div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.mainConfig {
+    flex-direction: row;
+    margin-bottom: 10rem;
+}
+
+.mainConfig h2 {
+    justify-content: flex-start;
+}
+
+#linha {
+    background-color: var(--cinzaborda);
+    width: 1px;
+    height: 23.24rem;
+}
+
+.bodyConfig>.bth1 {
+    margin: 5rem 8rem 0 8rem;
+}
+
+.bodytdah .navGeral button {
+    color: var(--roxo);
+}
+
+.mainTdah {
+    flex-direction: column;
+}
+
+.mPerson {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+bth1.mPerson section {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 4rem;
+}
+
+.fotoperson {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.fotoperson img {
+    height: 25rem;
+    border-radius: 50%;
+    border: 1px var(--cinzaborda) solid;
+    background-color: var(--cinzaclaro);
+}
+
+.fotoperson h2 {
+    font-weight: 800;
+    font-size: 25px;
+}
+
+.bio {
+    width: 40%;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.bio h3 {
+    font-weight: 700;
+}
+
+.bio button {
+    width: 15rem;
+    padding: 0.7rem 1rem;
+    border-radius: 2rem;
+    background-color: var(--azulfooter);
+    color: var(--cinza);
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+
+.bio button:hover {
+    transform: scale(110%);
+}
+
+.personagemSec {
+    display: flex;
+    gap: 2rem;
+}
+
+.personagemSec>a {
+    display: flex;
+    align-items: center;
+}
+
+/*  */
+/* Adicione estilos conforme necessário */
+.pensamento {
+    width: 100%;
+    height: 100px;
+    /* Ajuste conforme necessário */
+    resize: none;
+}
+
+#novaPublicacao {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+#novaPublicacao textarea {
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+    border: none;
+    background-color: var(--cinzainput);
+    padding: 3rem;
+    resize: none;
+
+}
+
+.asidepub button:hover {
+    transform: scale(110%);
+}
+
+.asidepub button {
+    background-color: var(--roxo);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: calc(16px + 1rem);
+    color: var(--cinzainput);
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+#novaPublicacao>div {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.mainTdah>section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mainTdah>section>div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 5rem;
+}
+
+
+#novaPublicacao button {
+    background-color: var(--roxo);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: calc(16px + 1rem);
+    color: var(--cinzainput);
+    cursor: pointer;
+    transition: all 0.4s;
+
+}
+
+#novaPublicacao button:hover {
+    transform: scale(110%);
+}
+
+.publicacao {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.comentario {
+    border-top: 1px solid var(--cinzaborda);
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--cinza);
+    display: flex;
+    flex-direction: column;
+}
+
+.comentario textarea{
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    border: 1px solid var(--cinzaborda);
+    background-color: white;
+    padding: 1rem;
+    resize: none;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+#formPublicacao {
+    border: var(--cinzaborda) 1px solid;
+    border-radius: 2rem;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+#formPublicacao h2 {
+    justify-content: flex-start;
+    font-weight: 800;
+}
+
+.comments {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 2rem;
+
+}
+
+.comments h2 {
+    display: flex;
+}
+
+#listaPublicacoes {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#novaPublicacao textarea {
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+    border: none;
+    background-color: var(--cinzainput);
+    padding: 3rem;
+    resize: none;
+}
+
+#config {
+    padding: 4rem 0 0 8rem;
+}
+
+.publicacao{
+    border: var(--cinzaborda) 1px solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 2rem;
+    background-color: white;
+    color: var(--cinzatexto);
+    margin-bottom: 1rem;
+}
+
+.publicacao button{
+    background:none;
+    border: none;
+    color: var(--roxo);
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.publicacao button:hover{
+    transform: scale(105%);
+}
+
+.publicacao p{
+    padding: 1rem;
+    text-align: left;
+    width: 100%;
+}
+
+#cmdExpandir{
+    border: 1px var(--cinzaborda) solid;
+    background-color: var(--cinzaclaro);
+    width: 15rem;
+    height: auto;
+    position: absolute;
+    top: -22rem; /*vai fazer com que esconda o expandir da tela*/
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    transition: all 0.5s;
+}
+
+#linksecreto{
+    color: var(--cinza);
+}
+
+#cmdExpandir a:hover{
+    cursor: pointer;
+    color: var(--roxo);
+    transform: none;
+}
+
+.navGeral > div div{
+    transition: all 0s;
+}
+
+.navGeral > div:hover #cmdExpandir{
+    top: 5rem;
+}
+
+/* parte de centralizar as publicaçao, mais ai vai do seu criterio, valeuu!!*/
+body {
+    font-family: 'Reddit Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header,
+.mainTdah {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+*/
+
+/*parte do cadastro de personagens*/
+/* Adicione estilos CSS adicionais aqui, se necessário */
+.fotoPerson {
+    width: 150px;
+    /* Defina a largura desejada */
+    height: 150px;
+    /* Defina a altura desejada */
+    overflow: hidden;
+    /* Evita que a imagem saia do quadrinho */
+    border-radius: 100px;
+    /* Adiciona bordas arredondadas */
+}
+
+.fotoPerson img {
+    width: 40%;
+    border-radius: 50%;
+    border: 1px solid var(--cinzaborda);
+    /* Mantém a proporção da imagem */
+}
+
+
+
+.notification {
+    display: none;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 15px;
+    background-color: #f44336;
+    color: white;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+
+
+.fotoperfil img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.character-selection img {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.linkVermelho {
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.linkVermelho:hover {
+    text-decoration: underline;
+}
+
+/* estilo.css  foto profissionais*/
+
+
+
+.profissional .foto {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+}
+
+.profissional .info {
+    display: flex;
+    flex-direction: column;
+}
+
+.profissional h3 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.profissional p {
+    margin: 5px 0;
+}
+
+#profissionaisLista {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    width: 23rem;
+}
+
+.emailError {
+    color: red;
+    font-size: 0.9em;
+}
+
+.historicoSuspensao {
+    background-color: rgba(255, 0, 0, 0.1);
+    /* Cor de fundo vermelha fraca */
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.publicacaoDenunciada {
+    font-weight: bold;
+    color: red;
+}
+
+.banimento {
+    background-color: rgb(223, 41, 41);
+    padding: 10px;
+    margin-top: 10px;
+    width: 80%;
+    /* Ajuste conforme necessário */
+    max-width: 600px;
+    /* Defina um limite máximo de largura */
+    color: white;
+    /* Cor do texto para contrastar com o vermelho */
+    border-radius: 5px;
+    /* Borda arredondada */
+
+
+}
+
+.mudar {
+    color: rgba(255, 0, 0, 0.1);
+}
+
+/* Estilo para o texto em negrito */
+#politicasSite .privacidade {
+    font-weight: bold;
+    /* Fonte em negrito */
+}
+
+/* Estilo para os links nas políticas */
+#politicasSite a {
+    color: #e74c3c;
+    /* Cor do link */
+    text-decoration: none;
+    /* Remover sublinhado */
+    transition: color 0.3s;
+    /* Efeito de transição de cor */
+}
+
+#politicasSite a:hover {
+    color: #c0392b;
+    /* Cor do link ao passar o mouse */
+}
+
+.aviso {
+    color: var(--cinzanav);
+}
+
+.mensagemApoio {
+    border: 1px solid purple;
+    padding: 20px;
+    background-color: #f9f9f9;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#notification {
+    display: none;
+    background-color: #ffdddd;
+    color: red;
+    padding: 10px;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+}
+
+
+
+.mensagemApoio .palavrasChave {
+    color: purple;
+    font-weight: bold;
+}
+
+.mensagemApoio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f8ff;
+    color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    z-index: 1000;
+    font-family: 'Reddit Sans', sans-serif;
+    text-align: center;
+}
+
+.mensagemApoio p {
+    margin: 10px 0;
+}
+
+.mensagemApoio img {
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+.mensagemApoio .palavrasChave {
+    color: purple;
+    font-weight: bold;
+}
+
+/* Estilos para mensagens de apoio e bloqueio */
+.mensagemApoio,
+.mensagemBloqueada {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    ;
+}
+
+.mensagemApoio img,
+.mensagemBloqueada img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.notification {
+    display: none;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Estilos para os botões de comentar e denunciar */
+
+
+
+
+#conta div {
+    display: flex;
+    flex-direction: column;
+    padding: 0 3rem;
+    gap: 0.7rem;
+}
+
+#conta div a {
+    font-weight: 700;
+}
+
+#personagem div {
+    display: flex;
+    flex-direction: column;
+    padding: 0 3rem;
+    gap: 0.7rem;
+}
+
+#personagem div a {
+    color: var(--roxo);
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+#personagem div a:hover {
+    text-decoration: underline;
+}
+
+#historicoSuspensoes div {
+    display: flex;
+    flex-direction: column;
+    padding: 0 3rem;
+    gap: 0.7rem;
+}
+
+#historicoSuspensoes,
+#politicasSite div h2 {
+    justify-content: flex-start;
+}
+
+#politicasSite div {
+    display: flex;
+    flex-direction: column;
+    padding: 0 3rem;
+    gap: 0.7rem;
+}
+
+#politicasSite p {
+    text-align: justify;
+    width: 70%;
+    padding-bottom: 0.5rem;
+}
+
+/*Seção para linguagem*/
+#escolherling div{
+    display: flex;
+    flex-direction: column;
+    padding: 0 3rem;
+    gap: 0.7rem;
+}
+
+#escolherling div img{
+    height: 5rem;
+    width: 7.5rem;
+    border: 1px solid white;
+    border-radius: 10%;
+}
+
+#escolherling div img:hover{
+    transition: all 0.5s;
+    transform: scale(110%);
+}
+
+/*ajustes do hoover em footer*/
+
+/* .comunFooter a:hover{
+    border: 1px all #57628C;
+    border-radius: 10%;
+    background-color: #4d567b;
+    padding: 0.1rem;
+    transition: all 0.5s;
+    transform: scale(100%);
+}  */
+
+
+/* tentativa de fazer o site ficar responsivo */
+/* @media screen and (max-widht: 760px ){
+    .container{
+        display: block;
+        background-image: none;
+    }
+
+    .container img{
+        width: 50vw;
+    }
+} */
+
+.controlarcd{
+    display: flex;
+    padding: 0 1rem;
+    justify-content: space-evenly;
+    gap: 0.5rem;
+    align-items: center;
+    flex-direction:row;
+    margin: 0 2rem 0;
+}
+
+.controlarcd img{
+    width: 6rem;
+    height: 6rem;
+    align-items: center;
+}
+
+.cd{
+    padding: 0 3rem;  
+}
+
+.controlarcd a:hover{
+    transition: all 0.5s;
+  
+}
+
+.jaocd img:hover, .anacd img:hover, .carloscd img:hover, .rennercd img:hover {
+    transition: all 0.5s;
+    transform: translateY(-3%);
+}
+.jaocd img, .anacd img, .carloscd img, .rennercd img {
+    border: solid var(--cinzafundo) 1px;
+    border-radius: 5%;
+}
+
+/* Estiliza o menu de hambúrguer */
+.hmenu {
+    display: none;
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    z-index: 1000;
+}
+
+.hamb-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.hamb-menu span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #333;
+    border-radius: 2px;
+}
+
+@media screen and (max-width: 1280px){
+    
+}
+
+/* Exibe o menu de hambúrguer e oculta o menu principal em telas pequenas */
+@media (max-width: 768px) {
+    .hmenu {
+        display: block;
+    }
+    
+    .navGeral {
+        display: none;
+    }
+
+    /* Estilos opcionais para o menu */
+    .navGeral.active {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 60px;
+        right: 15px;
+        background-color:#57628C
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 640px){
+    .headerBV{
+        width: 688px;
+        padding: 1rem;
+    }
+
+    .mainBV .secBV2 .comuniDtq .cardComuni{
+        width: 11rem;
+        height: 14rem;
+    }
+
+    .secBV2{
+        width: 688px;
+    }
+
+    .secBV4 .personBV{
+        display: flex;
+        background-color: var(--cinzafundo);
+        padding: 1rem;
+        border-radius: 2rem;
+        width: 100%;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    .secBV4{
+        width: 688px;
+    }
+
+    .footerInicial{
+        width: 688px;
+        padding: 4rem 4rem;
+    }
+
+    .comuni{
+        width: 20rem;
+        height: 18rem;
+    }
+}
+
