@@ -19,6 +19,7 @@
     box-sizing: border-box;
     font-family: "Reddit Sans", sans-serif;
     font-weight: 500;
+    scroll-behavior: smooth;
 }
 
 a {
@@ -28,12 +29,13 @@ a {
 
 h1 {
     font-weight: 800;
-    font-size: 30px;
+    font-size: 28px;
+    color: black;
 }
 
 h2 {
     font-weight: 600;
-    font-size: 22px;
+    font-size: 26px;
 }
 
 
@@ -50,9 +52,13 @@ main {
     padding: 1.5rem 8rem;
 }
 
-
 .tituloroxo {
     color: var(--roxo);
+}
+
+.tituloroxo:hover{
+    color: rgb(204, 27, 174);
+    transition: all 0.5s;
 }
 
 .tituloverde {
@@ -63,12 +69,26 @@ main {
     color: var(--azuldois);
 }
 
+.tituloazul:hover{
+    color: #97a7e6;
+    transition: all 0.5s;
+}
+
 .titulocinza {
     color: var(--cinzatexto);
 }
 
 .tituloazul2 {
     color: #1A7780;
+}
+
+.tituloverdeescuro{
+    color:#9dbb4c;
+}
+
+.tituloverdeescuro:hover{
+    color: #b7e43d;
+    transition: all 0.5s;
 }
 
 .headerBV {
@@ -130,11 +150,11 @@ h2 {
 .p1 h1 {
     color: var(--roxo);
     margin-bottom: 1.5rem;
-    font-size: 30px;
+    font-size: 34px;
 }
 
 .mainBV p {
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .mainBV img {
@@ -202,7 +222,7 @@ h2 {
 }
 
 .secBV2,
-.secBV4 {
+.secBV4, .secBV6 {
     width: 100%;
     background-color: var(--cinzainput);
 }
@@ -242,11 +262,12 @@ h2 {
     height: auto;
 }
 
+
 .cardComuni {
     display: flex;
     height: 17rem;
     width: 14rem;
-    border: 0.001rem solid var(--roxo);
+    border: 0.001rem solid #86c58b;
     border-radius: 2rem;
     align-items: center;
     justify-content: center;
@@ -254,11 +275,16 @@ h2 {
     transition: all 0.3s;
     box-shadow: 2px 2px var(--cinzaborda);
     flex-direction: column;
-    background-color: #eea0f5;
+    background-color: #CFF1D3;
     font-size: 20px;
     font-weight: 650;
     color: black;
     text-align: center;
+}
+
+b{
+    font-weight: bold;
+    font-size: bold;
 }
 
 /* editar comunidade do leopardo */
@@ -297,6 +323,8 @@ h2 {
 }
 
 .cardComuni:hover {
+    border: 1px solid  #6ea172;
+    background-color:#a3e0a9;
     transform: scale(110%);
 }
 
@@ -969,8 +997,8 @@ body nav svg:hover {
 .navPessoal {
     display: flex;
     align-items: center;
-}
-
+} 
+ 
 .perfilNav {
     display: flex;
     align-items: center;
@@ -2041,6 +2069,93 @@ body {
     border-radius: 2px;
 }
 
+.scrollToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color: purple;
+    color: rgb(255 255 255);
+    /* border: 1px solid purple; */
+    border-radius: 80px;
+    padding: 5px 16px;
+    font-size: 34px;
+    text-decoration: none;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.secBV2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    text-align: center; /* Centraliza o texto */
+    margin: 0 auto; /* Garante que a seção fique centralizada na página */
+    height: 50rem;
+}
+
+#conj {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o conteúdo dentro de #conj */
+}
+
+.localizar {
+    display: flex;
+    justify-content: center; /* Centraliza os itens do menu */
+    padding: 10px; /* Espaçamento interno */
+    background-color: transparent; /* Cor de fundo do menu */
+}
+
+.localizar p {
+    margin: 0 15px; /* Espaçamento entre os itens */
+}
+
+.localizar a {
+    text-decoration: none; /* Remove sublinhado dos links */
+    color: #333; /* Cor do texto */
+    transition: color 0.3s; /* Transição suave para a cor */
+}
+
+.localizar a:hover {
+    color: purple; /* Cor ao passar o mouse */
+}
+
+.menu-hamb{
+    display: flex;
+   flex-direction: column;
+   cursor: pointer;
+   width: 40px;
+   height: 20px;
+}
+
+.menu-hamburguer{
+    height: 5px;
+    width: 100%;
+    background-color: black;
+    margin: 4px 0;
+    transition: 0.3s;
+}
+
+.nav {
+    display: none; /* Oculta o menu inicialmente */
+    background-color: #f8f8f8;
+    padding: 10px;
+}
+
+.nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav ul li {
+    margin: 10px 0;
+}
+
+.nav.active {
+    display: block; /* Mostra o menu quando ativo */
+}
+
 @media screen and (max-width: 1280px){
     
 }
@@ -2062,7 +2177,7 @@ body {
         position: fixed;
         top: 60px;
         right: 15px;
-        background-color:#57628C
+        background-color:#57628C;
         padding: 10px;
     }
 }
@@ -2105,5 +2220,111 @@ body {
         width: 20rem;
         height: 18rem;
     }
+}
+
+.secBV1, .secBV2, .secBV3, .secBV4, .secBV5 {
+    min-height: 100vh; /* Ocupa 100% da altura da tela */
+    display: flex; /* Para centralizar o conteúdo */
+    flex-direction: column; /* Para organizar o conteúdo verticalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    padding: 20px; /* Adiciona algum espaçamento interno */
+    box-sizing: border-box; /* Para garantir que o padding não ultrapasse a largura da tela */
+}
+
+
+header .navPessoal {
+    display: flex;
+    align-items: center;
+}
+
+.perfilNav img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+
+.navLinks {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navLinks a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+.navLinks a:hover {
+    background-color: #3a75a6;
+    border-radius: 5px;
+}
+
+/* Main (conteúdo principal) */
+.perfilMain {
+    text-align: center;
+    margin-top: 50px;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #000000;
+    margin-bottom: 40px;
+}
+
+.perfil-card {
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.perfil-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 4px solid #4f8fcc;
+}
+
+.nome-usuario {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .navLinks {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .perfil-card {
+        padding: 20px;
+    }
+
+    .perfil-img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+.irPerfil {
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    margin-left: 20px; /* Espaço entre a configuração e o novo ícone */
+}
+
+.irPerfil img {
+    height: 1.7rem; /* Ajuste conforme necessário */
+    width: auto; /* Manter a proporção */
 }
 
