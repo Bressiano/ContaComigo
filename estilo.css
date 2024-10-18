@@ -1,5 +1,5 @@
 :root {
-    --verde: #9DBB6D;
+    --verde: #94b462;
     --azulum: #83B6BB;
     --azuldois: #727FB4;
     --roxo: #9A3589;
@@ -275,12 +275,126 @@ h2 {
     transition: all 0.3s;
     box-shadow: 2px 2px var(--cinzaborda);
     flex-direction: column;
-    background-color: #CFF1D3;
+    background-color: var(--roxo);
     font-size: 20px;
     font-weight: 650;
-    color: black;
+    color: #fff;
     text-align: center;
 }
+
+.neuroc {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /*----> Alinhar os cards no centro*/
+    gap: 1rem; /* ---> Espaço entre os cards */
+}
+
+/*Vai ser igual ao cardComuni para poupar tempo e estresse*/
+.cardNeuroc1 {
+    display: flex;
+    height: 17rem;
+    width: 14rem;
+    border: 0.001rem solid #86c58b;
+    border-radius: 2rem;
+    align-items: center;
+    justify-content: center;
+    margin: 0.8rem;
+    transition: all 0.3s;
+    box-shadow: 2px 2px var(--cinzaborda);
+    flex-direction: column;
+    background-color: var(--roxo);
+    font-size: 20px;
+    font-weight: 650;
+    color: #fff;
+    text-align: center;
+}
+
+.cardNeuroc2 {
+    display: flex;
+    height: 17rem;
+    width: 14rem;
+    border: 0.001rem solid #86c58b;
+    border-radius: 2rem;
+    align-items: center;
+    justify-content: center;
+    margin: 0.8rem;
+    transition: all 0.3s;
+    box-shadow: 2px 2px var(--cinzaborda);
+    flex-direction: column;
+    background-color: var(--verde);
+    font-size: 20px;
+    font-weight: 650;
+    color: #fff;
+    text-align: center;
+}
+
+.cardNeuroc3 {
+    display: flex;
+    height: 17rem;
+    width: 14rem;
+    border: 0.001rem solid #86c58b;
+    border-radius: 2rem;
+    align-items: center;
+    justify-content: center;
+    margin: 0.8rem;
+    transition: all 0.3s;
+    box-shadow: 2px 2px var(--cinzaborda);
+    flex-direction: column;
+    background-color: var(--azulum);
+    font-size: 20px;
+    font-weight: 650;
+    color: #fff;
+    text-align: center;
+}
+
+.cardNeuroc4 {
+    display: flex;
+    height: 17rem;
+    width: 14rem;
+    border: 0.001rem solid #86c58b;
+    border-radius: 2rem;
+    align-items: center;
+    justify-content: center;
+    margin: 0.8rem;
+    transition: all 0.3s;
+    box-shadow: 2px 2px var(--cinzaborda);
+    flex-direction: column;
+    background-color: var(--azuldois);
+    font-size: 20px;
+    font-weight: 650;
+    color: #fff;
+    text-align: center;
+}
+
+.neuroc .cardNeuroc1:hover{
+        border: 1px solid  #821e71;
+        background-color:#821e71;
+        transform: scale(110%);
+}
+
+.neuroc .cardNeuroc2:hover{
+    border: 1px solid  #516c25;
+    background-color:#648927;
+    transform: scale(110%);
+}
+
+.neuroc .cardNeuroc3:hover{
+    border: 1px solid  #1c757d;
+    background-color:#1c757d;
+    transform: scale(110%);
+}
+
+.neuroc .cardNeuroc4:hover{
+    border: 1px solid  #404e86;
+    background-color:#404e86;
+    transform: scale(110%);
+}
+
+.neuroc .cardNeuroc1, .cardNeuroc2, .cardNeuroc3, .cardNeuroc4 {
+    flex-basis: calc(20% - 1rem); /*---> Vai garantir que o card vai pegar apenas 20% da linha*/
+    max-width: 14rem; /*---> tamanho máximo */
+}
+/**/
 
 b{
     font-weight: bold;
@@ -1057,7 +1171,7 @@ h2 {
     display: flex;
     font-size: 20px;
     font-weight: 650;
-    color: black;
+    color: #ffffff;
     text-align: center;
 }
 
@@ -1599,7 +1713,7 @@ bth1.mPerson section {
     width: 15rem;
     height: auto;
     position: absolute;
-    top: -22rem; /*vai fazer com que esconda o expandir da tela*/
+    top: -30rem; /*vai fazer com que esconda o expandir da tela*/
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
