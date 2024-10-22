@@ -48,6 +48,10 @@ header {
     background-color: var(--cinzaclaro);
 }
 
+main{
+    padding: 1.5rem 8rem;
+}
+
 .mainConfig {
     display: flex;
     padding: 1.5rem 8rem;
