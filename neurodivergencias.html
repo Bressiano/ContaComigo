@@ -39,7 +39,7 @@
 
         <nav class="navPessoal">
             <div class="perfilNav">
-                <img id="profile-picture" src="default-profile.png" alt="Foto de Perfil">
+                <a href="Perfil.html"><img id="profile-picture" src="default-profile.png" alt="Foto de Perfil"></a>
             </div>
             <a href="configuracoes.html"><svg xmlns="http://www.w3.org/2000/svg" height="1.7rem"
                     viewBox="0 -960 960 960" fill="#5F6368">
@@ -61,19 +61,73 @@
         </div>
 
         <section class="neuroc">
-            <a href="cmdansiedade.html" class="cardNeuroc1" id="ansiedade">Ansiedade</a>
-            <a href="cmdansiedade.html" class="cardNeuroc2" id="bipolaridade">Bipolaridade</a>
-            <a href="cmdansiedade.html" class="cardNeuroc3" id="depressao">Depressão</a>
-            <a href="cmdansiedade.html" class="cardNeuroc4" id="narcisismo">Narcisismo</a>
-            <a href="cmdansiedade.html" class="cardNeuroc1" id="tdah">TDAH</a>
-            <a href="cmdansiedade.html" class="cardNeuroc2" id="tea">TEA</a>
-            <a href="cmdansiedade.html" class="cardNeuroc3" id="tpas">TPAS</a>
-            <a href="cmdansiedade.html" class="cardNeuroc4" id="#">Exemplo</a>
-
+            <div class="cardNeuroc cardNeuroc1" id="ansiedade">
+                <div class="cardFace front">
+                    Ansiedade
+                </div>
+                <div class="cardFace back">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat voluptates laudantium beatae ipsum suscipit fugiat minima sunt tenetur eligendi mollitia rerum, modi optio iste! Laborum eaque deleniti obcaecati harum eos?
+                </div>
+            </div>
+            <div class="cardNeuroc cardNeuroc2" id="bipolaridade">
+                <div class="cardFace front">
+                    Bipolaridade
+                </div>
+                <div class="cardFace back">
+                    Informações sobre Bipolaridade...
+                </div>
+            </div>
+            <div class="cardNeuroc cardNeuroc3" id="depressao">
+                <div class="cardFace front">
+                    Depressão
+                </div>
+                <div class="cardFace back">
+                    Informações sobre Depressão...
+                </div>
+            </div>
+            <div class="cardNeuroc cardNeuroc4" id="narcisismo">
+                <div class="cardFace front">
+                    Narcisismo
+                </div>
+                <div class="cardFace back">
+                    Informações sobre Narcisismo...
+                </div>
+            </div>
+            <div class="cardNeuroc cardNeuroc1" id="tdah">
+                <div class="cardFace front">
+                    TDAH
+                </div>
+                <div class="cardFace back">
+                    Informações sobre TDAH...
+                </div>
+            </div>
+            <div class="cardNeuroc cardNeuroc2" id="tea">
+                <div class="cardFace front">
+                    TEA
+                </div>
+                <div class="cardFace back">
+                    Informações sobre TEA...
+                </div>
+            </div>
+            <div class="cardNeuroc cardNeuroc3" id="tpas">
+                <div class="cardFace front">
+                    TPAS
+                </div>
+                <div class="cardFace back">
+                    Informações sobre TPAS...
+                </div>
+            </div>
+            <div class="cardNeuroc cardNeuroc4" id="#">
+                <div class="cardFace front">
+                    Exemplo
+                </div>
+                <div class="cardFace back">
+                    Informações sobre Exemplo...
+                </div>
+            </div>
         </section>
+        
     </main>
-
-
 
         
     <footer class="footerPrinc">
@@ -130,6 +184,14 @@
     <script src="js/fotoperfil.js"></script>
     <script src="js/seuarquivo.js"></script>
      <script src="js/perfil.js"></script>
+
+    <script>
+        document.querySelectorAll('.cardNeuroc').forEach(card => {
+            card.addEventListener('click', () => {
+                card.classList.toggle('flipped');
+            });
+        });
+    </script>
 </body>
 
 </html>
