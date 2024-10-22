@@ -49,6 +49,7 @@ header {
 }
 
 main{
+    display: flex;
     padding: 1.5rem 8rem;
 }
 
