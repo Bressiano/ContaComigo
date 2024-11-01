@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="estilo.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+    <title>Escolha seu personagem - ContaComigo</title>
+</head>
+
+<body class="bodyPerson">
+    <main class="mainCadPerson">
+        <h1 class="tituloazul">Escolha um personagem que você se identifique:</h1>
+        <section class="personMain">
+            <section class="opcaoPerson">
+                <div class="personagem">
+                    <img src="imagens/personagens/camaleus.png" alt="Personagem Camaleus"
+                        onclick="selecionarPersonagem('imagens/personagens/camaleus.png', 'Camaleus', 'Camaleus representa a bipolaridade, um transtorno de humor caracterizado por oscilações extremas entre episódios de mania e depressão. Ele possui a habilidade de se adaptar a diversas situações, mudando constantemente de comportamento e aparência. Essas mudanças frequentes refletem as mudanças de humor intensas e distintas que marcam a vida das pessoas com transtorno bipolar')">
+                    <h4>Camaleus</h4>
+                </div>
+                <div class="personagem">
+                    <img src="imagens/personagens/esquilo.png" alt="Personagem Amendoim"
+                        onclick="selecionarPersonagem('imagens/personagens/esquilo.png', 'Amendoim', 'Amendoim é um esquilo cheio de energia e curiosidade, que representa o Transtorno de Déficit de Atenção e Hiperatividade (TDAH). Ele não consegue ficar parado por muito tempo e se distrai facilmente com o que acontece ao seu redor. Sua energia constante e desejo de explorar o levam a descobrir novos ambientes e experiências com frequência.')">
+                    <h4>Amendoim</h4>
+                </div>
+                <div class="personagem">
+                    <img src="imagens/personagens/lontra.png" alt="Personagem Lontra"
+                        onclick="selecionarPersonagem('imagens/personagens/lontra.png', 'Flora', 'Flora, também conhecida carinhosamente como Florinha, representa o autismo. Ela é uma lontra sociável e gentil, que demonstra suas emoções e cuidados de maneiras únicas e não convencionais. Flora pode, em certos momentos, preferir a comunicação não verbal e buscar um espaço tranquilo e solitário, valorizando sua independência. Seu amor pelas flores simboliza sua conexão com o mundo ao seu redor de uma maneira sensível e delicada.')">
+                    <h4>Flora</h4>
+                </div>
+                <div class="personagem">
+                    <img src="imagens/personagens/tartaruga.png" alt="Personagem Melancolia"
+                        onclick="selecionarPersonagem('imagens/personagens/tartaruga.png', 'Melancolia', 'Melancolia é uma tartaruga que representa a depressão. Ela é gentil e tranquila, mas frequentemente se sente triste e sem energia. A depressão faz com que Melancolia se retraia em seu casco, preferindo ficar sozinha e em silêncio. Ela se move lentamente e muitas vezes parece estar carregando um grande peso emocional. No entanto, Melancolia ainda encontra momentos de conexão e apreciação pelas pequenas belezas da vida, mesmo em sua luta contra a tristeza.')">
+                    <h4>Melancolia</h4>
+                </div>
+                <div class="personagem">
+                    <img src="imagens/personagens/cachorro.png" alt="Personagem Pelucio"
+                        onclick="selecionarPersonagem('imagens/personagens/cachorro.png', 'Pelúcio', 'Pelúcio é um cachorro adorável e muito ligado aos seus donos. Ele representa a ansiedade, particularmente a ansiedade de separação e a agitação que acompanha a espera e a expectativa. Quando seus donos saem para trabalhar, Pelúcio fica ansioso pela volta deles, e quando finalmente retornam, ele se enche de alegria e agitação, tornando-se difícil de acalmar')">
+                    <h4>Pelucio</h4>
+                </div>
+                <div class="personagem">
+                    <img src="imagens/personagens/LeopardoDasNeves.png" alt="Personagem Leonardo"
+                        onclick="selecionarPersonagem('imagens/personagens/LeopardoDasNeves.png', 'Leonardo', 'Leonardo é um Leopardo das Neves que vive no alto das montanhas gélidas, ele prefere viver sozinho, ele é bem impulsivo e tende a ser rude em algumas circunstâncias, ele, não intencionalmente, e se estressa com muita facilidade, podendo até mesmo vir a se tornar agressivo, entretando, ele é um bom ouvinte e estará disponível para quando você necessitar de alguém para lhe ouvir sem julgamentos. O Nenju Suzu que carrega em seu pescoço é para deixa-lo confortável e manter-se em paz.')">
+                    <h4>Leonardo</h4>
+                </div>
+                <div class="personagem">
+                    <img src="imagens/personagens/Pavao.png" alt="Personagem Rei"
+                        onclick="selecionarPersonagem('imagens/personagens/Pavao.png', 'Rei', 'Rei, como o nome já diz, se vê como  encarnação de um Rei que foi destinado a grandeza, não vê suas próprias falhas, e jamais iria admitir que tenha algum defeito. Seu retrato de perfil é diferente dos demais, pois, acredita que é melhor e se destaca muito mais que os outros. Para ele, o mundo é um espelho, e ele é o reflexo da perfeição. Ele tende a se vitimizar, mesmo quando está errado, não recebe bem críticas e tem necessidade de admiração. Porém, Rei não é de todo mal, ele tem qualidades como a ambição, o carisma e a autodeterminação.')">
+                    <h4>Rei</h4>
+                </div>
+            </section>
+            <div class="linhaS"></div>
+            <section class="personSelec">
+                <div class="fotoPerson">
+                    <img id="personagemSelecionado" src="" alt="">
+                </div>
+                <h2 class="nomePerson">Selecione um personagem</h2>
+                <p class="paragPerson">Aqui vai aparecer a biografia do Personagem.</p>
+            </section>
+        </section>
+        <section class="butEtp">
+            <div class="etapas">
+                <h5>ETAPA 3</h5>
+                <div>
+                    <svg class="etapaAnd" width="40" height="8" viewBox="0 0 68 8" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M64 4L4 4" stroke="#D9D9D9" stroke-width="8" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                    <svg class="etapaAnd" width="40" height="8" viewBox="0 0 68 8" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M64 4L4 4" stroke="#D9D9D9" stroke-width="8" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                    <svg class="etapaAnd" width="40" height="8" viewBox="0 0 68 8" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M64 4L4 4" stroke="#D9D9D9" stroke-width="8" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+            </div>
+            <div class="buttonPerson">
+                <a href="bemvindo.html" class="butPular">Pular</a>
+                <a href="bemvindo.html" class="butAzul" onclick="confirmarPersonagem()">Confirmar</a>
+            </div>
+        </section>
+    </main>
+    <script>
+        function selecionarPersonagem(imagem, nome, descricao) {
+            // Define a imagem do personagem selecionado
+            document.getElementById('personagemSelecionado').src = imagem;
+            // Define o nome do personagem selecionado
+            document.querySelector('.nomePerson').textContent = nome;
+            // Define a descrição do personagem selecionado
+            document.querySelector('.paragPerson').textContent = descricao;
+        }
+
+        function confirmarPersonagem() {
+            var imagem = document.getElementById('personagemSelecionado').src;
+            localStorage.setItem('profilePicture', imagem);
+        }
+    </script>
+    <script src="js/fotoperfil.js"></script>
+    <script src="js/seuarquivo.js"></script>
+     <script src="js/perfil.js"></script>
+     <script src="js/fotoperfil.js"></script>
+     <script src="js/seuarquivo.js"></script>
+      <script src="js/perfil.js"></script>
+</body>
+
+</html>

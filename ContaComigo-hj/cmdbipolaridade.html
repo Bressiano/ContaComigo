@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="estilo.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+    <title>Bipolaridade - ContaComigo</title>
+
+</head>
+
+<body class="bodytdah">
+    <header>
+        <img class="logoNav" src="imagens/logotipo.degrade.svg" alt="Logo do ContaComigo">
+
+        <nav class="navGeral">
+            <a href="bemvindo.html">Início</a>
+            <div>
+                <button>Comunidades<span>v</span></button>
+
+                <div id="cmdExpandir">
+                    <a href="cmdansiedade.html">Ansiedade</a>
+                    <a href="cmddepressao.html">Depressão</a>
+                    <a href="cmdtdah.html">TDAH (Transtorno do déficit de atenção com hiperatividade)</a>
+                    <a href="cmdtea.html">TEA (Transtorno do Espectro Autista)</a>
+                    <a href="cmdbipolaridade.html">Bipolaridade</a>
+                    <a href="cmdtpas.html">TPAS (Transtorno de Personalidade Antissocial)</a>
+                    <a href="cmdtpn.html">TPN (Transtorno de Personalidade Narcisita)</a>
+                </div>
+            </div>
+
+            <a href="profissionais.html">Profissionais</a>
+            <a href="personagens.html">Personagens</a>
+            <a href="neurodivergencias.html">Neurodivergências</a>
+        </nav>
+
+        <nav class="navPessoal">
+            <div class="perfilNav">
+                <a href="Perfil.html"><img id="profile-picture" src="default-profile.png" alt="Foto de Perfil"></a>
+            </div>
+            <a href="configuracoes.html"><svg xmlns="http://www.w3.org/2000/svg" height="1.7rem"
+                    viewBox="0 -960 960 960" fill="#5F6368">
+                    <path
+                        d="m370-80-16-128q-13-5-24.5-12T307-235l-119 50L78-375l103-78q-1-7-1-13.5v-27q0-6.5 1-13.5L78-585l110-190 119 50q11-8 23-15t24-12l16-128h220l16 128q13 5 24.5 12t22.5 15l119-50 110 190-103 78q1 7 1 13.5v27q0 6.5-2 13.5l103 78-110 190-118-50q-11 8-23 15t-24 12L590-80H370Zm70-80h79l14-106q31-8 57.5-23.5T639-327l99 41 39-68-86-65q5-14 7-29.5t2-31.5q0-16-2-31.5t-7-29.5l86-65-39-68-99 42q-22-23-48.5-38.5T533-694l-13-106h-79l-14 106q-31 8-57.5 23.5T321-633l-99-41-39 68 86 64q-5 15-7 30t-2 32q0 16 2 31t7 30l-86 65 39 68 99-42q22 23 48.5 38.5T427-266l13 106Zm42-180q58 0 99-41t41-99q0-58-41-99t-99-41q-59 0-99.5 41T342-480q0 58 40.5 99t99.5 41Zm-2-140Z" />
+                </svg></a>
+        </nav>
+    </header>
+    <main class="mainTdah">
+        <div class="bth1">
+            <a href="bemvindo.html">
+                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M7.27983 14.4176L15.1634 22.3011L12.4645 25L0 12.5355L12.5355 0L15.2344 2.69886L7.27983 10.6534H25V14.4176H7.27983Z"
+                        fill="#5F6368" />
+                </svg>
+            </a>
+            <h1 class="tituloroxo">Bipolaridade</h1>
+        </div>
+        <section>
+            <aside class="asidepub">
+                <div class="criarpubli">
+                    <p><span class="negrito">1000 membros </span> <br> na comunidade</p>
+                    <button onclick="mostrarFormPublicacao()">Criar Publicação</button>
+                </div>
+            </aside>
+            <div class="comments" id="formPublicacao" style="display: none;">
+                <div>
+                    <h2>Criar Publicação</h2>
+                    <form id="novaPublicacao">
+                        <textarea id="conteudoPublicacao" placeholder="Escreva sua publicação..."></textarea>
+                        <button type="button" onclick="criarPublicacao()">Publicar</button>
+                    </form>
+                </div>
+                <div id="listaPublicacoes">
+                    <!-- Publicações serão inseridas dinamicamente aqui -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footerPrinc">
+        <div>
+           <img src="imagens/logocompletabranca.svg" alt="Logo ContaComigo" id="logobranca">
+
+            <div class="mapaSite">
+                <h4>MAPA DO SITE</h4>
+
+                <a href="telainicio.html">Início</a>
+                <a href="profissionais.html">Profissionais</a>
+                <a href="personagens.html">Personagens</a>
+                <a href="configuracoes.html">Configurações</a>
+                <a href="configuracoes.html">Políticas do site</a>
+            </div>
+
+            <div class="comunFooter">
+
+                <h4>ALGUMAS COMUNIDADES</h4>
+
+                <a href="cmdansiedade.html">Ansiedade</a>
+                <a href="cmddepressao.html">Depressão</a>
+                <a href="cmdbipolaridade.html">Bipolaridade</a>
+                <a href="cmdtdah.html">TDAH (Transtorno do Déficit de
+                    Atenção com Hiperatividade)</a>
+                <a href="cmdtea.html">TEA (Transtorno do Espectro Autista)</a>
+                <a href="telainicio.html">Mais</a>
+            </div>
+
+            <div class="rsFooter">
+                <h4>REDES SOCIAIS</h4>
+
+                <div id="redesSociais">
+                    <a href="https://www.instagram.com/sitecontacomigo?igsh=MXdiOWU2MThjcDdwNA=="><img
+                            src="imagens/instagram.svg" alt="Icone com link para o  Instagram do ContaComigo"></a>
+                    <a href="https://www.facebook.com/profile.php?id=61560779221230"><img src="imagens/facebook.svg"
+                            alt="Icone com link para o  Facebook do ContaComigo"></a>
+                </div>
+            </div>
+
+            <div class="mcFooter">
+                <h4>MEIO DE CONTATO</h4>
+
+                <div id="email">
+                    <img src="imagens/icon_email.svg" alt="">
+                    <a href="mailto:seuemaildeexemplo@example.com" target="_blank">coontacomigo@gmail.com</a>
+                </div>
+            </div>
+
+            <section class="copyright">
+                <p>© 2024 <a href="copytright.html">Copyright</a> - ContaComigo</p>
+            </section>
+    </footer>
+    <div id="notification" class="notification">Essa mensagem foi denunciada</div>
+
+    <script src="js/fotoperfil.js"></script>
+    <script src="js/seuarquivo.js"></script>
+     <script src="js/perfil.js"></script>
+</body>
+
+</html>

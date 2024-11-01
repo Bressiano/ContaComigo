@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="estilo.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+    <title>Entrar - ContaComigo</title>
+</head>
+
+<body class="bodyCadastro">
+
+    <main class="mainBemVindo">
+        <h1 class="tituloverde">Entrar</h1>
+
+        <form class="formEntrar" method="POST" action="#" onsubmit="return validarForm()">
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="exemplo@gmail.com">
+                <p class="error" id="emailError"></p>
+            </div>
+
+            <div>
+                <label for="Senha">Senha</label>
+                <input type="password" id="senha" name="senha" placeholder="Digite sua senha"
+                    autocomplete="current-password">
+                <p class="error" id="senhaError"></p>
+            </div>
+
+
+
+            <p>Não tem uma conta? <a href="registrar.html">Clique aqui</a></p>
+
+            <button class="corbotao" type="submit">Confirmar</button>
+
+        </form>
+    </main>
+
+    <script>
+        function validarForm() {
+            var email = document.getElementById("email").value;
+            var senha = document.getElementById("senha").value;
+            var emailError = document.getElementById("emailError");
+            var senhaError = document.getElementById("senhaError");
+            var valido = true;
+
+            if (email.trim() === "") {
+                emailError.textContent = "Por favor, insira seu email.";
+                emailError.style.color = "red";
+                valido = false;
+            } else {
+                emailError.textContent = "";
+            }
+
+            if (senha.trim() === "") {
+                senhaError.textContent = "Por favor, insira sua senha.";
+                senhaError.style.color = "red";
+                valido = false;
+            } else {
+                senhaError.textContent = "";
+            }
+
+            if (valido) {
+                // Se os campos estiverem preenchidos corretamente, redirecione para bemvindo.html
+                window.location.href = "bemvindo.html";
+            }
+
+            return false; // Isso evita o envio do formulário
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="estilo.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+    <title>Configurações - ContaComigo</title>
+</head>
+
+<body>
+    <header>
+        <img class="logoNav" src="imagens/logotipo.degrade.svg" alt="Logo do ContaComigo">
+
+        <nav class="navGeral">
+            <a href="telainicio.html">Início</a>
+            <div>
+                <button>Comunidades<span>v</span></button>
+
+                <div id="cmdExpandir">
+                    <a href="cmdansiedade.html">Ansiedade</a>
+                    <a href="cmddepressao.html">Depressão</a>
+                    <a href="cmdtdah.html">TDAH (Transtorno do déficit de atenção com hiperatividade)</a>
+                    <a href="cmdtea.html">TEA (Transtorno do Espectro Autista)</a>
+                    <a href="cmdbipolaridade.html">Bipolaridade</a>
+                    <a href="cmdtpas.html">TPAS (Transtorno de Personalidade Antissocial)</a>
+                    <a href="cmdtpn.html">TPN (Transtorno de Personalidade Narcisita)</a>
+                </div>
+            </div>
+            <a href="profissionais.html">Profissionais</a>
+            <a href="personagens.html">Personagens</a>
+            <a href="neurodivergencias.html">Neurodivergências</a>
+        </nav>
+
+        <nav class="navPessoal">
+            <div class="perfilNav">
+                <a href="Perfil.html"><img id="profile-picture" src="default-profile.png" alt="Foto de Perfil"></a>
+            </div>
+            <a href="configuracoes.html"><svg xmlns="http://www.w3.org/2000/svg" height="1.7rem"
+                    viewBox="0 -960 960 960" fill="#5F6368" class="select">
+                    <path
+                        d="m370-80-16-128q-13-5-24.5-12T307-235l-119 50L78-375l103-78q-1-7-1-13.5v-27q0-6.5 1-13.5L78-585l110-190 119 50q11-8 23-15t24-12l16-128h220l16 128q13 5 24.5 12t22.5 15l119-50 110 190-103 78q1 7 1 13.5v27q0 6.5-2 13.5l103 78-110 190-118-50q-11 8-23 15t-24 12L590-80H370Zm70-80h79l14-106q31-8 57.5-23.5T639-327l99 41 39-68-86-65q5-14 7-29.5t2-31.5q0-16-2-31.5t-7-29.5l86-65-39-68-99 42q-22-23-48.5-38.5T533-694l-13-106h-79l-14 106q-31 8-57.5 23.5T321-633l-99-41-39 68 86 64q-5 15-7 30t-2 32q0 16 2 31t7 30l-86 65 39 68 99-42q22 23 48.5 38.5T427-266l13 106Zm42-180q58 0 99-41t41-99q0-58-41-99t-99-41q-59 0-99.5 41T342-480q0 58 40.5 99t99.5 41Zm-2-140Z" />
+                </svg></a>
+        </nav>
+    </header>
+
+    <div class="bth1" id="config">
+        <a href="telainicio.html"><svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M7.27983 14.4176L15.1634 22.3011L12.4645 25L0 12.5355L12.5355 0L15.2344 2.69886L7.27983 10.6534H25V14.4176H7.27983Z"
+                    fill="#5F6368" />
+            </svg></a>
+
+        <h1>Configurações</h1>
+    </div>
+
+    <main class="mainConfig">
+
+        <aside class="asideConfig">
+            <section>
+                <div class="configu">
+                    <h5>Configurações</h5>
+                    <button onclick="mostrarSecao('conta')">Conta</button>
+                    <button onclick="mostrarSecao('personagem')">Personagem</button>
+                </div>
+
+                <div class="ativ">
+                    <h5>Atividades</h5>
+                    <button onclick="mostrarSecao('historicoSuspensoes')">Histórico de suspensões</button>
+                </div>
+
+                <div class="info">
+                    <h5>Informações</h5>
+                    <button onclick="mostrarSecao('politicasSite')">Políticas do site</button>
+                </div>
+
+                <div>
+                    <h5> Linguagem </h5>
+                    <button onclick="mostrarSecao('escolherling')"> Escolher idioma</button> <!---painel de configurações, para abrir a escolha de linguagens-->
+                </div>
+
+                <div>
+                    <h5> Créditos </h5>
+                    <button onclick="mostrarSecao('creditosSite')"> Créditos do Site </button>
+                </div>
+                </section>
+            </section>
+            <div id="linha"></div>
+        </aside>
+        <section id="conteudo">
+
+            <section id="conta" class="secaoConfig">
+                <div>
+                    <h2>Configurações da Conta</h2>
+                    <form id="editarPerfilForm">
+                        <p>Nome: renner</p>
+                        <p>Email: renner123@gmail.com</p>
+                    </form>
+                    <a href="#" id="excluirConta" onclick="excluirConta()" class="linkVermelho">Excluir Conta</a>
+                </div>
+            </section>
+
+            <section id="personagem" class="secaoConfig" style="display: none;">
+                <div>
+                    <h2>Configurações de Personagem</h2>
+                    <a href="personagens.html">Mudar Personagem</a>
+                </div>
+            </section>
+
+            <section id="historicoSuspensoes" class="secaoConfig" style="display: none;">
+                <div>
+                    <h2>Histórico de Suspensões</h2>
+                    <div class="banimento">o maximo de suspensão antes do banimento é 3</div>
+                    <p>Aqui você pode visualizar o histórico de suspensões da sua conta.</p>
+
+                    <ul id="listaSuspensao">
+                        <!-- Aqui serão adicionadas as suspensões dinamicamente -->
+                    </ul>
+                </div>
+            </section>
+
+            <section id="politicasSite" class="secaoConfig" style="display: none;">
+                <div>
+                    <h2>Políticas do site</h2>
+                    <p>Bem-vindo ao nosso site! Para garantir uma experiência positiva e segura para todos os usuários,
+                        estabelecemos as seguintes políticas. Ao utilizar nosso site, você concorda em cumprir estas
+                        diretrizes: </p>
+
+                    <p> <span class="negrito">1. Respeito Mútuo</span> <br>
+                        • Todos os usuários devem tratar uns aos outros com respeito. Qualquer forma de ofensa,
+                        discriminação, assédio ou comportamento abusivo não será tolerada.</p>
+
+                    <p>
+                        <span class="negrito">2. Proibição de Conteúdo Ofensivo </span><br>
+                        • Não é permitido postar ou compartilhar conteúdo que possa ofender, insultar ou prejudicar
+                        outras pessoas. Isso inclui, mas não se limita a, comentários, imagens ou links que promovam
+                        ódio, violência ou discriminação.</p>
+
+                    <p><span class="negrito">3. Medidas Disciplinares</span><br>
+                        • Qualquer usuário que violar estas políticas estará sujeito a medidas disciplinares. <br>
+                        • A primeira e a segunda infração resultarão em uma suspensão temporária do site. <br>
+                        • Na terceira infração, o usuário será banido permanentemente do site.</p>
+
+                    <p> <span class="negrito">4. Conteúdo Inapropriado</span><br>
+                        • É proibido compartilhar conteúdo que seja ilegal, ameaçador, abusivo, difamatório, obsceno ou
+                        de qualquer outra forma inapropriado.</p>
+
+                    <p><span class="negrito">5. Uso Adequado do Site</span><br>
+                        • Os usuários devem usar o site de maneira adequada e conforme seu propósito, evitando qualquer
+                        tipo de comportamento que possa comprometer a segurança e a integridade do site ou de seus
+                        usuários. </p>
+
+                    <p><span class="negrito">6. Filtragem de Conteúdo</span><br>
+                        • Todas as publicações feitas no site passarão por um algoritmo que filtrará palavras
+                        específicas. </p>
+
+                    <p><span class="negrito">7. Denúncia de Violações</span><br>
+                        • Se você encontrar qualquer conteúdo ou comportamento que viole estas políticas, por favor,
+                        denuncie imediatamente para nossa equipe de suporte para que possamos tomar as medidas
+                        apropriadas.</p>
+
+                    <p><span class="negrito">8. Alterações nas Políticas</span><br>
+                        • Reservamo-nos o direito de alterar estas políticas a qualquer momento. Quaisquer mudanças
+                        serão publicadas nesta página e é responsabilidade do usuário manter-se atualizado com relação a
+                        elas.</p>
+
+                    <p>Esperamos que essas políticas ajudem a manter um ambiente positivo e seguro para todos. Se tiver
+                        dúvidas ou preocupações, não hesite em entrar em contato conosco.</p>
+                </div>
+            </section>
+
+            <section id="escolherling" class="secaoConfig" style="display: none;">
+                <div>
+                    <h2>Escolha sua Linguagem: </h2>
+                    <a href="siteinlges.html"><img src="imagens/bandeiraeua.png" alt="bandeira Estados Unidos"></a>
+                    <a href="configuracoes.html"><img src="imagens/bandeirabr.jpg" alt="bandeira Brasileira"></a>
+                </div>
+            </section>
+
+            <section id="creditosSite" class="secaoConfig" style="display: none;">
+                <div class="pai">
+                    <h2 class="cd"> Créditos do Site: </h2>
+                    <div class="controlarcd">
+                        <div class="rennercd">
+                            <a href="https://www.instagram.com/renner__ferreira/"><img class="renner" src="imagens/imgcd/renner.jfif" alt="Renner Daniel Gomes Ferreira"> </a>
+                            <h4><span class="negrito"> Renner Daniel Gomes Ferreira</span></h4>
+                             <p> Responsável pelo Javascript e funcionalidade do site</p>
+                        </div>
+                        <div class="anacd">
+                            <a href="https://www.instagram.com/ana_bressiano/"><img class="ana" src="imagens/imgcd/ana.jfif" alt="Ana Julia Bressiano"></a> 
+                            <h4><span class="negrito"> Ana Julia Bressiano</span></h4>
+                            <p> Responsável pelos design dos personagens e pelo css</p>
+                        </div>
+                        <div class="carloscd">
+                            <a href="https://www.instagram.com/im.kars_/"> <img class="carlos" src="imagens/imgcd/carlos.jfif" alt="Carlos Zei de Paula"> </a>
+                            <h4> <span class="negrito"> Carlos Zei de Paula</span></h4>
+                            <p> Responsável pelo HTML e telas do site</p>
+                        </div>
+                        <div class="jaocd">
+                           <a href="https://www.instagram.com/_joao.guiilherme_/"><img class="jao" src="imagens/imgcd/jao.jpg" alt="Joao Guilherme Rizzo Ferreira"></a>
+                            <h4><span class="negrito"> João Guilherme</span></h4>
+                            <p> Responsável pelo HTML e telas do site</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+
+    </main>
+
+    <footer class="footerPrinc">
+        <div>
+           <img src="imagens/logocompletabranca.svg" alt="Logo ContaComigo" id="logobranca">
+
+            <div class="mapaSite">
+                <h4>MAPA DO SITE</h4>
+
+                <a href="telainicio.html">Início</a>
+                <a href="profissionais.html">Profissionais</a>
+                <a href="personagens.html">Personagens</a>
+                <a href="configuracoes.html">Configurações</a>
+                <a href="configuracoes.html">Políticas do site</a>
+            </div>
+
+            <div class="comunFooter">
+
+                <h4>ALGUMAS COMUNIDADES</h4>
+
+                <a href="cmdansiedade.html">Ansiedade</a>
+                <a href="cmddepressao.html">Depressão</a>
+                <a href="cmdbipolaridade.html">Bipolaridade</a>
+                <a href="cmdtdah.html">TDAH (Transtorno do Déficit de
+                    Atenção com Hiperatividade)</a>
+                <a href="cmdtea.html">TEA (Transtorno do Espectro Autista)</a>
+                <a href="telainicio.html">Mais</a>
+            </div>
+
+            <div class="rsFooter">
+                <h4>REDES SOCIAIS</h4>
+
+                <div id="redesSociais">
+                    <a href="https://www.instagram.com/sitecontacomigo?igsh=MXdiOWU2MThjcDdwNA=="><img
+                            src="imagens/instagram.svg" alt="Icone com link para o  Instagram do ContaComigo"></a>
+                    <a href="https://www.facebook.com/profile.php?id=61560779221230"><img src="imagens/facebook.svg"
+                            alt="Icone com link para o  Facebook do ContaComigo"></a>
+                </div>
+            </div>
+
+            <div class="mcFooter">
+                <h4>MEIO DE CONTATO</h4>
+
+                <div id="email">
+                    <img src="imagens/icon_email.svg" alt="">
+                    <a href="mailto:seuemaildeexemplo@example.com" target="_blank">coontacomigo@gmail.com</a>
+                </div>
+            </div>
+
+            <section class="copyright">
+                <p>© 2024 <a href="copytright.html">Copyright</a> - ContaComigo</p>
+            </section>
+    </footer>
+    <script src="js/fotoperfil.js"></script>
+    <script src="js/configuracoes.js"></script>
+</body>
+    <!---Obrigada Maria Fernanda por durante o primeiro semestre nos ajudar na criação do site na parte do HTML e CSS-->
+</html>

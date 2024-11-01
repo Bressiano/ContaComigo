@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="estilo.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+    <title>Criar conta - ContaComigo</title>
+</head>
+
+<body class="bodyCadastro">
+    <main class="mainCriarConta">
+
+        <h1 class="tituloazul">Criar Conta</h1>
+
+        <form method="POST" action="javascript:void(0);" onsubmit="return validarFormulario()">
+
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" class="email" id="email" placeholder="exemplo@gmail.com">
+                <p class="error" id="emailError"></p>
+            </div>
+
+            <div>
+                <label for="senha">Crie uma senha</label>
+                <input type="password" name="senha" class="senha" placeholder="Digite a senha" required>
+                <p class="error" id="senhaError"></p>
+                <p class="aviso">*A senha deve conter no mínimo 8 caracteres.</p>
+            </div>
+
+            <div id="linhaBaixo">
+
+                <div id="radio">
+                    <label for="politicas">Aceitar as<a href="politicas.html"> políticas do site</a></label>
+                    <input type="radio" name="politicas" id="politicas" required>
+                    <p class="error" id="politicasError"></p>
+                </div>
+
+                <p>Já tem uma conta? <a href="entrar.html">Clique aqui</a></p>
+            </div>
+
+            <button class="corbotaoazul" type="submit">Continuar</button>
+
+        </form>
+
+        <div class="etapas">
+            <h5>ETAPA 1</h5>
+
+            <div>
+                <svg class="etapaAnd" width="40" height="8" viewBox="0 0 68 8" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M64 4L4 4" stroke="#D9D9D9" stroke-width="8" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+
+                <svg width="40" height="8" viewBox="0 0 68 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M64 4L4 4" stroke="#D9D9D9" stroke-width="8" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+
+                <svg width="40" height="8" viewBox="0 0 68 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M64 4L4 4" stroke="#D9D9D9" stroke-width="8" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="js/validacaologin.js">
+        
+
+    </script>
+    <script src="js/fotoperfil.js"></script>
+    <script src="js/seuarquivo.js"></script>
+     <script src="js/perfil.js"></script>
+</body>
+
+</html>
