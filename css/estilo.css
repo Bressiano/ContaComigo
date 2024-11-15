@@ -475,7 +475,7 @@ b{
 .cardComuni:hover {
     border: 1px solid  #6ea172;
     background-color:#a3e0a9;
-    transform: scale(110%);
+    transform: scale(102%);
 }
 
 #ansiedade img{
@@ -581,7 +581,8 @@ b{
 
 #tpn:hover::after{
     content: "(Transtorno de Personalidade Narcisista)";
-    color: #160a13;
+    transition: 0.5s all;
+    color: #220f1d;
     font-size: 14px;
     font-weight: 650;
     width: 80%;
@@ -661,8 +662,8 @@ b{
 #redesSociais {
     display: flex;
     margin-top: 0.5rem;
+    margin-right: 1.5rem;
     gap: 0.7rem;
-    justify-content: center;
 }
 
 #redesSociais a:hover {
@@ -682,12 +683,16 @@ b{
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 0.5rem; /* Ajuste o espaçamento entre os elementos */
+    max-width: 100%; /* Evita que ultrapasse a largura da tela */
+    overflow: hidden; /* Impede o conteúdo de transbordar */
+    box-sizing: border-box; /* Garante que padding e bordas não afetem o tamanho total */
 }
 
 #email {
     display: flex;
     gap: 0.5rem;
+    max-width: 100%; /* Garante que o conteúdo não ultrapasse a tela */
 }
 
 
@@ -1403,6 +1408,7 @@ h2 {
     justify-content: space-between;
     padding: 2rem 8rem;
     align-items: center;
+    position: relative;
 }
 
 .footerPrinc h4 {
@@ -1802,19 +1808,20 @@ bth1.mPerson section {
     width: 100%;
 }
 
-#cmdExpandir{
+#cmdExpandir {
     border: 1px var(--cinzaborda) solid;
     background-color: var(--cinzaclaro);
     width: 15rem;
     height: auto;
     position: absolute;
-    top: -30rem; /*vai fazer com que esconda o expandir da tela*/
+    top: -30rem;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
     padding: 1rem;
     border-radius: 1rem;
     transition: all 0.5s;
+    z-index: 1000; /* Garante que fique acima dos outros elementos */
 }
 
 #linksecreto{
@@ -2430,6 +2437,46 @@ body {
     font-size: 1.8rem;
 }
 
+.sobreBipolaridade{
+    color: black;
+}
+
+.sobreBipolaridade::after{
+    content: " Bipolaridade";
+    color: var(--verde);
+    font-size: 1.8rem;
+}
+
+.sobredepressao{
+    color: black;
+}
+
+.sobreDepressao::after{
+    content: " Depressão";
+    color: var(--azulum);
+    font-size: 1.8rem;
+}
+
+.sobreTDAH{
+    color: black;
+}
+
+.sobreTDAH::after{
+    content: " TDAH (Transtorno do Déficit de Atenção e Hiperatividade)";
+    color: var(--azuldois);
+    font-size: 1.8rem;
+}
+
+.sobreTPN{
+    color: black;
+}
+
+.sobreTPN::after{
+    content: "TPN(Transtorno de Personalidade Narcisista)";
+    color: var(--roxo);
+    font-size: 1.8rem;
+}
+
 .mainAnsie {
     display: flex;
     flex-direction: column;
@@ -2538,7 +2585,7 @@ body {
     margin: 5px 0; /* Margem entre os links */
 }
 .footerPrinc h4 {
-    font-size: 1.5em; /* tamanho do título */
+    font-size: 1em; /* tamanho do título */
 }
 
 .footerPrinc a {
@@ -2549,19 +2596,20 @@ body {
 #redesSociais img {
     max-width: 100%;
     height: auto; /* mantém a proporção */
+    margin: 0 2rem 0 0;
 }
 .footerPrinc {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 20px;
+    padding: 0;
     position: relative;
 }
-
 .copyright {
+    position: absolute; /* fixa o elemento no final da tela */
+    bottom: 0; /* garante que fique na parte inferior */
     width: 100%; /* ocupa toda a largura do footer */
     text-align: center; /* centraliza o texto */
-    margin-top: auto; /* garante que fique na parte inferior */
     padding: 5px 0; /* reduz o espaçamento vertical */
     font-size: 0.8em; /* diminui o tamanho da fonte */
     background-color: var(--azuldois); /* fundo opcional */
@@ -2571,6 +2619,16 @@ body {
 .footerPrinc p {
     margin: 0; /* remove margens do parágrafo */
 }
+
+.comunFooter h4{
+    font-size: 1rem;
+}
+
+.rsFooter h4{
+    margin: 0 2rem 0 0;
+    font-size: 1rem;
+}
+
 /* Responsividade para telas menores */
 @media (max-width: 1200px) {
     .cardComuni {
@@ -2648,4 +2706,3 @@ body {
 .hmenu {
     cursor: pointer; /* Muda o cursor para indicar interatividade */
 }
-
