@@ -15,7 +15,10 @@
 <body class="bV" id="coomeço">
     <header class="headerBV">
         <a href="Perfil.html"><img src="imagens/logotipo.degrade.svg" alt="Logo do ContaComigo"></a>
+    
         
+    
+        <!-- Navegação principal -->
         <nav class="localizar">
             <p><a href="#começo">Inicio</a></p>
             <p><a href="#secBV2">Comunidades</a></p>
@@ -24,12 +27,39 @@
             <p><a href="#secBV5">Profissionais</a></p>
             <p><a href="#secBV6">Neurodivergências</a></p>
         </nav>
-
+    
+        <!-- Links Entrar e Criar Conta -->
         <nav>
             <p><a href="entrar.html">Entrar</a></p>
             <p><a href="registrar.html" class="criarconta">Criar Conta</a></p>
         </nav>
+
+        <!-- Botão do menu hambúrguer -->
+        <div class="menu-hamburguer" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <!-- Menu lateral oculto -->
+    <div class="menu-lateral" id="menuLateral">
+        <div class="menu-header">
+            <span class="close-menu" id="closeMenu">×</span>
+        </div>
+        <nav class="localizar">
+            <p><a href="#começo">Inicio</a></p>
+            <p><a href="#secBV2">Comunidades</a></p>
+            <p><a href="#secBV3">Forúns</a></p>
+            <p><a href="#secBV4">Personagens</a></p>
+            <p><a href="#secBV5">Profissionais</a></p>
+            <p><a href="#secBV6">Neurodivergências</a></p>
+        </nav>
+        <section class="copyright">
+            <p>© 2024 - ContaComigo</p>
+        </section>
+    </div>
     </header>
+    
+    
 
     <section class="vlibras">
         <div vw class="enabled">
@@ -65,21 +95,26 @@
                         <img src="imagens/esquiloicon.png" alt="Icon de esquilo">TDAH
                     </a>
                 </div>
-                <p>
-                    <b>Descubra sua comunidade:</b> Conectando mentes, compartilhando histórias e fortalecendo jornadas.
-                    Cadastre-se agora e descubra muitas outras comunidades. 
-                    <a href="registrar.html" class="tituloroxo"> Venha conhecer!</a>
-                </p>
+                <div class="info-comunidade">
+                    <p>
+                        <span> Descubra sua comunidade:</span> Conectando mentes, compartilhando histórias e fortalecendo jornadas.
+                        Cadastre-se agora e descubra muitas outras comunidades. 
+                        <a href="registrar.html" class="tituloroxo"> Venha conhecer!</a>
+                    </p>
+                </div>
             </div>
         </section>
-        
         <section class="secBV3" id="secBV3">
             <h1 class="tituloverde">Fóruns moderados</h1>
             <h2 class="titulocinza">dentro de cada uma das comunidades</h2>
             <div class="content">
-                <p><b>Guiando conversas com empatia:</b> Nosso algoritmo modera todos os
-                    comentários para eliminar qualquer intenção maliciosa.</p>
-                <img src="imagens/suspensoes.png" alt="Exemplo de publicação suspensa">
+                <div class="texto-forum">
+                    <p>
+                        <b>Guiando conversas com empatia:</b> Nosso algoritmo modera todos os
+                        comentários para eliminar qualquer intenção maliciosa.
+                    </p>
+                </div>
+                <img src="imagens/suspensoes.png" alt="Exemplo de publicação suspensa" class="img-forum">
             </div>
         </section>
 
@@ -91,13 +126,22 @@
                     <img src="imagens/personagens/tartaruga.png" alt="Personagem Tartaruga">
                     <div>
                         <h3>Melancolia</h3>
-                        <p>Melancolia é uma tartaruga que representa a depressão. Ela é gentil e tranquila, mas
+                        <p>
+                            Melancolia é uma tartaruga que representa a depressão. Ela é gentil e tranquila, mas
                             frequentemente se sente triste e sem energia. A depressão faz com que Melancolia se retraia
-                            em seu casco... <a href="registrar.html" class="tituloazul"> ver mais</a></p>
+                            em seu casco... <a href="registrar.html" class="tituloazul"> ver mais</a>
+                        </p>
                     </div>
                 </div>
-                <p><b>Encontre o que te representa:</b> Escolha o personagem que mais se
-                    identifica com você, ele se tornará sua foto de perfil e te representará. Cadastre-se agora e explore uma variedade de personagens! <a href="registrar.html" class="tituloazul">Clique para começar.</a></p>
+                </div>
+                <div class="info-box">
+                    <p>
+                        <b>Encontre o que te representa:</b> Escolha o personagem que mais se
+                        identifica com você, ele se tornará sua foto de perfil e te representará.
+                        Cadastre-se agora e explore uma variedade de personagens!
+                        <a href="registrar.html" class="tituloazul">Clique para começar.</a>
+                    </p>
+                </div>
             </div>
         </section>
 
@@ -105,12 +149,17 @@
             <h1 class="tituloazul2">Profissionais</h1>
             <h2>endereço e contato fácil para você</h2>
             <div class="content">
-                <p><b>Conectando você com o apoio certo:</b> Encontre profissionais especializados
-                    em saúde mental, com seus endereços e contatos disponíveis para ajudá-lo em sua jornada de cuidado e
-                    bem-estar.</p>
-                <img src="imagens/psico.png" alt="Exemplo de card da lista de profissionais">
+                <div class="texto-profissionais">
+                    <p>
+                        <b>Conectando você com o apoio certo:</b> Encontre profissionais especializados
+                        em saúde mental, com seus endereços e contatos disponíveis para ajudá-lo em sua jornada de cuidado e
+                        bem-estar.
+                    </p>
+                </div>
+                <img src="imagens/psico.png" alt="Exemplo de card da lista de profissionais" class="img-profissionais">
             </div>
-        </section> 
+        </section>
+        
 
         <section class="secBV6" id="secBV6">
             <h1 class="tituloverdeescuro">Neurodivergências</h1>
@@ -187,6 +236,15 @@
             event.preventDefault(); // Previne o comportamento padrão
             window.scrollTo({ top: 0, behavior: 'smooth' }); // Rolagem suave
         };
+
+        document.getElementById("menuToggle").addEventListener("click", function () {
+    document.getElementById("menuLateral").classList.add("active");
+});
+
+document.getElementById("closeMenu").addEventListener("click", function () {
+    document.getElementById("menuLateral").classList.remove("active");
+});
+
     </script>
 
         <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
