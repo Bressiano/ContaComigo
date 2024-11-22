@@ -461,6 +461,56 @@ b{
 }
 /**/
 
+/*Ajustes dos cards BV*/
+.cardComuniBV{
+    width: 2rem;
+    height: 8rem;
+    align-items: center;
+    gap: 2rem;
+}
+
+.cardComuniBV img {
+    height: 3rem;
+    margin-bottom: 1rem;
+}
+
+#tdahBV img {
+    padding: 0.5rem;
+    width: 5rem;
+    height: auto;
+}
+
+
+#tdahBV {
+    background-color: var(--azuldois);
+    border-radius: 2rem;
+    width: 9rem;
+}
+
+#tdahBV:hover {
+    background-color: #404e86;
+    border: 1px solid #404e86;
+    transition: all 0.5s;
+}
+
+#ansiedadeBV img{
+    width: 5rem;
+   height: auto;
+}
+
+#ansiedadeBV {
+    background-color: var(--roxo);
+    border-radius: 2rem;
+    width: 8.5rem;
+}
+
+#ansiedadeBV:hover {
+    background-color: #821e71;
+    border: 1px solid #821e71;
+    transition: all 0.5s;
+}
+/**/
+
 .cardComuni{
     width: 2rem;
     height: 8rem;
@@ -589,9 +639,49 @@ b{
 }
 /**/
 
+/* organiza card do bv */
+
+.cardbvorganiza {
+    display: flex
+;
+    justify-content: center;
+}
+
+.cardbv a {
+    background-color: var(--verde);
+    display: flex; /* Adicionando flexbox para centralizar o conteúdo */
+    text-align: center;
+    height: 5rem;
+    width: 8rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5%;
+    text-decoration: none; /* Remover o sublinhado do link */
+}
+
+.DepressaoBV {
+    display: flex; /* Flexbox para centralizar o conteúdo */
+    justify-content: center;
+    align-items: center;
+    width: 10rem; /* Aumentando a largura */
+    height: 10rem; /* Aumentando a altura */
+    text-align: center;
+    border-radius: 5%; /* Garantindo bordas arredondadas */
+}
+
+.cardbv  a:hover{
+    background-color: rgb(43, 144, 28);
+    transition: all 0.9s;
+    color: white;
+}
+
+/* */
+
+
 #comuniBV {
     display: flex;
     flex-direction: row;
+    gap: 1rem;
 }
 
 .secBV3 .content p {
@@ -1133,7 +1223,7 @@ body header {
 }
 
 body a {
-    color: var(--cinzanav);
+    color: black;
 }
 
 body nav button {
@@ -1170,7 +1260,7 @@ body nav svg:hover {
     position: relative;
     font-size: 16px;
     font-weight: 650;
-    color: var(--cinzanav);
+    color: var(--black);
     display: flex;
     transition: all 0.5s;
     align-items: center;
@@ -2477,6 +2567,36 @@ body {
     font-size: 1.8rem;
 }
 
+.sobreTEA{
+    color: black;
+}
+
+.sobreTEA::after{
+    content: "TEA(Transtorno de Espectro Autista)";
+    color: var(--verde);
+    font-size: 1.8rem;
+}
+
+.sobreTPAS{
+    color: black;
+}
+
+.sobreTPAS::after{
+    content: "TPAS(Transtorno de Personalidade Antissocial)";
+    color: var(--azulum);
+    font-size: 1.8rem;
+}
+
+.sobreDislexia{
+    color: black;
+}
+
+.sobreDislexia::after{
+    content: "Dislexia";
+    color: var(--azuldois);
+    font-size: 1.8rem;
+}
+
 .mainAnsie {
     display: flex;
     flex-direction: column;
@@ -2607,6 +2727,16 @@ body {
 }
 .copyright {
     position: absolute; /* fixa o elemento no final da tela */
+    bottom: 0; /* garante que fique na parte inferior */
+    width: 100%; /* ocupa toda a largura do footer */
+    text-align: center; /* centraliza o texto */
+    padding: 5px 0; /* reduz o espaçamento vertical */
+    font-size: 0.8em; /* diminui o tamanho da fonte */
+    background-color: var(--azuldois); /* fundo opcional */
+    border-top: 1px solid #ccc; /* linha superior para separação opcional */
+}
+
+.copyrightInicial{
     bottom: 0; /* garante que fique na parte inferior */
     width: 100%; /* ocupa toda a largura do footer */
     text-align: center; /* centraliza o texto */
