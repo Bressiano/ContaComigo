@@ -16,7 +16,10 @@
     <div class="container">
         <header>
             <img class="logoNav" src="imagens/logotipo.degrade.svg" alt="Logo do ContaComigo">
-
+        
+          
+            
+          
             <nav class="navGeral">
                 <a href="bemvindo.html">Início</a>
                 <div>
@@ -24,38 +27,62 @@
                     <div id="cmdExpandir">
                         <a href="cmdansiedade.html">Ansiedade</a>
                         <a href="cmddepressao.html">Depressão</a>
-                        <a href="cmdtdah.html">TDAH (Transtorno do déficit de atenção com hiperatividade)</a>
-                        <a href="cmdtea.html">TEA (Transtorno do Espectro Autista)</a>
+                        <a href="cmdtdah.html">TDAH</a>
+                        <a href="cmdtea.html">TEA</a>
                         <a href="cmdbipolaridade.html">Bipolaridade</a>
-                        <a href="cmdtpas.html">TPAS (Transtorno de Personalidade Antissocial)</a>
-                        <a href="cmdtpn.html">TPN (Transtorno de Personalidade Narcisita)</a>
+                        <a href="cmdtpas.html">TPAS</a>
+                        <a href="cmdtpn.html">TPN</a>
                     </div>
                 </div>
                 <a href="profissionais.html">Profissionais</a>
                 <a href="personagens.html">Personagens</a>
                 <a href="neurodivergencias.html">Neurodivergências</a>
-          
-                <!-- Menu de hambúrguer ao lado de Configurações -->
-                <div class="hmenu" onclick="toggleMenu()">
-                    <div class="hamb-menu">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                </div>
             </nav>
-            
+        
+          
+            <!-- Menu geral -->
+
+
             <nav class="navPessoal">
                 <div class="perfilNav">
                     <a href="Perfil.html"><img id="profile-picture" src="default-profile.png" alt="Foto de Perfil"></a>
                 </div>
-                <a href="configuracoes.html">
+                <a class="telaconfi" href="configuracoes.html">
                     <svg xmlns="http://www.w3.org/2000/svg" height="1.7rem" viewBox="0 -960 960 960" fill="#5F6368" class="select">
                         <path d="m370-80-16-128q-13-5-24.5-12T307-235l-119 50L78-375l103-78q-1-7-1-13.5v-27q0-6.5 1-13.5L78-585l110-190 119 50q11-8 23-15t24-12l16-128h220l16 128q13 5 24.5 12t22.5 15l119-50 110 190-103 78q1 7 1 13.5v27q0 6.5-2 13.5l103 78-110 190-118-50q-11 8-23 15t-24 12L590-80H370Zm70-80h79l14-106q31-8 57.5-23.5T639-327l99 41 39-68-86-65q5-14 7-29.5t2-31.5q0-16-2-31.5t-7-29.5l86-65-39-68-99 42q-22-23-48.5-38.5T533-694l-13-106h-79l-14 106q-31 8-57.5 23.5T321-633l-99-41-39 68 86 64q-5 15-7 30t-2 32q0 16 2 31t7 30l-86 65 39 68 99-42q22 23 48.5 38.5T427-266l13 106Zm42-180q58 0 99-41t41-99q0-58-41-99t-99-41q-59 0-99.5 41T342-480q0 58 40.5 99t99.5 41Zm-2-140Z" />
                     </svg>
                 </a>
             </nav>
+            <div class="menu-hamb" onclick="openMenu()">
+                <div class="menu-hamburguer"></div>
+                <div class="menu-hamburguer"></div>
+                <div class="menu-hamburguer"></div>
+            </div>
+            <nav class="full-screen-menu" id="menu">
+                <button class="close-menu" onclick="closeMenu()">×</button>
+                <ul>
+                    <li> <a href="bemvindo.html">Início</a></li>
+                    <li>  <button onclick="toggleCommunities()">Comunidades<span>v</span></button></li>
+                    <li> <a href="profissionais.html">Profissionais</a></li>
+                    <li>  <a href="personagens.html">Personagens</a></li>
+                    <li> <a href="neurodivergencias.html">Neurodivergências</a></li>
+                    <li> <a href="configuracoes.html"> configuraçoes</a></li>
+                    
+                        
+                </ul>
+
         </header>
+        <section class="vlibras">
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+    </section>
+
+
+     
 
         <main class="mainInicio">
             <div class="bth1">
@@ -84,6 +111,51 @@
                     <a href="cmddislexia.html" class="cardComuni" id="dislexia"><img src="imagens/raposaicon.png" alt="Icon de Raposa">Dislexia</a>
                 </div>
             </section>
+        </div>
+        <button  id="accessibilityBtn" class="accessibility-icon">
+            <span>&#9855;</span>
+        </button>
+        <div id="accessibilityBar" class="accessibility-bar">
+            <button id="closeBar" class="close-bar-button" aria-label="Fechar barra">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <button id="zoomIn" aria-label="Aumentar zoom">
+                <svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="512" height="512"><path d="M23.707,22.293l-5.969-5.969a10.016,10.016,0,1,0-1.414,1.414l5.969,5.969a1,1,0,0,0,1.414-1.414ZM10,18a8,8,0,1,1,8-8A8.009,8.009,0,0,1,10,18Z"/>
+                    <path d="M13,9H11V7A1,1,0,0,0,9,7V9H7a1,1,0,0,0,0,2H9v2a1,1,0,0,0,2,0V11h2a1,1,0,0,0,0-2Z"/></svg>
+            </button>
+            <button id="zoomOut" aria-label="Reduzir zoom">
+                <svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="512" height="512"><path d="M23.707,22.293l-5.969-5.969a10.016,10.016,0,1,0-1.414,1.414l5.969,5.969a1,1,0,0,0,1.414-1.414ZM10,18a8,8,0,1,1,8-8A8.009,8.009,0,0,1,10,18Z"/>
+                    <path d="M13,9H7a1,1,0,0,0,0,2h6a1,1,0,0,0,0-2Z"/></svg>
+            </button>
+            <button id="darkModeBtn" aria-label="Ativar modo escuro">
+                <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24">
+                    <path d="M12,0c-2.761,0-5,2.239-5,5s2.239,5,5,5,5-2.239,5-5S14.761,0,12,0Zm-3,5c0-1.657,1.343-3,3-3,.556,0,1.069,.161,1.516,.425-1.156,.291-2.016,1.329-2.016,2.575s.859,2.284,2.016,2.575c-.446,.263-.96,.425-1.516,.425-1.657,0-3-1.343-3-3Zm9.169,3.307c-.614,1.143-1.539,2.091-2.659,2.742,.163-.016,.322-.049,.489-.049,2.757,0,5,2.242,5,5s-2.243,5-5,5-5-2.242-5-5c0-1.7,.856-3.2,2.156-4.103-.377,.063-.761,.103-1.156,.103-2.67,0-4.989-1.495-6.169-3.693-3.359,.949-5.831,4.035-5.831,7.693,0,4.411,3.589,8,8,8h8c4.411,0,8-3.589,8-8,0-3.658-2.472-6.744-5.831-7.693Z"/>
+                  </svg>
+            </button>
+            <button id="lightModeBtn" aria-label="Ativar modo claro">
+                <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24">
+                    <path d="M12,12c3.309,0,6-2.691,6-6S15.309,0,12,0,6,2.691,6,6s2.691,6,6,6Zm0-11c2.757,0,5,2.243,5,5s-2.243,5-5,5-5-2.243-5-5S9.243,1,12,1Zm-.16,8.494c.438,.025,.875-.032,1.292-.171,.363-.122,.603-.448,.61-.831,.008-.388-.223-.728-.586-.866-.301-.114-.554-.304-.754-.564h0c-.474-.615-.474-1.508,0-2.124,.2-.261,.454-.451,.754-.564,.364-.138,.594-.478,.586-.865-.009-.386-.252-.713-.62-.835-1.25-.415-2.711-.042-3.623,.922-.667,.706-1.005,1.631-.95,2.604,.099,1.774,1.514,3.19,3.291,3.293Zm-1.614-5.211c.478-.505,1.123-.783,1.817-.783,.169,0,.337,.018,.501,.052-.363,.183-.683,.448-.936,.776-.757,.984-.757,2.359,0,3.343,.252,.328,.572,.593,.936,.777-.21,.045-.428,.06-.646,.048-1.249-.073-2.281-1.105-2.351-2.352-.039-.696,.202-1.357,.679-1.861Zm5.774,7.717c2.206,0,4,1.794,4,4s-1.794,4-4,4-4-1.794-4-4,1.794-4,4-4Zm8,4c0,4.411-3.589,8-8,8H8C3.589,24,0,20.411,0,16c0-2.799,1.425-5.347,3.811-6.817,.234-.145,.542-.071,.688,.164,.145,.235,.072,.543-.164,.688-2.088,1.286-3.335,3.516-3.335,5.965,0,3.86,3.14,7,7,7h8c3.859,0,7-3.14,7-7,0-2.458-1.253-4.691-3.353-5.976-.235-.145-.31-.452-.166-.688,.145-.237,.453-.31,.688-.166,2.399,1.468,3.831,4.021,3.831,6.829Z"/>
+                  </svg>
+            </button>
+            <button id="daltonismoBtn" aria-label="Ativar filtro para daltonismo">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512.19 512.19" style="enable-background:new 0 0 512.19 512.19;" xml:space="preserve" width="512" height="512">
+                    <g>
+                        <circle cx="256.095" cy="256.095" r="85.333"/>
+                        <path d="M496.543,201.034C463.455,147.146,388.191,56.735,256.095,56.735S48.735,147.146,15.647,201.034   c-20.862,33.743-20.862,76.379,0,110.123c33.088,53.888,108.352,144.299,240.448,144.299s207.36-90.411,240.448-144.299   C517.405,277.413,517.405,234.777,496.543,201.034z M256.095,384.095c-70.692,0-128-57.308-128-128s57.308-128,128-128   s128,57.308,128,128C384.024,326.758,326.758,384.024,256.095,384.095z"/>
+                    </g></svg>
+            </button>
+            <img class="fatec" src="imagens/acessibilidade/logoFatec.11da754b656f44b38e1b.webp" alt="" srcset="">
+        </div>
+        
+       
+        
+    
+
+
+
         </main>
         
         <a id="linksecreto" href="bemvindo.html">linksecreto</a> 
@@ -134,7 +206,62 @@
                 <p>© 2024 - ContaComigo</p>
             </section>
         </footer>
+    </script>
 
+    <script>
+        const accessibilityBtn = document.getElementById('accessibilityBtn');
+        const accessibilityBar = document.getElementById('accessibilityBar');
+        const closeBar = document.getElementById('closeBar');
+        const darkModeBtn = document.getElementById('darkModeBtn');
+        const zoomIn = document.getElementById('zoomIn');
+        const zoomOut = document.getElementById('zoomOut');
+        let fontSize = 16;
+
+        // Abrir barra
+        accessibilityBtn.addEventListener('click', () => {
+            accessibilityBar.style.display = 'flex';
+            accessibilityBtn.style.display = 'none';
+        });
+
+        // Fechar barra
+        closeBar.addEventListener('click', () => {
+            accessibilityBar.style.display = 'none';
+            accessibilityBtn.style.display = 'block';
+        });
+
+        // Aumentar zoom
+        zoomIn.addEventListener('click', () => {
+            fontSize += 2;
+            document.body.style.fontSize = `${fontSize}px`;
+        });
+
+        // Reduzir zoom
+        zoomOut.addEventListener('click', () => {
+            if (fontSize > 10) {
+                fontSize -= 2;
+                document.body.style.fontSize = `${fontSize}px`;
+            }
+        });
+
+        // Modo escuro
+        darkModeBtn.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+        });
+// Filtro para daltonismo
+daltonismoBtn.addEventListener('click', () => {
+            document.body.classList.toggle('daltonismo')
+        });
+    </script>
+
+    <!-- VLibras -->
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+
+    
+    
         <script>
             function toggleMenu() {
                 const navGeral = document.querySelector('.navGeral');
@@ -147,9 +274,10 @@
             }
         </script>
 
-        <script src="js/fotoperfil.js"></script>
+        <script src="js/fotoperfil.js"></script><!-- menu de hamburguer esta aqui -->
         <script src="js/seuarquivo.js"></script>
         <script src="js/perfil.js"></script>
+        
     </div>
 </body>
 </html>

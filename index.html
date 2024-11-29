@@ -15,22 +15,40 @@
 <body class="bV" id="coomeço">
     <header class="headerBV">
         <img src="imagens/logotipo.degrade.svg" alt="Logo do ContaComigo">
+       
         
-        <nav class="localizar">
-            <p><a href="#começo">Inicio</a></p>
-            <p><a href="#secBV2">Comunidades</a></p>
-            <p><a href="#secBV3">Forúns</a></p>
-            <p><a href="#secBV4">Personagens</a></p>
-            <p><a href="#secBV5">Profissionais</a></p>
-            <p><a href="#secBV6">Neurodivergências</a></p>
-        </nav>
+        
+        <!-- Menu padrão para telas grandes -->
 
+
+        <div class="menu-hamb" onclick="openMenu()">
+            <div class="menu-hamburguer"></div>
+            <div class="menu-hamburguer"></div>
+            <div class="menu-hamburguer"></div>
+        </div>
+        
+        <nav class="full-screen-menu" id="menu">
+            <button class="close-menu" onclick="closeMenu()">×</button>
+            <ul>
+                <li><a href="#começo">Inicio</a></li>
+                <li><a href="#secBV2">Comunidades</a></li>
+                <li><a href="#secBV3">Fóruns</a></li>
+                <li><a href="#secBV4">Personagens</a></li>
+                <li><a href="#secBV5">Profissionais</a></li>
+                <li><a href="#secBV6">Neurodivergências</a></li>
+                <li><a href="entrar.html">Entrar</a></li>
+                    <li><a href="registrar.html" class="criarconta">Criar Conta</a></li>
+                    
+            </ul>
+        </nav>
         <nav>
+            
             <p><a href="entrar.html">Entrar</a></p>
             <p><a href="registrar.html" class="criarconta">Criar Conta</a></p>
         </nav>
+       
     </header>
-
+   
     <section class="vlibras">
         <div vw class="enabled">
             <div vw-access-button class="active"></div>
@@ -41,7 +59,17 @@
     </section>
 
     <main class="mainBV">
+        <section class="vlibras">
+            <div vw class="enabled">
+                <div vw-access-button class="active"></div>
+                <div vw-plugin-wrapper>
+                  <div class="vw-plugin-top-wrapper"></div>
+                </div>
+              </div>
+        </section>
+        
         <section class="secBV1" id="secBV1">
+            
             <div class="p1">
                 <div class="l1BV">
                     <h1 id="h1BV">Encontre seu espaço seguro</h1>
@@ -51,9 +79,11 @@
                 </div>
                 <img src="imagens/arte3.svg" alt="arte">
             </div>
+            
         </section>
 
         <section class="secBV2" id="secBV2">
+           
             <h1 class="tituloroxo">Comunidades</h1>
             <h2 class="titulocinza">para cada transtorno mental</h2>
             <div id="conj">
@@ -65,25 +95,34 @@
                         <img src="imagens/esquiloicon.png" alt="Icon de esquilo">TDAH
                     </a>
                 </div>
+                <div class="l2BV">
                 <p>
-                    <b>Descubra sua comunidade:</b> Conectando mentes, compartilhando histórias e fortalecendo jornadas.
-                    Cadastre-se agora e descubra muitas outras comunidades. 
+
+                    <div class="texto-ocultar">
+                        Descubra sua comunidade: Conectando mentes, compartilhando histórias e fortalecendo jornadas. Cadastre-se agora e descubra muitas outras comunidades.
+                    </div>
                     <a href="registrar.html" class="tituloroxo"> Venha conhecer!</a>
                 </p>
+               
             </div>
+            </div>
+          
         </section>
         
         <section class="secBV3" id="secBV3">
+           
             <h1 class="tituloverde">Fóruns moderados</h1>
             <h2 class="titulocinza">dentro de cada uma das comunidades</h2>
             <div class="content">
                 <p><b>Guiando conversas com empatia:</b> Nosso algoritmo modera todos os
                     comentários para eliminar qualquer intenção maliciosa.</p>
-                <img src="imagens/suspensoes.png" alt="Exemplo de publicação suspensa">
+               <div class="aumentar"> <img src="imagens/suspensoes.png" alt="Exemplo de publicação suspensa"></div>
             </div>
+          
         </section>
 
         <section class="secBV4" id="secBV4">
+           
             <h1 class="tituloazul">Personagens</h1>
             <h2 class="titulocinza">que representam cada transtorno mental</h2>
             <div class="content">
@@ -96,23 +135,28 @@
                             em seu casco... <a href="registrar.html" class="tituloazul"> ver mais</a></p>
                     </div>
                 </div>
+              <div>
                 <p><b>Encontre o que te representa:</b> Escolha o personagem que mais se
-                    identifica com você, ele se tornará sua foto de perfil e te representará. Cadastre-se agora e explore uma variedade de personagens! <a href="registrar.html" class="tituloazul">Clique para começar.</a></p>
+                    identifica com você, ele se tornará sua foto de perfil e te representará. Cadastre-se agora e explore uma variedade de personagens! <a href="registrar.html" class="tituloazul">Clique para começar.</a></p></div>
             </div>
+           
         </section>
 
         <section class="secBV5" id="secBV5">
+           
             <h1 class="tituloazul2">Profissionais</h1>
-            <h2>endereço e contato fácil para você</h2>
+            <h2 >endereço e contato fácil para você</h2>
             <div class="content">
-                <p><b>Conectando você com o apoio certo:</b> Encontre profissionais especializados
+                <p  ><b>Conectando você com o apoio certo:</b> Encontre profissionais especializados
                     em saúde mental, com seus endereços e contatos disponíveis para ajudá-lo em sua jornada de cuidado e
                     bem-estar.</p>
-                <img src="imagens/psico.png" alt="Exemplo de card da lista de profissionais">
+                <img class="sec" src="imagens/psico.png" alt="Exemplo de card da lista de profissionais">
             </div>
+           
         </section> 
 
         <section class="secBV6" id="secBV6">
+        
             <h1 class="tituloverdeescuro">Neurodivergências</h1>
             <h2>Entenda e conheça mais sobre as neurodivergências</h2>
             <section class="cardbvorganiza">
@@ -125,11 +169,126 @@
                     para explorar e se identificar, além de um <b> quiz interativo</b> 
                     para ajudar na autoanálise, baseado em pesquisas feitas com profissionais! <a href="registrar.html" class="tituloverdeescuro">Clique aqui para começar.</a></p>
             </div>
+       
         </section>
-        
-
+        <button  id="accessibilityBtn" class="accessibility-icon">
+            <span>&#9855;</span>
+        </button>
+        <div id="accessibilityBar" class="accessibility-bar">
+            <button id="closeBar" class="close-bar-button" aria-label="Fechar barra">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <button id="zoomIn" aria-label="Aumentar zoom">
+                <svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="512" height="512"><path d="M23.707,22.293l-5.969-5.969a10.016,10.016,0,1,0-1.414,1.414l5.969,5.969a1,1,0,0,0,1.414-1.414ZM10,18a8,8,0,1,1,8-8A8.009,8.009,0,0,1,10,18Z"/>
+                    <path d="M13,9H11V7A1,1,0,0,0,9,7V9H7a1,1,0,0,0,0,2H9v2a1,1,0,0,0,2,0V11h2a1,1,0,0,0,0-2Z"/></svg>
+            </button>
+            <button id="zoomOut" aria-label="Reduzir zoom">
+                <svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="512" height="512"><path d="M23.707,22.293l-5.969-5.969a10.016,10.016,0,1,0-1.414,1.414l5.969,5.969a1,1,0,0,0,1.414-1.414ZM10,18a8,8,0,1,1,8-8A8.009,8.009,0,0,1,10,18Z"/>
+                    <path d="M13,9H7a1,1,0,0,0,0,2h6a1,1,0,0,0,0-2Z"/></svg>
+            </button>
+            <button id="darkModeBtn" aria-label="Ativar modo escuro">
+                <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24">
+                    <path d="M12,0c-2.761,0-5,2.239-5,5s2.239,5,5,5,5-2.239,5-5S14.761,0,12,0Zm-3,5c0-1.657,1.343-3,3-3,.556,0,1.069,.161,1.516,.425-1.156,.291-2.016,1.329-2.016,2.575s.859,2.284,2.016,2.575c-.446,.263-.96,.425-1.516,.425-1.657,0-3-1.343-3-3Zm9.169,3.307c-.614,1.143-1.539,2.091-2.659,2.742,.163-.016,.322-.049,.489-.049,2.757,0,5,2.242,5,5s-2.243,5-5,5-5-2.242-5-5c0-1.7,.856-3.2,2.156-4.103-.377,.063-.761,.103-1.156,.103-2.67,0-4.989-1.495-6.169-3.693-3.359,.949-5.831,4.035-5.831,7.693,0,4.411,3.589,8,8,8h8c4.411,0,8-3.589,8-8,0-3.658-2.472-6.744-5.831-7.693Z"/>
+                  </svg>
+            </button>
+            <button id="lightModeBtn" aria-label="Ativar modo claro">
+                <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24">
+                    <path d="M12,12c3.309,0,6-2.691,6-6S15.309,0,12,0,6,2.691,6,6s2.691,6,6,6Zm0-11c2.757,0,5,2.243,5,5s-2.243,5-5,5-5-2.243-5-5S9.243,1,12,1Zm-.16,8.494c.438,.025,.875-.032,1.292-.171,.363-.122,.603-.448,.61-.831,.008-.388-.223-.728-.586-.866-.301-.114-.554-.304-.754-.564h0c-.474-.615-.474-1.508,0-2.124,.2-.261,.454-.451,.754-.564,.364-.138,.594-.478,.586-.865-.009-.386-.252-.713-.62-.835-1.25-.415-2.711-.042-3.623,.922-.667,.706-1.005,1.631-.95,2.604,.099,1.774,1.514,3.19,3.291,3.293Zm-1.614-5.211c.478-.505,1.123-.783,1.817-.783,.169,0,.337,.018,.501,.052-.363,.183-.683,.448-.936,.776-.757,.984-.757,2.359,0,3.343,.252,.328,.572,.593,.936,.777-.21,.045-.428,.06-.646,.048-1.249-.073-2.281-1.105-2.351-2.352-.039-.696,.202-1.357,.679-1.861Zm5.774,7.717c2.206,0,4,1.794,4,4s-1.794,4-4,4-4-1.794-4-4,1.794-4,4-4Zm8,4c0,4.411-3.589,8-8,8H8C3.589,24,0,20.411,0,16c0-2.799,1.425-5.347,3.811-6.817,.234-.145,.542-.071,.688,.164,.145,.235,.072,.543-.164,.688-2.088,1.286-3.335,3.516-3.335,5.965,0,3.86,3.14,7,7,7h8c3.859,0,7-3.14,7-7,0-2.458-1.253-4.691-3.353-5.976-.235-.145-.31-.452-.166-.688,.145-.237,.453-.31,.688-.166,2.399,1.468,3.831,4.021,3.831,6.829Z"/>
+                  </svg>
+            </button>
+            <button id="daltonismoBtn" aria-label="Ativar filtro para daltonismo">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512.19 512.19" style="enable-background:new 0 0 512.19 512.19;" xml:space="preserve" width="512" height="512">
+                    <g>
+                        <circle cx="256.095" cy="256.095" r="85.333"/>
+                        <path d="M496.543,201.034C463.455,147.146,388.191,56.735,256.095,56.735S48.735,147.146,15.647,201.034   c-20.862,33.743-20.862,76.379,0,110.123c33.088,53.888,108.352,144.299,240.448,144.299s207.36-90.411,240.448-144.299   C517.405,277.413,517.405,234.777,496.543,201.034z M256.095,384.095c-70.692,0-128-57.308-128-128s57.308-128,128-128   s128,57.308,128,128C384.024,326.758,326.758,384.024,256.095,384.095z"/>
+                    </g></svg>
+            </button>
+            <img class="fatec" src="imagens/acessibilidade/logoFatec.11da754b656f44b38e1b.webp" alt="" srcset="">
+        </div>
     </main>
-    <footer>
+    <script>
+           const accessibilityBtn = document.getElementById('accessibilityBtn');
+        const accessibilityBar = document.getElementById('accessibilityBar');
+        const closeBar = document.getElementById('closeBar');
+        const darkModeBtn = document.getElementById('darkModeBtn');
+        const zoomIn = document.getElementById('zoomIn');
+        const zoomOut = document.getElementById('zoomOut');
+        let fontSize = 16;
+
+        // Abrir barra
+        accessibilityBtn.addEventListener('click', () => {
+            accessibilityBar.style.display = 'flex';
+            accessibilityBtn.style.display = 'none';
+        });
+
+        // Fechar barra
+        closeBar.addEventListener('click', () => {
+            accessibilityBar.style.display = 'none';
+            accessibilityBtn.style.display = 'block';
+        });
+
+        // Aumentar zoom
+        zoomIn.addEventListener('click', () => {
+            fontSize += 2;
+            document.body.style.fontSize = `${fontSize}px`;
+        });
+
+        // Reduzir zoom
+        zoomOut.addEventListener('click', () => {
+            if (fontSize > 10) {
+                fontSize -= 2;
+                document.body.style.fontSize = `${fontSize}px`;
+            }
+        });
+
+        // Modo escuro
+        darkModeBtn.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+        });
+// Filtro para daltonismo
+daltonismoBtn.addEventListener('click', () => {
+            document.body.classList.toggle('daltonismo')
+        });
+ 
+     </script>
+</script>
+
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+  new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
+
+<!-- Botão de rolar para o topo -->
+<a href="#" id="scrollToTop" class="scrollToTop" title="Voltar ao topo">
+    ↑
+  </a>
+<script>
+// Mostrar ou esconder o botão ao rolar
+    window.onscroll = function() {
+        const scrollToTopButton = document.getElementById('scrollToTop');
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            scrollToTopButton.style.display = 'block';
+        } else {
+            scrollToTopButton.style.display = 'none';
+        }
+    };
+    const scrollToTopButton = document.getElementById('scrollToTop');
+
+function toggleButtonVisibility() {
+if (window.innerWidth <= 450) {
+scrollToTopButton.style.display = 'none';
+} else {
+scrollToTopButton.style.display = 'block';
+}
+}
+
+
+</script>
+    </main>
+    <footer class="footer">
         <section class="footerInicial">
             <img src="imagens/logocompletabranca.svg" alt="Logo ContaComigo" id="logobranca">
 
@@ -159,34 +318,34 @@
     </footer>
     
 
-    <!-- Botão de rolar para o topo -->
-    <a href="#" id="scrollToTop" class="scrollToTop" title="Voltar ao topo">
-        ↑
-    </a>
+  
 
     <script>
-        // Mostrar ou esconder o botão ao rolar
-        window.onscroll = function() {
-            const scrollToTopButton = document.getElementById('scrollToTop');
-            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-                scrollToTopButton.style.display = 'block';
-            } else {
-                scrollToTopButton.style.display = 'none';
-            }
-        };
+      
+
+
+
+// Chamar a função no carregamento da página e em caso de redimensionamento da janela
+window.addEventListener('load', toggleButtonVisibility);
+window.addEventListener('resize', toggleButtonVisibility);
 
         // Função para voltar ao topo
         document.getElementById('scrollToTop').onclick = function(event) {
             event.preventDefault(); // Previne o comportamento padrão
             window.scrollTo({ top: 0, behavior: 'smooth' }); // Rolagem suave
         };
-    </script>
+      
 
-        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-        <script>
-          new window.VLibras.Widget('https://vlibras.gov.br/app');
-        </script>
-        
+        function openMenu() {
+        const menu = document.getElementById('menu');
+        menu.style.display = 'flex'; // Mostra o menu em tela cheia
+    }
+
+    function closeMenu() {
+        const menu = document.getElementById('menu');
+        menu.style.display = 'none'; // Oculta o menu
+    }
+    </script>
 </body>
 
 </html>
