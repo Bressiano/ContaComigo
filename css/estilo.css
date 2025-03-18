@@ -15,8 +15,9 @@
 }
 
 * {
+    
     margin: 0;
-    padding: 0;
+    /* padding: 0; */
     box-sizing: border-box;
     font-family: "Reddit Sans", sans-serif;
     font-weight: 500;
@@ -50,7 +51,7 @@ header {
 
 main{
     display: flex;
-    padding: 1.5rem 8rem;
+   
 }
 
 .main-content2{
@@ -61,6 +62,10 @@ main{
 .mainConfig {
     display: flex;
     padding: 1.5rem 8rem;
+}
+
+.l2BV .tituloroxo{
+    color: var(--roxo);
 }
 
 .tituloroxo {
@@ -104,11 +109,13 @@ main{
 
 .headerBV {
     display: flex;
-    padding: 0 8rem;
+    
     height: 7rem;
     align-items: center;
     justify-content: space-between;
     border-bottom: 0.3px solid #eaeaea;
+    width: auto;
+    
 }
 
 .headerBV img {
@@ -117,6 +124,7 @@ main{
 
 .headerBV nav {
     display: flex;
+    width: auto;
 }
 
 .headerBV nav p {
@@ -142,11 +150,11 @@ main{
     margin-bottom: 2rem;
     flex-direction: column;
     padding: 0;
+    height: auto;
+    width: 100%;
 }
 
-.mainBV section {
-    padding: 4rem 8rem 2rem 8rem;
-}
+
 
 .mainBV section h1,
 h2 {
@@ -195,6 +203,7 @@ h2 {
     }
 }
 
+
 .secBV1 svg {
     height: 3rem;
     display: block;
@@ -240,11 +249,10 @@ h2 {
 
 .content {
     display: flex;
-    gap: 5rem;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    margin: 2rem 0;
-}
+    text-align: center;
+  }
 
 #conj {
     display: flex;
@@ -267,6 +275,22 @@ h2 {
     fill: #5F6368;
 }
 
+.secBV6{
+    background-color: var(--cinzafundo);
+}
+
+.secBV6 p{
+    font-size: 1rem;
+}
+
+
+.secBV6 {
+    display: flex;
+    flex-direction: column; /* Alinha os elementos em coluna */
+    align-items: center; /* Centraliza horizontalmente */
+    gap: 0.5rem; /* Espaço entre os elementos */
+    padding: 2.5rem 4rem;
+}
 
 #comuniBV {
     align-items: center;
@@ -286,7 +310,6 @@ h2 {
 }
 
 .header-main2 h1 {
-    font-size: 32px;
     color: var(--roxo);
 }
 
@@ -316,6 +339,22 @@ h2 {
     transition: transform 0.3s, background-color 0.3s, border 0.3s;
     cursor: pointer;
 }
+
+/*volta para o inicio clicando na logo*/
+.logovoltar {
+    height: 10rem; /* Altura da div */
+    display: flex; /* Flexbox para centralizar o conteúdo */
+    justify-content: center; /* Alinha horizontalmente */
+    align-items: center; /* Alinha verticalmente */
+    padding: 1rem;
+}
+
+.logovoltar img {
+    max-height: 100%; /* Garante que a imagem não ultrapasse a altura da div */
+    width: auto; /* Mantém a proporção da imagem */
+    object-fit: contain; /* Faz com que a imagem se ajuste sem distorcer */
+}
+/**/
 
 .card a {
     color: inherit;
@@ -461,56 +500,6 @@ b{
 }
 /**/
 
-/*Ajustes dos cards BV*/
-.cardComuniBV{
-    width: 2rem;
-    height: 8rem;
-    align-items: center;
-    gap: 2rem;
-}
-
-.cardComuniBV img {
-    height: 3rem;
-    margin-bottom: 1rem;
-}
-
-#tdahBV img {
-    padding: 0.5rem;
-    width: 5rem;
-    height: auto;
-}
-
-
-#tdahBV {
-    background-color: var(--azuldois);
-    border-radius: 2rem;
-    width: 9rem;
-}
-
-#tdahBV:hover {
-    background-color: #404e86;
-    border: 1px solid #404e86;
-    transition: all 0.5s;
-}
-
-#ansiedadeBV img{
-    width: 5rem;
-   height: auto;
-}
-
-#ansiedadeBV {
-    background-color: var(--roxo);
-    border-radius: 2rem;
-    width: 8.5rem;
-}
-
-#ansiedadeBV:hover {
-    background-color: #821e71;
-    border: 1px solid #821e71;
-    transition: all 0.5s;
-}
-/**/
-
 .cardComuni{
     width: 2rem;
     height: 8rem;
@@ -639,59 +628,41 @@ b{
 }
 /**/
 
-/* organiza card do bv */
-
-.cardbvorganiza {
-    display: flex
-;
-    justify-content: center;
-}
-
-.cardbv a {
-    background-color: var(--verde);
-    display: flex; /* Adicionando flexbox para centralizar o conteúdo */
-    text-align: center;
-    height: 5rem;
-    width: 8rem;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5%;
-    text-decoration: none; /* Remover o sublinhado do link */
-}
-
-.DepressaoBV {
-    display: flex; /* Flexbox para centralizar o conteúdo */
-    justify-content: center;
-    align-items: center;
-    width: 10rem; /* Aumentando a largura */
-    height: 10rem; /* Aumentando a altura */
-    text-align: center;
-    border-radius: 5%; /* Garantindo bordas arredondadas */
-}
-
-.cardbv  a:hover{
-    background-color: rgb(43, 144, 28);
-    transition: all 0.9s;
-    color: white;
-}
-
-/* */
-
-
 #comuniBV {
     display: flex;
     flex-direction: row;
-    gap: 1rem;
 }
 
-.secBV3 .content p {
-    width: 40%;
+.secBV3 p{
+    font-size: 1rem;
+}
+
+.secBV3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.secBV3 h1 {
+    font-size: 24px; /* Ajuste o tamanho conforme necessário */
     text-align: center;
 }
 
-.secBV3 .content img {
-    width: 40%;
+.secBV3 h2 {
+    font-size: 18px; /* Ajuste o tamanho conforme necessário */
+    text-align: center;
 }
+
+.secBV3 .content {
+    text-align: center;
+}
+
+.aumentar img {
+    width: 90%; /* A imagem ocupará toda a largura do container */
+    height: auto; /* A altura será ajustada automaticamente para manter as proporções */
+    object-fit: contain;
+  }
 
 .secBV4 .content>p {
     width: 40%;
@@ -732,7 +703,7 @@ b{
 }
 
 .secBV5 .content img {
-    width: 40%;
+    width: auto;
 }
 
 .footerInicial {
@@ -767,6 +738,7 @@ b{
 
 #logobranca {
     width: 15rem;
+   
 }
 
 .mcFooter {
@@ -777,12 +749,16 @@ b{
     max-width: 100%; /* Evita que ultrapasse a largura da tela */
     overflow: hidden; /* Impede o conteúdo de transbordar */
     box-sizing: border-box; /* Garante que padding e bordas não afetem o tamanho total */
+    margin-right: 2rem
+    
 }
 
 #email {
     display: flex;
     gap: 0.5rem;
     max-width: 100%; /* Garante que o conteúdo não ultrapasse a tela */
+    font-size: 1rem;
+    margin-right: 2rem;
 }
 
 
@@ -904,7 +880,7 @@ b{
     height: 40rem;
     align-items: center;
     justify-content: center;
-    padding: 5rem 0;
+   
 }
 
 .mainCriarConta form {
@@ -1114,7 +1090,7 @@ b{
     background-color: var(--cinzaclaro);
     flex-direction: column;
     width: 80%;
-    height: 48rem;
+    height: auto;
     align-items: center;
     justify-content: center;
     padding: 5rem 0;
@@ -1183,6 +1159,7 @@ b{
     color: var(--cinza);
     display: flex;
     align-items: center;
+    height: auto;
 }
 
 .butPular {
@@ -1205,7 +1182,7 @@ b{
     justify-content: space-between;
     width: 100%;
     padding: 0 6rem 2rem 6rem;
-    height: auto;
+  
 }
 
 .butEtp .etapas {
@@ -1223,7 +1200,7 @@ body header {
 }
 
 body a {
-    color: black;
+    color: var(--cinzanav);
 }
 
 body nav button {
@@ -1260,7 +1237,7 @@ body nav svg:hover {
     position: relative;
     font-size: 16px;
     font-weight: 650;
-    color: var(--black);
+    color: var(--cinzanav);
     display: flex;
     transition: all 0.5s;
     align-items: center;
@@ -1352,10 +1329,10 @@ h2 {
     text-align: center;
 }
 
-.comuni1{
+/* .comuni1{
     
 
-}
+} */
 
 .comuni a {
     display: flex;
@@ -1514,7 +1491,7 @@ h2 {
 
 .footerPrinc>div {
     display: flex;
-    height: 16rem;
+   gap: 1rem;
     width: 100%;
     justify-content: space-between;
     align-items: flex-start;
@@ -1525,7 +1502,13 @@ h2 {
     justify-content: flex-end;
     flex-direction: column;
     gap: 1rem;
+    margin-bottom: 2rem;
 
+}
+.mcFooter img {
+    height: 30%; /* Reduz a altura proporcionalmente */
+    width: auto; /* Garante que a largura seja proporcional à altura */
+    max-width: 60px; /* Opcional: Define um tamanho máximo absoluto */
 }
 
 
@@ -2390,14 +2373,17 @@ body {
     cursor: pointer;
     z-index: 1000;
 }
+.scrollToTop.show {
+    display: block; /* Mostra o botão */
+}
 
 .secBV2 {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centraliza o conteúdo verticalmente */
-    text-align: center; /* Centraliza o texto */
-    margin: 0 auto; /* Garante que a seção fique centralizada na página */
-    height: 50rem;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    height: 30%;
 }
 
 #conj {
@@ -2427,17 +2413,12 @@ body {
     color: purple; /* Cor ao passar o mouse */
 }
 
-.menu-hamb{
-    display: flex;
-   flex-direction: column;
-   cursor: pointer;
-   width: 40px;
-   height: 20px;
-}
 
-.menu-hamburguer{
+
+.menu-hamburguer {
     height: 5px;
     width: 100%;
+    max-width: 40px; /* Define uma largura máxima para o menu hambúrguer */
     background-color: black;
     margin: 4px 0;
     transition: 0.3s;
@@ -2491,6 +2472,1260 @@ body {
 .perfil p {
     color: #666;
     margin-bottom: 20px;
+}
+
+.comunidades {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.comunidades h3 {
+    margin-bottom: 10px;
+}
+
+.comunidade {
+    background: #f0f0f0;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.neurocBV{
+    display: flex;
+}
+
+.cardA{
+    color: white;
+}
+
+.sobreAnsiedade{
+    color: black;
+}
+
+.sobreAnsiedade::after{
+    content: " Ansiedade";
+    color: var(--roxo);
+    font-size: 1.8rem;
+}
+
+.sobreBipolaridade{
+    color: black;
+}
+
+.sobreBipolaridade::after{
+    content: " Bipolaridade";
+    color: var(--verde);
+    font-size: 1.8rem;
+}
+
+.sobredepressao{
+    color: black;
+}
+
+.sobreDepressao::after{
+    content: " Depressão";
+    color: var(--azulum);
+    font-size: 1.8rem;
+}
+
+.sobreTDAH{
+    color: black;
+}
+
+.sobreTDAH::after{
+    content: " TDAH (Transtorno do Déficit de Atenção e Hiperatividade)";
+    color: var(--azuldois);
+    font-size: 1.8rem;
+}
+
+.sobreTPN{
+    color: black;
+}
+
+.sobreTPN::after{
+    content: "TPN(Transtorno de Personalidade Narcisista)";
+    color: var(--roxo);
+    font-size: 1.8rem;
+}
+
+.mainAnsie {
+    display: flex;
+    flex-direction: column;
+}
+
+.conteudo {
+    max-width: 2000px; /* Limita a largura do conteúdo */
+    padding: 20px; /* Adiciona preenchimento interno */
+}
+
+.titulo {
+    margin-top: 20px; /* Espaço acima do título */
+    margin-bottom: 10px; /* Espaço abaixo do título */
+}
+
+.informacoes p {
+    margin-top: 10px; /* Espaço acima dos parágrafos */
+    margin-bottom: 10px; /* Espaço abaixo dos parágrafos */
+}
+
+
+
+/*Ajustar os videos*/
+
+.msc1, .msc2, .msc3, .msc4{
+    margin: 2rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.msc1 p, .msc2 p, .msc3 p, .msc4 p{
+    padding: 1rem;
+
+}
+
+.organiza{
+    display: flex;
+    flex-direction: column;
+}
+/**/
+
+
+
+
+
+
+
+
+
+
+/* Estilo geral para a seção */
+.cmn {
+    padding: 8px;
+}
+
+.tituloroxo {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+/* Container de comunidades */
+.comuni, .comuni1 {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens quebrem para a linha seguinte */
+    justify-content: space-between; /* Espaçamento entre os itens */
+}
+
+/* Estilo para os cards */
+.cardComuni {
+    flex: 1 1 calc(30% - 20px);
+    margin: 8px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+/* Ajustar o tamanho das imagens */
+.cardComuni img {
+    width: 100px; /* Tamanho fixo para as imagens */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+/* Estilo do menu hambúrguer */
+.hamb-menu {
+    display: none; /* Esconder por padrão */
+    
+}
+
+/* Estilo do menu quando ativo */
+.navGeral.active {
+    display: flex; /* Exibe o menu */
+    flex-direction: column; /* Alinha os itens verticalmente */
+}
+
+/* Seção das comunidades inicialmente oculta */
+#comunidadesOcultas {
+    display: none; /* Inicialmente oculto */
+    flex-direction: column; /* Exibe os links em coluna */
+    color: #000;
+}
+
+/* Ajustes adicionais, se necessário */
+#comunidadesOcultas a {
+    margin: 5px 0; /* Margem entre os links */
+}
+.footerPrinc h4 {
+    font-size: 1em; /* tamanho do título */
+}
+
+.footerPrinc a {
+    display: block; /* links em blocos para melhor acessibilidade */
+    margin: 5px 0; /* espaçamento entre os links */
+}
+#logobranca,
+#redesSociais img {
+    max-width: 100%;
+    height: auto; /* mantém a proporção */
+    margin: 0 2rem 0 0;
+}
+.footerPrinc {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+    position: relative;
+}
+.copyright {
+    position: absolute; /* fixa o elemento no final da tela */
+    bottom: 0; /* garante que fique na parte inferior */
+    width: 100%; /* ocupa toda a largura do footer */
+    text-align: center; /* centraliza o texto */
+    padding: 5px 0; /* reduz o espaçamento vertical */
+    font-size: 0.8em; /* diminui o tamanho da fonte */
+    background-color: var(--azuldois); /* fundo opcional */
+    border-top: 1px solid #ccc; /* linha superior para separação opcional */
+}
+
+.footerPrinc p {
+    margin: 0; /* remove margens do parágrafo */
+}
+
+.comunFooter h4{
+    font-size: 1rem;
+}
+
+.rsFooter h4{
+    margin: 0 2rem 0 0;
+    font-size: 1rem;
+}
+
+
+selector{
+    overflow-x: hidden;
+}
+
+
+/* Estilo para a seção principal */
+.mainProf {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.5rem 8rem;
+}
+
+/* Estilo para a lista de profissionais */
+.lista {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem; /* Espaço entre os itens */
+}
+
+/* Dropdown responsivo */
+.lista select {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Contêiner de profissionais */
+#profissionaisLista {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
+    gap: 1rem; /* Espaço entre os cards */
+    justify-content: center; /* Distribui os itens horizontalmente */
+}
+
+/* Card de profissional */
+.profissional {
+    flex: 1 1 calc(33% - 1rem); /* Três cards por linha */
+    min-width: 250px; /* Garante um tamanho mínimo */
+    max-width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.profissional:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+.neuroc {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os cards quebrem para novas linhas */
+    gap: 2rem; /* Espaço entre os cards */
+    justify-content: center; /* Centraliza os itens */
+    padding: 1rem;
+}
+
+.cardNeuroc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: calc(25% - 2rem); /* Quatro cards por linha */
+    min-width: 200px; /* Tamanho mínimo dos cards */
+    background-color: var(--cinzainput);
+    border: 1px solid var(--cinzaborda);
+    border-radius: 1rem;
+    padding: 1rem;
+    transition: transform 0.3s;
+}
+
+.cardNeuroc:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+    background-color: var(--roxo);
+    color: #fff;
+}
+
+.cardFace {
+    padding: 1rem;
+}
+
+.front {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.back {
+    font-size: 1rem;
+    color: var(--cinzatexto);
+}
+
+
+/* teste */
+.mainPerfil {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os elementos quebrem para novas linhas */
+    justify-content: center; /* Centraliza o conteúdo */
+    gap: 2rem; /* Espaço entre os elementos */
+    padding: 2rem;
+}
+
+.mainPerfil .perfil {
+    flex: 1 1 300px; /* Ocupa no mínimo 300px */
+    max-width: 400px; /* Define um tamanho máximo */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza os itens dentro do bloco */
+    text-align: center;
+    padding: 1rem;
+    border: 1px solid var(--cinzaborda);
+    border-radius: 1rem;
+    background-color: var(--cinzaclaro);
+}
+
+.mainPerfil .perfil img {
+    width: 150px; /* Largura fixa para a imagem */
+    height: 150px;
+    border-radius: 50%; /* Torna a imagem circular */
+    margin-bottom: 1rem;
+    object-fit: cover;
+}
+
+.mainPerfil .comunidades {
+    flex: 1 1 300px; /* Ocupa no mínimo 300px */
+    max-width: 600px; /* Define um tamanho máximo */
+    padding: 1rem;
+    border: 1px solid var(--cinzaborda);
+    border-radius: 1rem;
+    background-color: var(--cinzaclaro);
+}
+
+.mainPerfil .comunidades h3 {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.mainPerfil .comunidade {
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    background-color: var(--cinzaclaro);
+    border-radius: 0.5rem;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.personagemSec {
+    display: flex;
+    flex-direction: row; /* Coloca os elementos lado a lado */
+    justify-content: center;
+    align-items: flex-start;
+    gap: 4rem; /* Espaçamento entre a imagem e a biografia */
+    padding: 2rem;
+}
+
+.fotoperson {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.fotoperson img {
+    width: 300px;
+    height: auto;
+    border-radius: 1rem;
+    transition: all 0.3s ease;
+    object-fit: cover;
+}
+
+.fotoperson h2 {
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+
+.bio {
+    max-width: 600px;
+    text-align: end;
+    font-size: 1rem;
+    padding: 1rem;
+    border: 1px solid var(--cinzaborda);
+    border-radius: 1rem;
+    background-color: var(--cinzaclaro);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column; /* Organiza os elementos em coluna */
+    gap: 1rem; /* Espaçamento entre os itens */
+    align-items: flex-end; /* Alinha os itens ao final */
+}
+
+.bio button {
+    padding: 0.6rem 1.2rem; /* Tamanho padrão */
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: var(--azuldois);
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    align-self: flex-start; /* Faz o botão ocupar o espaço necessário */
+}
+
+.secBV4 p{
+    font-size: 1rem;
+}
+
+.secBV4 {
+    display: flex;
+    flex-direction: column; /* Alinha os elementos em coluna */
+    align-items: center; /* Centraliza horizontalmente */
+    gap: 0.5rem; /* Espaço entre os elementos */
+    padding: 2.5rem 4rem;
+}
+
+.secBV4 .content {
+    display: flex;
+    flex-direction: column; /* Organiza o conteúdo em coluna */
+    align-items: center; /* Centraliza os elementos */
+    gap: 1rem; /* Espaçamento entre os itens */
+}
+
+.secBV4 .personBV {
+    display: flex;
+    flex-direction: column; /* Empilha imagem e descrição */
+    align-items: center; /* Centraliza horizontalmente */
+    gap: 1rem; /* Espaço entre os itens */
+    text-align: center; /* Centraliza o texto */
+}
+
+.secBV4 .personBV img {
+    width: 150px; /* Ajusta o tamanho da imagem */
+    height: auto; /* Mantém a proporção */
+}
+
+.secBV4 p {
+    text-align: center; /* Centraliza os parágrafos */
+}
+
+.info-box {
+    max-width: 600px; /* Limita a largura da div */
+    margin: 0 auto; /* Centraliza a div horizontalmente */
+    padding: 1rem; /* Adiciona espaçamento interno */
+    background-color: #f9f9f9; /* Cor de fundo suave */
+    border: 1px solid #ddd; /* Borda leve */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    text-align: center; /* Centraliza o texto */
+    transition: all 0.3s ease; /* Suaviza mudanças */
+}
+
+.info-box p {
+    font-size: 0.9rem; /* Tamanho do texto */
+    line-height: 1.4; /* Altura da linha para melhorar a leitura */
+    color: #333; /* Cor do texto */
+}
+
+.info-box a {
+    font-size: 0.9rem; /* Tamanho do link ajustado */
+    color: #3366cc; /* Azul para destaque */
+    text-decoration: none; /* Remove sublinhado */
+}
+
+.info-box a:hover {
+    text-decoration: underline; /* Sublinhado ao passar o mouse */
+}
+
+.personBV {
+    display: flex;
+    flex-direction: column; /* Alinha imagem e texto verticalmente */
+    align-items: center; /* Centraliza conteúdo horizontalmente */
+    background-color: #f9f9f9; /* Fundo suave */
+    border: 1px solid #ddd; /* Borda leve */
+    border-radius: 50px; /* Bordas arredondadas */
+    padding: 1rem; /* Espaçamento interno */
+    width: 100%; /* Ocupa toda a largura disponível */
+    max-width: 600px; /* Limita a largura máxima */
+    margin: 1rem auto; /* Centraliza horizontalmente com margem vertical */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
+    transition: all 0.3s ease; /* Suaviza transições */
+}
+
+.personBV img {
+    width: 150px; /* Tamanho padrão da imagem */
+    height: auto; /* Mantém proporção */
+    border-radius: 50%; /* Imagem circular */
+    margin-bottom: 1rem; /* Espaço abaixo da imagem */
+    transition: width 0.3s ease; /* Suaviza mudanças de tamanho */
+}
+
+.personBV h3 {
+    font-size: 1.2rem; /* Tamanho do título */
+    margin-bottom: 0.5rem; /* Espaçamento abaixo do título */
+    color: #333; /* Cor do texto */
+}
+
+.personBV p {
+    font-size: 1rem; /* Tamanho padrão do texto */
+    line-height: 1.5; /* Altura da linha para legibilidade */
+    text-align: center; /* Centraliza o texto */
+    color: #555; /* Cor do texto */
+}
+
+.personBV a {
+    color: #3366cc; /* Azul para o link */
+    text-decoration: none; /* Remove sublinhado */
+}
+
+.personBV a:hover {
+    text-decoration: underline; /* Sublinhado ao passar o mouse */
+}
+
+
+.l1BV {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: flex-start; /* Alinha o conteúdo à esquerda */
+    padding: 1rem; /* Espaçamento interno */
+    background-color: transparent; /* Fundo padrão (sem cor) */
+    border-radius: 8px; /* Bordas arredondadas */
+    transition: all 0.3s ease; /* Suaviza transições */
+}
+
+.l1BV h1 {
+    font-size: 2rem; /* Tamanho do título */
+    margin-bottom: 1rem; /* Espaço abaixo do título */
+    color: #333;
+}
+
+.l1BV p {
+    font-size: 1rem; /* Tamanho do texto */
+    margin-bottom: 1rem; /* Espaçamento entre os parágrafos */
+    line-height: 1.6; /* Melhora a legibilidade */
+    color: #555;
+}
+
+.criarconta {
+    font-size: 1rem; /* Tamanho do botão */
+    padding: 0.7rem 1.5rem; /* Tamanho do botão */
+    background-color: #f5f5f5; /* Fundo padrão do botão */
+    color: #ffffff; /* Cor do texto */
+    border-radius: 10px; /* Bordas arredondadas */
+    text-align: center;
+    text-decoration: none; /* Remove sublinhado */
+    transition: background-color 0.3s ease; /* Suaviza mudanças no hover */
+}
+
+.criarconta:hover {
+    background-color: #ddd; /* Cor mais escura no hover */
+}
+
+.copyright{
+    position: relative;
+  
+
+
+}
+
+
+secBV2 {
+    padding: 4rem 4rem;
+    text-align: center;
+}
+
+.secBV2 h1,
+.secBV2 h2 {
+    margin-bottom: 1.5rem;
+}
+
+.secBV2 #conj {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap; /* Permite que os itens quebrem para novas linhas */
+}
+
+.secBV2 .comuniDtq {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap; /* Permite que as comunidades quebrem para novas linhas */
+}
+
+/* Estilo inicial dos cards */
+.cardComuni2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem; /* Aumenta o padding para um card maior */
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    width: 180px; /* Torna os cards um pouco maiores */
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cardComuni2 img {
+    width: 4rem; /* Aumenta o tamanho da imagem */
+    height: auto;
+    margin-bottom: 0.5rem;
+}
+
+.cardComuni2:hover {
+    transform: scale(1.05); /* Efeito de zoom no hover */
+}
+
+/* Aumenta o tamanho do card para TDAH */
+#tdah {
+    width: 220px; /* Aumenta o card do TDAH */
+    padding: 1.8rem; /* Aumenta o padding do card do TDAH */
+}
+
+#tdah img {
+    width: 4.5rem; /* Aumenta a imagem do card TDAH */
+}
+
+.secBV2 p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-top: 2rem;
+    color: #333;
+}
+
+/* Estilo para o link */
+.secBV2 a {
+    text-decoration: none;
+    color: white;
+    display: flex; /* Usando flexbox para alinhar imagem e texto */
+    flex-direction: column; /* Alinha a imagem e o texto verticalmente */
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    height: 100%; /* Garante que o conteúdo ocupe toda a altura do link */
+}
+
+/* Estilo ao passar o mouse */
+.secBV2 a:hover {
+    text-decoration: underline; /* Sublinha no hover */
+}
+
+
+.info-comunidade {
+    background-color: #f9f9f9; /* Fundo claro */
+    padding: 1rem; /* Espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    text-align: center; /* Centraliza o texto */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin-top: 2rem; /* Espaçamento superior */
+    margin-bottom: 2rem;
+}
+
+.info-comunidade p {
+    font-size: 1rem; /* Tamanho do texto */
+    line-height: 1.6; /* Altura da linha para melhorar a legibilidade */
+    color: #333; /* Cor do texto */
+}
+
+.info-comunidade a {
+    color: #3366cc; /* Cor do link */
+    text-decoration: none; /* Remove o sublinhado */
+}
+
+.info-comunidade a:hover {
+    text-decoration: underline; /* Sublinha no hover */
+}
+
+.secBV3 {
+    padding: 2rem 4rem; /* Espaçamento interno */
+    text-align: center; /* Centraliza os títulos */
+}
+
+.secBV3 h1 {
+    font-size: 2rem; /* Tamanho do título principal */
+    margin-bottom: 1rem; /* Espaço abaixo do título */
+    color: #008000; /* Verde */
+}
+
+.secBV3 h2 {
+    font-size: 1.5rem; /* Tamanho do subtítulo */
+    margin-bottom: 2rem; /* Espaço abaixo do subtítulo */
+    color: #555; /* Cinza */
+}
+
+/* Estilo geral da seção */
+.secBV3 {
+    padding: 2rem 4rem; /* Espaçamento interno */
+    text-align: center; /* Centraliza os títulos */
+}
+
+.secBV3 h1 {
+    font-size: 2rem; /* Tamanho do título principal */
+    margin-bottom: 1rem; /* Espaço abaixo do título */
+    color: #008000; /* Verde */
+}
+
+.secBV3 h2 {
+    font-size: 1.5rem; /* Tamanho do subtítulo */
+    margin-bottom: 2rem; /* Espaço abaixo do subtítulo */
+    color: #555; /* Cinza */
+}
+
+/* Estilo do conteúdo */
+.secBV3 .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem; /* Espaço entre texto e imagem */
+    flex-wrap: wrap; /* Permite quebra em telas menores */
+}
+
+/* Estilo da div de texto */
+.secBV3 .texto-forum {
+    flex: 1 1 50%; /* Ocupa metade do espaço disponível */
+    text-align: left; /* Alinha o texto à esquerda */
+    font-size: 1rem;
+    color: #333; /* Cor do texto */
+}
+
+.secBV3 .texto-forum p {
+    line-height: 1.6; /* Altura da linha para melhorar a legibilidade */
+    margin: 0;
+}
+
+/* Estilo da imagem */
+.secBV3 .img-forum {
+    flex: 1 1 50%; /* Ocupa metade do espaço disponível */
+    max-width: 100%; /* Garante que a imagem não ultrapasse o container */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* .secBV5 {
+    padding: 2rem 4rem;
+    text-align: center; 
+}  agora vai kkkk */
+  .secBV5{
+    display: none;
+  }
+
+.secBV5 h1 {
+    font-size: 2rem; /* Tamanho do título principal */
+    margin-bottom: 1rem; /* Espaço abaixo do título */
+    color: #0044cc; /* Azul */
+}
+
+.secBV5 h2 {
+    font-size: 1.5rem; /* Tamanho do subtítulo */
+    margin-bottom: 2rem; /* Espaço abaixo do subtítulo */
+    color: #555; /* Cinza */
+}
+
+.secBV5 {
+    /* padding: 2rem 4rem; Espaçamento interno */
+    text-align: center; /* Centraliza os títulos */
+}
+
+.secBV5 h1 {
+    font-size: 2rem; /* Tamanho do título principal */
+    margin-bottom: 1rem; /* Espaço abaixo do título */
+    color: #0044cc; /* Azul */
+}
+
+.secBV5 h2 {
+    font-size: 1.5rem; /* Tamanho do subtítulo */
+    margin-bottom: 2rem; /* Espaço abaixo do subtítulo */
+    color: #555; /* Cinza */
+}
+
+/* Estilo do conteúdo */
+.secBV5 .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem; /* Espaço entre texto e imagem */
+    flex-wrap: wrap; /* Permite quebra em telas menores */
+}
+
+/* Estilo do texto */
+.secBV5 .texto-profissionais {
+    flex: 1 1 50%; /* Ocupa metade do espaço disponível */
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+.secBV5 .texto-profissionais p {
+    font-size: 1rem; /* Tamanho padrão do texto */
+    line-height: 1.6; /* Altura da linha para melhorar a legibilidade */
+    margin: 0;
+    color: #333; /* Cor do texto */
+}
+
+/* Estilo da imagem */
+.secBV5 .img-profissionais {
+    flex: 1 1 50%; /* Ocupa metade do espaço disponível */
+    max-width: 100%; /* Garante que a imagem não ultrapasse o container */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+
+/* Centraliza o container do card */
+.neurocBV {
+    display: flex;
+    justify-content: flex-start; /* Alinha os cards à esquerda inicialmente */
+    align-items: center;
+    flex-wrap: wrap; /* Permite que os itens quebrem linha, se necessário */
+    gap: 1rem; /* Espaçamento entre os cards */
+}
+
+
+
+
+/* Estilo padrão para a estrutura principal */
+.mainConfig {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+/* Sidebar (Aside) */
+.asideConfig {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.asideConfig section h5 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.asideConfig button {
+    background-color: transparent;
+    border: none;
+    padding: 0.8rem 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: left;
+}
+
+.asideConfig button:hover {
+    background-color: #d6d6d6;
+}
+
+#linha {
+    border-left: 1px solid #ddd;
+    margin: 0 1rem;
+}
+
+/* Conteúdo principal */
+#conteudo {
+    width: 75%;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.secaoConfig {
+    display: none;
+}
+
+.secaoConfig.active {
+    display: block;
+}
+.controlarcd {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+.controlarcd div {
+    flex: 1 1 calc(25% - 1rem); /* Quatro colunas em telas grandes */
+    text-align: center;
+}
+
+.controlarcd img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+}
+
+
+
+
+
+
+
+/* organiza card do bv */
+
+/* .cardbvorganiza {
+    display: flex
+;
+    justify-content: center;
+} */
+
+.cardbv a {
+    background-color: var(--verde);
+    display: flex;
+    text-align: center;
+    height: 6rem;
+    width: 13rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5%;
+    text-decoration: none;
+    color: white;
+}
+
+.DepressaoBV {
+    display: flex; /* Flexbox para centralizar o conteúdo */
+    justify-content: center;
+    align-items: center;
+    width: 10rem; /* Aumentando a largura */
+    height: 10rem; /* Aumentando a altura */
+    text-align: center;
+    border-radius: 5%; /* Garantindo bordas arredondadas */
+}
+
+.cardbv  a:hover{
+    background-color: rgb(72, 143, 61);
+    transition: all 0.9s;
+    color: black;
+
+}
+
+/* */
+
+
+
+/*Ajustes dos cards BV*/
+.cardComuniBV{
+    width: 2rem;
+    height: 8rem;
+    align-items: center;
+    gap: 2rem;
+}
+
+.cardComuniBV img {
+    height: 3rem;
+    margin-bottom: 1rem;
+}
+/* Estilo para as imagens dentro do quadrado */
+#tdahBV img, #ansiedadeBV img {
+    width: 4rem; /* Ajusta o tamanho da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-bottom: 0.5rem; /* Espaçamento entre imagem e texto */
+}
+
+/* Estilo específico para o quadrado do TDAH */
+#tdahBV {
+    background-color: var(--azuldois);
+    border-radius: 2rem;
+    width: 9rem;
+    height: 9rem; /* Define a altura fixa para manter o quadrado */
+    display: flex; /* Flexbox para centralizar o conteúdo */
+    flex-direction: column; /* Organiza imagem e texto verticalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+}
+
+/* Estilo específico para o quadrado da Ansiedade */
+#ansiedadeBV {
+    background-color: var(--roxo);
+    border-radius: 2rem;
+    width: 8.5rem;
+    height: 9rem; /* Define a altura fixa para manter o quadrado */
+    display: flex; /* Flexbox para centralizar o conteúdo */
+    flex-direction: column; /* Organiza imagem e texto verticalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+}
+
+/* Ajustando o texto para que ele caiba dentro do quadrado */
+#tdahBV, #ansiedadeBV {
+    text-align: center; /* Alinha o texto no centro */
+    font-size: 1rem; /* Ajusta o tamanho da fonte */
+    word-wrap: break-word; /* Permite que o texto quebre em várias linhas, se necessário */
+    padding: 0.5rem; /* Espaçamento dentro do quadrado */
+    text-decoration: none;
+}
+
+#tdahBV:hover {
+    background-color: #404e86;
+    border: 1px solid #404e86;
+    transition: all 0.5s;
+}
+
+#ansiedadeBV:hover {
+    background-color: #821e71;
+    border: 1px solid #821e71;
+    transition: all 0.5s;
+}
+/**/
+
+.cardComuni{
+    width: 2rem;
+    height: 8rem;
+    align-items: center;
+}
+
+.cardComuni img {
+    height: 3rem;
+    margin-bottom: 1rem;
+}
+
+.cardComuni:hover {
+    border: 1px solid  #6ea172;
+    background-color:#a3e0a9;
+    transform: scale(102%);
+}
+
+#ansiedade img{
+     width: 5rem;
+    height: auto;
+}
+
+#bipolaridade img{
+    width: 5rem;
+    height: auto;
+}
+
+#tpas img{
+    width: 5rem;
+    height: auto;
+}
+
+#depressao img {
+    width: 5rem;
+    height: auto;
+}
+
+#tdah img {
+    padding: 0.5rem;
+    width: 5rem;
+    height: auto;
+}
+
+#tea img{
+    width: 8rem;
+    height: auto;
+}
+
+#tpn img{
+    width: 5rem;
+    height: auto;
+}
+
+#dislexia img{
+    padding: 0.5rem;
+    width: 7rem;
+    height: auto;
+}
+
+/* Os itens abaixo são a legenda que aparece no card das comunidades TDAH, TEA e TPAS */
+#tdah::after {
+    content: "(Transtorno do Déficit de Atenção com Hiperatividade)";
+    color: #110529;
+    font-size: 14px;
+    font-weight: 650;
+    width: 80%;
+
+}
+
+#tdah:hover::after {
+    content: "(Transtorno do Déficit de Atenção com Hiperatividade)";
+    color: #030008;
+    font-size: 14px;
+    font-weight: 650;
+    width: 80%;
+} 
+
+#TPAS::after {
+    content: "(Transtorno de Personalidade Antissocial)";
+    color: #324047;
+    font-size: 14px;
+    font-weight: 650;
+    width: 80%;
+}
+
+#TPAS:hover::after {
+    content: "(Transtorno de Personalidade Antissocial)";
+    color: #11171a;
+    font-size: 14px;
+    font-weight: 650;
+    width: 80%;
+} 
+
+#TEA::after {
+    content: "(Transtorno do Espectro Autista)";
+    color: #3A4226;
+    font-size: 14px;
+    font-weight: 650;
+    width: 80%;
+}
+
+#TEA:hover::after {
+    content: "(Transtorno do Espectro Autista)";
+    color: #070805;
+    font-size: 14px;
+    font-weight: 650;
+    width: 80%;
+}
+
+
+#tpn::after {
+    content: "(Transtorno de Personalidade Narcisista)";
+    color: #fe9feb;
+    font-size: 14px;
+    font-weight: 650;
+    width: 80%;
+}
+
+#tpn:hover::after{
+    content: "(Transtorno de Personalidade Narcisista)";
+    transition: 0.5s all;
+    color: #220f1d;
+    font-size: 14px;
+    font-weight: 650;
+    width: 80%;
+}
+/**/
+
+.card {
+    position: relative;
+    flex: 1 1 calc(25% - 1.5rem); /* Quatro cards por linha com espaço */
+    min-width: 200px;
+    height: 150px;
+    background-color: var(--roxo);
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    transition: transform 0.3s, background-color 0.3s, border 0.3s;
+    cursor: pointer;
+}
+
+.card a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    /* Borda e cor de fundo específicas com base no ID */
+}
+
+
+main{
+    display: flex;
+    padding: 1.5rem 8rem;
+}
+
+.main-content2{
+    display: flex;
+    flex-direction: column;
+}
+
+.mainConfig {
+    display: flex;
+    padding: 1.5rem 8rem;
+}
+
+.tituloroxo {
+    color: var(--roxo);
+}
+
+.tituloroxo:hover{
+    color: rgb(204, 27, 174);
+    transition: all 0.5s;
+}
+
+.tituloverde {
+    color: var(--verde);
+}
+
+.tituloazul {
+    color: var(--azuldois);
+}
+
+.tituloazul:hover{
+    color: #97a7e6;
+    transition: all 0.5s;
+}
+
+.titulocinza {
+    color: var(--cinzatexto);
+}
+
+.tituloazul2 {
+    color: #1A7780;
+}
+
+.tituloverdeescuro{
+    color:#9dbb4c;
+}
+
+.tituloverdeescuro:hover{
+    color: #b7e43d;
+    transition: all 0.5s;
 }
 
 .comunidades {
@@ -2758,81 +3993,1857 @@ body {
     margin: 0 2rem 0 0;
     font-size: 1rem;
 }
+.nomePerson {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
 
-/* Responsividade para telas menores */
+.paragPerson {
+    font-size: 1rem; /* Tamanho da fonte padrão */
+    line-height: 1.5; /* Altura da linha */
+    text-align: justify; /* Alinha o texto para ambas as margens */
+    padding: 0 1rem; /* Espaçamento interno */
+    max-width: 100%; /* Limita a largura ao tamanho da tela */
+    word-wrap: break-word; /* Permite quebra de palavras longas */
+    overflow-wrap: break-word; /* Garante quebra de palavras em navegadores modernos */
+    word-break: break-word; /* Compatibilidade extra para quebra */
+    margin: 0 auto; /* Centraliza o texto */
+    box-sizing: border-box; /* Inclui o padding dentro do limite da largura */
+}
+#mobileMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Garante que os itens fiquem alinhados do topo */
+    align-items: flex-start; /* Alinha os itens à esquerda */
+    padding-top: 50px; /* Ajuste para dar o mesmo espaço do topo do menu */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Fundo escuro */
+    color: white;
+    z-index: 1000;
+    box-shadow: none;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Ajuste do botão de comunidades */
+#mobileMenu button {
+    background-color: var(--cinzaclaro);
+    color: white;
+    font-size: 16px;
+    border: none;
+    padding: 1rem;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    margin-top: 15px; /* Ajuste de margem para alinhamento */
+}
+
+#mobileMenu .close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+}
+
+
+/* Estilos para os links no menu */
+#mobileMenu a {
+    font-size: 18px;
+    color: white;
+    padding: 1rem 0;
+    text-decoration: none;
+    border-bottom: 1px solid #fff;
+    transition: background-color 0.3s ease;
+}
+
+/* Mudança de cor ao passar o mouse */
+#mobileMenu a:hover {
+    color: rebeccapurple;
+}
+
+/* Estilo do botão para comunidades */
+#mobileMenu button {
+    background-color: var(--cinzaclaro);
+    color: white;
+    font-size: 16px;
+    border: none;
+    padding: 1rem;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+
+/* Exibe o conteúdo das comunidades */
+#cmdExpandirMobile {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+    transition: margin-top 0.3s ease;
+}
+
+/* Exibe as comunidades ao clicar no botão */
+#mobileMenu button:focus + #cmdExpandirMobile,
+#cmdExpandirMobile:hover {
+    display: flex;
+    margin-top: 2rem;
+}
+
+/* Quando o menu de comunidades for aberto, empurra o conteúdo abaixo */
+#cmdExpandirMobile a {
+    margin-top: 0.8rem;
+}
+.menu-hamb {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 2000;
+}
+
+
+
+.full-screen-menu {
+    display: none; /* Oculta o menu inicialmente */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Ocupa toda a largura */
+    height: 100%; /* Ocupa toda a altura */
+    background-color: rgba(0, 0, 0, 0.9); /* Fundo escuro */
+    color: white; /* Texto branco */
+    z-index: 1000;
+    flex-direction: column;
+    justify-content: space-between; /* Alinha o conteúdo verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    padding: 20px 0; /* Espaçamento interno */
+}
+
+.full-screen-menu ul {
+    list-style: none; /* Remove bullets */
+    padding: 0;
+    margin: 0;
+    width: 100%; /* Ocupa a largura completa */
+    text-align: center; /* Centraliza os links */
+}
+
+.full-screen-menu ul li {
+    margin: 20px 0; /* Espaçamento entre os itens */
+    width: 100%; /* Cada item ocupa a linha completa */
+}
+
+.full-screen-menu ul li a {
+    display: block; /* Ocupa a linha inteira */
+    padding: 10px 0;
+    text-decoration: none; /* Remove sublinhado */
+    color: white; /* Cor do texto */
+    font-size: 24px; /* Tamanho do texto */
+    transition: background-color 0.3s, color 0.3s; /* Suaviza as mudanças de cor */
+}
+
+.full-screen-menu ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Fundo semi-transparente ao passar o mouse */
+    color: #ff9800; /* Cor do texto em destaque */
+}
+
+/* Botão de fechar */
+.full-screen-menu .close-menu {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 36px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.full-screen-menu .close-menu:hover {
+    transform: scale(1.2); /* Efeito de zoom */
+}
+
+/* Rodapé dentro do menu */
+
+
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .mobile-menu div {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    transition: all 0.3s ease;
+    display: none;
+  }
+  
+  .nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none; /* Oculta inicialmente */
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .nav-list li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    transition: color 0.3s;
+  }
+  
+  .nav-list li a:hover {
+    color: #007BFF; /* Cor ao passar o mouse */
+  }
+ /* Botão de acessibilidade */
+
+ 
+
+/* Botão de acessibilidade */
+.accessibility-icon {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: #f1f1f1;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s;
+    z-index: 1000;
+}
+
+.accessibility-icon:hover {
+    background-color: #e0e0e0;
+}
+
+.accessibility-icon span {
+    font-size: 24px;
+}
+
+/* Barra de acessibilidade */
+.accessibility-bar {
+    display: none;
+    flex-direction: column;
+    gap: 8px;
+    background: #f1f1f1;
+    padding: 10px;
+    border-radius: 8px;
+    width: 70px;
+    position: fixed;
+    bottom: 80px;
+    left: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    
+}
+
+
+
+button svg {
+    width: 16px;
+    height: 16px;
+    fill: #333;
+}
+
+button:hover svg {
+    fill: #000;
+}
+
+/* Filtros e temas */
+.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.daltonismo {
+    filter: grayscale(100%);
+}
+.fatec img{
+    width: 50px;
+    align-items: center;
+    margin-top: 1rem;
+}
+
 @media (max-width: 1200px) {
-    .cardComuni {
-        flex: 1 1 calc(33.33% - 20px); /* 3 cards por linha */
+    header, .navGeral, .navPessoal, .mainInicio, .footerPrinc {
+        padding: 0 4rem;
     }
-}
+    .comuni {
+        flex-wrap: wrap;
+    }
+    .cardComuni {
+        flex: 1 1 calc(33.33% - 1rem); /* Três cards por linha */
+    }
+    .todos {
+        justify-content: space-between; /* Ajusta a distribuição */
+    }
+    .personagem {
+        width: 6.5rem; /* Ajusta o tamanho */
+    }
+    .cardNeuroc {
+        width: calc(33.33% - 2rem); /* Três cards por linha */
+    }
+   
+        .mainConfig {
+            flex-direction: column;
+            padding: 1rem;
+        }
+    
+        .asideConfig {
+            width: 100%;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+    
+        .asideConfig section {
+            flex: 1;
+            min-width: 150px;
+        }
+    
+        #linha {
+            display: none;
+        }
+    
+        #conteudo {
+            width: 100%;
+        }
 
-@media (max-width: 900px) {
-    .cardComuni {
-        flex: 1 1 calc(50% - 20px); /* 2 cards por linha */
-    }
+        
+}
+@media (max-width:1090px){
+    
+    /* O menu de navegação geral é escondido em telas pequenas */
     .navGeral {
-        display: none; /* Oculta o menu normal */
+        display: none;
     }
 
-    .navGeral.active {
-        display: flex; /* Exibe o menu quando ativo */
+    
+    .headerBV nav {
+        display: none; /* Oculta o menu padrão */
+        width: auto;
     }
 
-    .hmenu {
-        display: flex; /* Mostra o menu hambúrguer */
-    }
-    .hamb-menu {
-        display: none; /* Esconder por padrão */
-     color: #000;   
-    }
-}
-
-@media (max-width: 768px) {
-    .cardComuni {
-        flex: 1 1 calc(45% - 20px); /* 2 cards por linha */
-    }
-    .footerPrinc {
-        flex-direction: column; /* empilha os itens em telas menores */
-        align-items: center; /* centraliza os itens */
-    }
-
-    .footerPrinc div {
-        text-align: center; /* centraliza o texto */
-        margin: 0; /* remove margens para alinhamento adequado */
+    .menu-hamb {
+        display: block; /* Mostra o menu de hambúrguer */
     }
     .copyright {
-        display: none; /* oculta a seção de copyright em telas pequenas */
+        display: flex; /* Certifica-se de usar Flexbox para alinhamento */
+        align-items: center; /* Alinha verticalmente */
+        justify-content: center; /* Opcional: Alinha horizontalmente, caso necessário */
+        width: 100%; /* Ocupa toda a largura do contêiner */
+        box-sizing: border-box; /* Inclui padding e borda no cálculo do tamanho */
+        height: auto; /* Altura ajustável conforme o conteúdo */
+        overflow: hidden; /* Evita que o conteúdo ultrapasse os limites */
+       margin-left: -10%;
     }
+     .nav-list {
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        background: var(--azuldois);
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+        color: white;
+      }
+      .nav-list li {
+        margin-left: 0;
+        
+        color: white;
+      }
+      .mobile-menu {
+        display: flex;
+        
+      }
+      .mobile-menu div {
+        width: 25px;
+        height: 3px;
+        background-color: #333;
+        transition: all 0.3s ease;
+        
+      }
 }
-
-@media (max-width: 480px) {
+@media (max-width: 950px) {
+    .navGeral a, .navGeral button, .navPessoal a {
+        font-size: 0.9rem; /* Reduz o tamanho do texto */
+    }
+    .logoNav {
+        height: 40%;
+    }
     .cardComuni {
-        flex: 1 1 calc(100% - 20px); /* 1 card por linha */
-    }.footerPrinc {
-        padding: 10px; /* ajusta o preenchimento */
+        flex: 1 1 calc(50% - 1rem); /* Dois cards por linha */
+    }
+    
+    .footerPrinc div {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footerPrinc{
+       
+        
+            padding: 5rem;
+         width: auto;
+           margin-top: 0; /* Remove espaçamento superior */
+           padding: 1rem; /* Ajusta o espaçamento interno */
+           height:100%; /* Ajusta altura ao conteúdo */
+       
+        
+    }
+    .navGeral{
+        display: none;
+    }
+    .todos {
+        display: grid; /* Ativa o grid layout */
+        grid-template-columns: repeat(4, 1fr); /* Define 4 colunas com tamanhos iguais */
+        gap: 1.5rem; /* Espaço entre os itens */
+        justify-items: center; /* Centraliza os itens horizontalmente */
+        align-items: center; /* Centraliza os itens verticalmente */
+        padding: 1rem; /* Espaçamento interno */
+    }
+    .personagem {
+        width: 6rem;
+    }
+    .cardNeuroc {
+        width: calc(50% - 2rem); /* Dois cards por linha */
+    }
+    .copyright {
+        display: flex; /* Certifica-se de usar Flexbox para alinhamento */
+        align-items: center; /* Alinha verticalmente */
+        justify-content: center; /* Opcional: Alinha horizontalmente, caso necessário */
+        width: 100%; /* Ocupa toda a largura do contêiner */
+        box-sizing: border-box; /* Inclui padding e borda no cálculo do tamanho */
+        height: auto; /* Altura ajustável conforme o conteúdo */
+        overflow: hidden; /* Evita que o conteúdo ultrapasse os limites */
+       
+    }
+   
+    }
+    
+    .nav-list.active {
+      transform: translateX(0);
+    }
+    
+    .nav-list.active {
+        transform: translateX(0);
+      }
+      @keyframes navLinkFade {
+        from {
+          opacity: 0;
+          transform: translateX(50px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+      
+      .mobile-menu.active .line1 {
+        transform: rotate(-45deg) translate(-8px, 8px);
+        background: var(--azulfooter);
+      }
+      
+      .mobile-menu.active .line2 {
+        opacity: 0;
+      }
+      
+      .mobile-menu.active .line3 {
+        transform: rotate(45deg) translate(-5px, -7px);
+      background: var(--azulfooter);
+      }
+
+@media (max-width: 800px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .navGeral {
+        flex-direction: column;
+        gap: 1rem;
+        
+    }
+    .navPessoal {
+        justify-content: center;
+    }
+    footer img {
+        width: 80%;
+    }
+    footer{
+        padding: 5rem;
+       height: 25rem;
+       margin-top: 0; /* Remove espaçamento superior */
+       padding: 1rem; /* Ajusta o espaçamento interno */
+       height: auto; /* Ajusta altura ao conteúdo */
+    }
+    
+    .copyright {
+        text-align: center;
+        width: 100%; /* Garante que ocupe toda a largura da tela */
+        padding: 0.5rem; /* Define o espaçamento interno */
+        box-sizing: border-box; /* Inclui o padding no cálculo do tamanho total */
+        margin: 0; /* Remove margens desnecessárias */
+        background-color: transparent; /* Remove cor de fundo */
+        color: inherit; /* Herda a cor do texto do elemento pai */
+    }
+    #profissionaisLista {
+        gap: 1.5rem; /* Aumenta o espaço entre os cards */
+        justify-content: center; /* Centraliza os cards */
     }
 
-    .footerPrinc h4 {
-        font-size: 1.2em; /* reduz o tamanho do título */
+    .profissional {
+        flex: 1 1 calc(50% - 1rem); /* Dois cards por linha */
     }
 
-    #email {
-        display: flex; /* alinha o ícone e o texto horizontalmente */
-        align-items: center; /* centraliza verticalmente */
+    .todos {
+        display: grid; /* Ativa o grid layout */
+        grid-template-columns: repeat(2, 1fr); /* Define 4 colunas com tamanhos iguais */
+        gap: 1.5rem; /* Espaço entre os itens */
+        justify-items: center; /* Centraliza os itens horizontalmente */
+        align-items: center; /* Centraliza os itens verticalmente */
+        padding: 1rem; /* Espaçamento interno */
+    }
+    .personagem {
+        width: 5.5rem;
     }
 
-    #email img {
-        margin-right: 5px; /* espaço entre o ícone e o texto */
+    .mainPerfil {
+        flex-direction: column; /* Coloca os elementos em uma coluna */
+        gap: 1.5rem;
+        padding: 1.5rem;
     }
+
+    .mainPerfil .perfil, .mainPerfil .comunidades {
+        max-width: 100%; /* Os blocos ocupam toda a largura */
+    }
+    .personagemSec {
+        gap: 1.5rem; /* Reduz o espaço entre os itens */
+    }
+
+    .fotoperson img {
+        width: 200px; /* Diminui a imagem */
+    }
+
+    .fotoperson h2 {
+        font-size: 1.5rem; /* Reduz o tamanho do título */
+    }
+
+    
+
+
+    nav .localizar {
+        display: none;
+    }
+    .copyright {
+        display: flex; /* Certifica-se de usar Flexbox para alinhamento */
+        align-items: center; /* Alinha verticalmente */
+        justify-content: center; /* Opcional: Alinha horizontalmente, caso necessário */
+        width: 100%; /* Ocupa toda a largura do contêiner */
+        box-sizing: border-box; /* Inclui padding e borda no cálculo do tamanho */
+        height: auto; /* Altura ajustável conforme o conteúdo */
+        overflow: hidden; /* Evita que o conteúdo ultrapasse os limites */
+        margin-left: -10%;
+    }
+    .telaconfi{
+        display: none;
+    }
+    
 }
 
-/* Adicionando regras para evitar overflow */
-body {
-    overflow-x: hidden; /* Remove a rolagem horizontal */
-    margin: 0; /* Remove margens padrão */
+
+
+
+
+@media (max-width: 750px) {
+    .p1 {
+        flex-direction: column; /* Alinha os itens em coluna */
+        align-items: center; /* Centraliza os itens */
+        gap: 1.5rem; /* Reduz o espaço entre os itens */
+    }
+
+    .l1BV {
+        align-items: center; /* Centraliza o conteúdo horizontalmente */
+        text-align: center; /* Centraliza o texto */
+        background-color: #f9f9f9; /* Fundo quase branco */
+        padding: 1.5rem; /* Adiciona espaçamento interno maior */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra leve */
+    }
+
+    .l1BV h1 {
+        font-size: 1.5rem; /* Reduz o tamanho do título */
+    }
+
+    .l1BV p {
+        font-size: 0.9rem; /* Texto menor */
+        line-height: 1.4; /* Ajusta a altura da linha */
+    }
+
+    .criarconta {
+        font-size: 0.9rem; /* Ajusta o tamanho do botão */
+        padding: 0.6rem 1rem; /* Reduz o tamanho do botão */
+    }
+
+    .secBV2 {
+        padding: 1.5rem;
+    }
+
+    .secBV2 #conj {
+        flex-direction: column; /* Alinha as comunidades em coluna */
+        gap: 1.5rem; /* Menos espaço entre os itens */
+    }
+
+    .secBV2 .comuniDtq {
+        gap: 1rem; /* Menos espaço entre as comunidades */
+    }
+
+    .secBV3 .content {
+        flex-direction: column; /* Alinha texto e imagem em coluna */
+        align-items: center; /* Centraliza o conteúdo */
+        gap: 1rem; /* Reduz o espaço entre os itens */
+    }
+
+    .secBV3 .texto-forum {
+        text-align: center; /* Centraliza o texto */
+    }
+
+    .secBV3 h1 {
+        font-size: 1.8rem; /* Reduz o tamanho do título principal */
+    }
+
+    .secBV3 h2 {
+        font-size: 1.3rem; /* Reduz o tamanho do subtítulo */
+    }
+
+    .cardComuni2 {
+        width: 150px; /* Ajusta a largura do card */
+        padding: 1rem; /* Diminui o padding */
+    }
+
+    .cardComuni2 img {
+        width: 3rem; /* Ajusta a largura da imagem */
+    }
+
+    /* Ajusta o card do TDAH para telas menores */
+    #tdah {
+        width: 180px; /* Aumenta um pouco o card do TDAH */
+        padding: 1.5rem; /* Ajusta o padding */
+    }
+
+    #tdah img {
+        width: 3.5rem; /* Aumenta a imagem do TDAH */
+    }
+
+    .secBV2 p {
+        font-size: 0.9rem; /* Texto menor */
+    }
+
+    .secBV2 h1 {
+        font-size: 1.5rem; /* Tamanho menor do título */
+    }
+
+    .secBV2 h2 {
+        font-size: 1.2rem; /* Tamanho menor do subtítulo */
+    }
+
+    .mainInicio, .mainTdah {
+        padding: 0 2rem;
+    }
+    
+    .cardComuni {
+        flex: 1 1 calc(100% - 1rem); /* Um card por linha */
+    }
+
+
+    .info-comunidade {
+        padding: 1rem; /* Reduz o padding */
+    }
+
+    .info-comunidade p {
+        font-size: 0.9rem; /* Diminui o tamanho da fonte */
+    }
+
+    .info-comunidade a {
+        font-size: 0.9rem; /* Ajusta o tamanho do link */
+    }
+
+    footer img {
+        width: 80%;
+    }
+    footer{
+        padding: 5rem;
+       height: 25rem;
+    }
+    
+    .copyright {
+        text-align: center;
+        width: 100%; /* Garante que ocupe toda a largura da tela */
+        padding: 0.5rem; /* Define o espaçamento interno */
+        box-sizing: border-box; /* Inclui o padding no cálculo do tamanho total */
+        margin: 0; /* Remove margens desnecessárias */
+        background-color: transparent; /* Remove cor de fundo */
+        color: inherit; /* Herda a cor do texto do elemento pai */
+    }
+
+    .todos {
+        display: grid; /* Ativa o grid layout */
+        grid-template-columns: repeat(2, 1fr); /* Define 4 colunas com tamanhos iguais */
+        gap: 1.5rem; /* Espaço entre os itens */
+        justify-items: center; /* Centraliza os itens horizontalmente */
+        align-items: center; /* Centraliza os itens verticalmente */
+        padding: 1rem; /* Espaçamento interno */
+    }
+    .personagem {
+        width: 80%; /* Cada item ocupa quase toda a largura */
+    }
+    .personagemSec {
+        flex-direction: column; /* Alinha os elementos em coluna */
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .fotoperson img {
+        width: 200px; /* Reduz o tamanho da imagem */
+    }
+
+    .bio {
+        text-align: center;
+        align-items: center; /* Centraliza os itens */
+    }
+
+    .bio button {
+        padding: 0.4rem 1rem; /* Botão menor */
+        font-size: 0.8rem; /* Texto menor */
+        align-self: center; /* Centraliza o botão */
+    }
+
+    nav .localizar {
+        display: none;
+    }
+
+    .menu-lateral .localizar {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+   
+    .asideConfig {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .asideConfig button {
+        font-size: 0.9rem;
+        padding: 0.5rem;
+    }
+
+    #conteudo {
+        padding: 1rem;
+    }
+    main {
+        padding: 1rem;
+    }
+    h1, h2 {
+        font-size: 18px;
+        text-align: center;
+    }
+    .opcaoPerson {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .opcaoPerson .personagem img {
+        width: 80px;
+        height: 80px;
+    }
+    .personSelec img {
+        width: 120px;
+        height: 120px;
+    }
+    .buttonPerson {
+       
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .personagem {
+        gap: 0.3rem; /* Reduz o espaçamento em telas menores */
+    }
+
+    .personagem img {
+        width: 60px; /* Diminui o tamanho da imagem */
+        height: auto; /* Mantém a proporção */
+    }
+
+    .personagem h4 {
+        font-size: 14px; /* Reduz o tamanho da fonte */
+    }
+    .nomePerson {
+        font-size: 1.2rem;
+    }
+    .paragPerson {
+        font-size: 0.9rem; /* Reduz o tamanho da fonte */
+        line-height: 1.4; /* Ajusta a altura da linha */
+        padding: 0 0.5rem; /* Diminui o espaçamento interno */
+        max-width: 100%; /* Garante que o texto não ultrapasse a tela */
+    }
+    .hmenu {
+        display: block; /* Exibe o ícone de hambúrguer */
+        cursor: pointer; /* Indica que é clicável */
+    }
+    .hamb-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 25px;
+    }
+    .hamb-menu span {
+        display: block;
+        width: 100%;
+        height: 4px;
+        background-color: #333;
+        border-radius: 2px;
+    }
+    /* O menu de navegação geral é escondido em telas pequenas */
+    .navGeral {
+        display: none;
+    }
+
+    /* Menu responsivo */
+    #mobileMenu {
+        display: none; /* Inicialmente oculto */
+        position: absolute;
+        top: 7rem; /* Ajuste para que o menu não sobreponha o conteúdo */
+        left: 0;
+        width: 100%;
+        background-color: var(--cinzaclaro);
+        flex-direction: column;
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    #mobileMenu.active {
+        display: flex; /* Exibe o menu quando a classe 'active' for adicionada */
+    }
+
+    #mobileMenu a, #mobileMenu button {
+        font-size: 16px;
+        color: var(--cinzanav);
+    }
+   
+}
+/* Rodapé dentro do menu lateral */
+.copyright {
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    background-color: var(--azuldois);
+    height: auto;
 }
 
-/* Adicionando estilo ao menu para mobile */
-.hmenu {
-    cursor: pointer; /* Muda o cursor para indicar interatividade */
+@media (max-width: 700px) {
+    .secBV3 .content {
+        flex-direction: column; /* Alinha texto e imagem em coluna */
+        align-items: center; /* Centraliza o conteúdo */
+        gap: 1.5rem; /* Reduz o espaço entre os itens */
+    }
+
+    .secBV3 .texto-forum {
+        text-align: center; /* Centraliza o texto */
+    }
+
+    .secBV3 h1 {
+        font-size: 1.8rem; /* Reduz o tamanho do título principal */
+    }
+
+    .secBV3 h2 {
+        font-size: 1.3rem; /* Reduz o tamanho do subtítulo */
+    }
+    .paragPerson {
+        font-size: 0.9rem; /* Reduz o tamanho da fonte */
+        line-height: 1.4; /* Ajusta a altura da linha */
+        padding: 0 0.5rem; /* Diminui o espaçamento interno */
+        max-width: 100%; /* Garante que o texto não ultrapasse a tela */
+    }
+    .aumentar {
+        max-width: 500px; /* Ajuste o valor conforme necessário */
+      }
+      .msc1, .msc2, .msc3, .msc4 {
+        display: block;
+        
+    }
+  
+}
+
+@media (max-width: 650px) {
+    header img, .perfilNav img {
+        width: 60px;
+    }
+    .navGeral a {
+        padding: 0.5rem;
+        font-size: 1rem;
+    }
+    .footerPrinc h4, .footerPrinc p {
+      
+        font-size: 0.8rem;
+    }
+    #redesSociais img {
+        width: 20px;
+        visibility: hidden;
+    }
+    .footerPrinc{
+        height: 40rem;
+    }
+    .rsFooter{
+
+    
+        display: none;
+    }
+
+    .personagem {
+        width: 70%; /* Ajusta a largura */
+    }
+    .neuroc {
+        flex-direction: column; /* Alinha os cards em uma única coluna */
+        align-items: center;
+    }
+    .cardNeuroc {
+        width: 100%; /* Card ocupa toda a largura */
+    }
+    .todos {
+        display:block; /* Ativa o grid layout */
+        grid-template-columns: repeat 1fr; /* Define 4 colunas com tamanhos iguais */
+        gap: 1.5rem; /* Espaço entre os itens */
+        justify-items: center; /* Centraliza os itens horizontalmente */
+        align-items: center; /* Centraliza os itens verticalmente */
+        padding: 1rem; /* Espaçamento interno */
+    }
+    .personagemSec {
+        flex-direction: column; /* Alinha os elementos em coluna */
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .fotoperson img {
+        width: 200px; /* Reduz o tamanho da imagem */
+    }
+
+    .bio {
+        text-align: center;
+        align-items: center; /* Centraliza os itens */
+    }
+
+    .bio button {
+        padding: 0.4rem 1rem; /* Botão menor */
+        font-size: 0.8rem; /* Texto menor */
+        align-self: center; /* Centraliza o botão */
+    }
+
+
+    .secBV4 {
+        display: flex;
+        flex-direction: column; /* Alinha os elementos em coluna */
+        align-items: center; /* Centraliza horizontalmente */
+        gap: 1.5rem; /* Espaço entre os elementos */
+    }
+
+    .secBV4 .content {
+        display: flex;
+        flex-direction: column; /* Organiza o conteúdo em coluna */
+        align-items: center; /* Centraliza os elementos */
+        gap: 1rem; /* Espaçamento entre os itens */
+    }
+
+    .secBV4 .personBV {
+        display: flex;
+        flex-direction: column; /* Empilha imagem e descrição */
+        align-items: center; /* Centraliza horizontalmente */
+        gap: 1rem; /* Espaço entre os itens */
+        text-align: center; /* Centraliza o texto */
+    }
+
+    .secBV4 .personBV img {
+        width: 150px; /* Ajusta o tamanho da imagem */
+        height: auto; /* Mantém a proporção */
+    }
+
+    .secBV4 p {
+        text-align: center; /* Centraliza os parágrafos */
+    }
+    .personBV {
+        background-color: #d1d1f0; /* Cor de fundo mais escura */
+        padding: 1rem; /* Mantém espaçamento interno reduzido */
+    }
+
+    .personBV img {
+        width: 120px; /* Diminui a imagem */
+    }
+
+    .personBV h3 {
+        font-size: 1rem; /* Título menor */
+    }
+
+    .personBV p {
+        font-size: 0.9rem; /* Texto menor */
+    }
+    .info-box {
+        max-width: 500px; /* Reduz a largura máxima */
+        padding: 0.8rem; /* Reduz o espaçamento interno */
+        background-color: #d1d1f0; /* Fundo com cor mais escura */
+    }
+
+    .info-box p {
+        font-size: 0.85rem; /* Reduz o tamanho da fonte */
+    }
+
+    .info-box a {
+        font-size: 0.85rem; /* Ajusta o tamanho do link */
+    }
+    .secBV3 .img-forum {
+        max-width: 80%; /* Garante que a imagem ocupe até 80% da tela */
+        min-width: 300px; /* Define um tamanho mínimo */
+        height: auto; /* Mantém a proporção */
+        margin: 0 auto; /* Centraliza horizontalmente */
+    }
+    .neurocBV {
+        justify-content: center; /* Centraliza o card no container */
+    }
+
+    #bipolaridade {
+        margin: 0 auto; /* Centraliza o card horizontalmente */
+    }
+    .personagem img {
+        width: 60px;
+        height: 60px;
+    }
+   
+    .personagem img {
+        width: 50px; /* Imagem menor */
+    }
+
+    .personagem h4 {
+        font-size: 14px; /* Texto menor */
+    }
+    .nomePerson {
+        font-size: 1rem;
+    }
+    .paragPerson {
+        font-size: 0.9rem; /* Reduz o tamanho da fonte */
+        line-height: 1.4; /* Ajusta a altura da linha */
+        padding: 0 0.5rem; /* Diminui o espaçamento interno */
+        max-width: 100%; /* Garante que o texto não ultrapasse a tela */
+    }
+    
+   
+}
+
+
+@media (max-width: 550px) {
+    .secBV1 {
+      flex-direction: column; /* Empilha os elementos verticalmente */
+    }
+  
+    .secBV1 img {
+      width: auto; /* Faz a imagem ocupar toda a largura */
+    }
+    /* .secBV1, .secBV2, .secBV3, .secBV4, .secBV5, .secBV6 {
+        flex-direction: column;
+        align-items: center;
+      } */
+    
+      /* Outros ajustes específicos para cada seção */
+      .secBV2 .comuniDtq {
+        flex-direction: column;
+      }
+      .l1BV{
+        height: auto;
+        width: auto;
+      }
+      
+      .sec{
+        max-width: 300px;
+        overflow-x: hidden;
+      }
+      .menu-hamburguer {
+        height: 4px; /* Ajusta a altura em telas menores */
+        max-width: 30px; /* Reduz a largura máxima para telas pequenas */
+    }
+  }
+
+
+@media (max-width: 500px) {
+    #coomeço{
+        max-width: 500px;
+    }
+    header {
+        flex-direction: column;
+        padding: 1rem;
+        align-items: center;
+    }
+
+    .navGeral {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .logoNav {
+        height: auto;
+    }
+
+    .headerBV nav {
+        flex-direction: column;
+        gap: 0.5rem;
+        max-width: 500px;
+    }
+
+    
+    .cardComuni2 {
+        width: 120px; /* Reduz a largura do card */
+        padding: 0.8rem; /* Diminui o padding */
+        flex-direction: column; /* Organiza o card em coluna */
+    }
+
+    .cardComuni2 img {
+        width: 3rem; /* Aumenta a imagem do TDAH */
+    }
+
+    .cardComuni2 span {
+        display: none; /* Esconde o texto */
+    }
+    
+    /* Ajusta o card do TDAH para telas menores */
+    #tdah {
+        width: 140px; /* Aumenta um pouco o card do TDAH */
+        padding: 1.2rem; /* Ajusta o padding */
+    }
+
+    #tdah img {
+        width: 5rem; /* Aumenta a imagem do TDAH */
+    }
+
+    .info-comunidade p {
+        display: none; /* Esconde todo o conteúdo dentro de <p> */
+    }
+
+    .info-comunidade span {
+        display: inline; /* Exibe o conteúdo de <span> */
+        color: black; /* Muda a cor do texto para preto */
+    }
+
+    .info-comunidade a {
+        display: inline; /* Exibe o link */
+        font-size: 1rem; /* Ajusta o tamanho do link */
+        color: #3366cc; /* Cor do link */
+    }
+
+    .info-comunidade {
+        padding: 1rem; /* Ajusta o padding para telas menores */
+    }
+    .secBV2 p {
+        font-size: 0.8rem; /* Texto ainda menor */
+    }
+
+    .footerPrinc {
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+    }
+
+    .footerPrinc img {
+        width: 100px;
+    }
+    
+
+    .cardComuni {
+        flex: 1 1 calc(100% - 1rem); /* Um card por linha */
+    }
+
+    .todos {
+        grid-template-columns: repeat(1, 1fr); /* Um card por linha */
+    }
+
+    .personagem {
+        width: 90%;
+    }
+
+    .fotoperson img {
+        width: 150px; /* Reduz o tamanho da imagem */
+    }
+
+    .bio {
+        padding: 1rem;
+        text-align: center;
+        font-size: 0.9rem;
+    }
+
+
+
+    #redesSociais a img {
+        width: 25px; /* Reduz ainda mais os ícones em telas pequenas */
+    }
+
+    #email a {
+        font-size: 0.7rem; /* Ajusta o tamanho da fonte */
+    }
+   
+    .footerPrinc h4, .footerPrinc p {
+      
+        font-size: 0.8rem;
+    }
+    
+    .footerPrinc{
+        height: 2rem;
+        
+    }
+    .mapaSite, .comunFooter, .mcFooter, .rsFooter{
+        display: none;
+    }
+
+    .lista {
+        align-items: center; /* Centraliza os elementos na lista */
+    }
+
+    #profissionaisLista {
+        flex-direction: column; /* Coloca os cards em uma única coluna */
+        gap: 2rem; /* Espaço maior entre os cards */
+    }
+
+    .profissional {
+        flex: 1 1 100%; /* Um card por linha */
+        max-width: 100%; /* Garante que ocupe toda a largura disponível */
+    }
+   
+    .personagem {
+        width: 60%; /* Reduz ainda mais a largura */
+    }
+    .mainPerfil .perfil img {
+        width: 120px; /* Reduz o tamanho da imagem */
+        height: 120px;
+    }
+
+    .mainPerfil {
+        padding: 1rem;
+    }
+
+    .mainPerfil .comunidade {
+        font-size: 0.9rem; /* Texto menor para comunidades */
+    }
+    .bio button {
+        padding: 0.3rem 0.8rem; /* Botão mais compacto */
+        font-size: 0.7rem; /* Texto ainda menor */
+    }
+    .info-box {
+        max-width: 90%; /* Usa 90% da largura da tela */
+        padding: 0.6rem; /* Reduz o espaçamento interno ainda mais */
+        background-color: #a9a9d1; /* Fundo ainda mais escuro */
+    }
+
+    .info-box p {
+        font-size: 0.8rem; /* Fonte menor para telas muito pequenas */
+    }
+
+    .info-box a {
+        font-size: 0.8rem; /* Fonte menor para links */
+    }
+    .criarconta {
+        font-size: 0.7rem; /* Ajusta o tamanho do texto */
+        padding: 0.5rem 1rem; /* Ajusta o tamanho do botão sem alterar o layout */
+        white-space: nowrap; /* Impede que o texto quebre a linha */
+        text-align: center; /* Centraliza o texto no botão */
+        display: inline-block; /* Garante que o botão ocupe apenas o espaço necessário */
+    }
+
+    .secBV5 .content {
+        flex-direction: column; /* Alinha texto e imagem em coluna */
+        align-items: center; /* Centraliza o conteúdo */
+    }
+
+    .secBV5 .texto-profissionais {
+        text-align: center; /* Centraliza o texto */
+        margin-bottom: 1rem; /* Espaço abaixo do texto */
+    }
+
+    .secBV5 .texto-profissionais p {
+        font-size: 0.85rem; /* Reduz o tamanho do texto */
+        line-height: 1.4; /* Ajusta a altura da linha */
+    }
+
+    .secBV5 .img-profissionais {
+        max-width: 80%; /* A imagem ocupa 80% da largura da tela */
+        min-width: 300px; /* Define um tamanho mínimo */
+        height: auto; /* Mantém a proporção */
+        margin: 0 auto; /* Centraliza horizontalmente */
+    }
+    .neurocBV {
+        justify-content: center; /* Centraliza o card no container */
+    }
+
+    #bipolaridade {
+        margin: 0 auto; /* Centraliza o card horizontalmente */
+    }
+    .asideConfig {
+        gap: 0.5rem;
+    }
+
+    .asideConfig button {
+        font-size: 0.8rem;
+        padding: 0.4rem;
+    }
+
+    #conteudo {
+        padding: 0.5rem;
+    }
+    .controlarcd {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .controlarcd div {
+        width: 100%; /* Cada item ocupa a largura total */
+        text-align: center;
+    }
+
+    .controlarcd img {
+        margin-bottom: 1rem;
+    }
+    .copyright {
+        position: absolute;
+        bottom: -30px; /* Posiciona 10px acima do rodapé */
+        left: 50%; /* Alinha o conteúdo ao centro horizontalmente */
+        transform: translateX(-50%); /* Ajusta o alinhamento, garantindo que fique centrado */
+        font-size: 0.8rem; /* Torna o texto menor */
+        color: white; /* Define a cor do texto para um tom mais suave */
+        text-align: center; /* Garante que o texto dentro do elemento esteja centralizado */
+        width: 100%;
+        padding: 0.5rem; /* Adiciona um pouco de espaçamento interno */
+    }
+    #logobranca {
+        font-size: 0.8rem;  /* Reduz o tamanho da fonte */
+        position: absolute; /* Para controlar a posição em relação ao topo */
+        top: 10%;             /* Fixa o texto no topo da página */
+        left: 50%;          /* Centraliza o texto horizontalmente */
+        transform: translateX(-50%); /* Ajuste fino para garantir que o texto fique centrado */
+        margin: 0;          /* Remove qualquer margem extra */
+    }
+    .mainCadPerson {
+        padding: 1rem 0.5rem;
+        height: auto;
+    }
+    .personagem img {
+        width: 60px;
+        height: 60px;
+    }
+    
+    
+    .personagem img {
+        width: 50px; /* Imagem menor */
+    }
+
+    .personagem h4 {
+        font-size: 10px; /* Texto menor */
+    }
+    .paragPerson {
+        font-size: 0.8rem; /* Texto ainda menor para telas muito pequenas */
+        line-height: 1.3; /* Ajusta a altura da linha */
+        padding: 0 0.3rem; /* Reduz ainda mais o espaçamento interno */
+    }
+    .butEtp .etapas,
+  .butEtp .buttonPerson {
+    display: flex;
+    flex-direction: column;
+  }
+  body{
+   
+    overflow-x: hidden;
+  }
+  .mainCriarConta {
+    max-width: 100%;
+    margin: 0;
+}
+
+h1.tituloazul {
+    font-size: 1.25rem;
+}
+
+input, button {
+    font-size: 0.87rem;
+    padding: 0.5rem;
+}
+
+p.aviso, p.error {
+    font-size: 0.75rem;
+}
+
+.etapas h5 {
+    font-size: 0.875rem;
+}
+.msc1, .msc2, .msc3, .msc4 {
+    display: block;
+    
+}
+iframe{
+    max-width: 200px;
+}
+.full-screen-menu {
+ 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Ocupa toda a largura */
+    height: 100%; /* Ocupa toda a altura */
+    background-color: rgba(0, 0, 0, 0.9); /* Fundo escuro */
+    color: white; /* Texto branco */
+    z-index: 1000;
+    flex-direction: column;
+    justify-content: space-between; /* Alinha o conteúdo verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    padding: 20px 0; /* Espaçamento interno */
+}
+
+}
+@media (max-width: 450px) {
+    #coomeço{
+        max-width: 450px;
+    }
+    body {
+        padding: 0;
+      
+    }
+    .headerBV nav {
+        max-width: 100%; /* Garante que ocupa todo o espaço disponível */
+        padding: 0 0.5rem; /* Reduz o padding lateral para economizar espaço */
+    }
+    .headerBV nav p {
+        font-size: 0.9rem;
+       
+    }
+
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+
+    .footerPrinc {
+        font-size: 0.8rem;
+    }
+
+    .personagem {
+        width: 100%;
+    }
+
+    .bio button {
+        font-size: 0.7rem;
+    }
+
+    .cardComuni img {
+        width: 80px; /* Ajusta o tamanho da imagem */
+    }
+
+
+
+
+   
+    .mainInicio h1, .tituloroxo {
+        font-size: 1.2rem;
+    }
+    .cardComuni img {
+        width: 50px; /* Reduz o tamanho dos ícones */
+    }
+    .footerPrinc {
+        flex-direction: column;
+        text-align: center;
+        padding: 50%;
+        height: auto;
+       
+        width: 100%;
+       
+       
+    }
+    #email a {
+        font-size: 0.5rem;
+    }
+  
+
+    main{
+        margin-bottom: 20rem;
+        padding-bottom: 20rem;
+        margin-top: 10rem;
+    }
+    .personagem {
+        width: 100%; /* Ocupa toda a largura da tela */
+    } 
+    .fotoperson img {
+        width: 100px; /* Imagem menor para dispositivos muito pequenos */
+    }
+
+    .fotoperson h2 {
+        font-size: 1rem;
+    }
+
+    .bio button {
+        padding: 0.3rem 0.8rem; /* Botão mais compacto */
+        font-size: 0.7rem; /* Texto ainda menor */
+    }
+    .personBV {
+        background-color: #a9a9d1; /* Cor de fundo ainda mais escura */
+    }
+
+    .personBV img {
+        width: 100px; /* Imagem ainda menor */
+    }
+
+    .personBV p {
+        font-size: 0.8rem; /* Texto menor */
+    }
+    .info-box {
+        max-width: 100%; /* Usa 90% da largura da tela */
+        padding: 1rem; /* Reduz o espaçamento interno ainda mais */
+        background-color: #a9a9d1; /* Fundo ainda mais escuro */
+    }
+
+    .info-box p {
+        font-size: 0.7rem; /* Fonte menor para telas muito pequenas */
+    }
+
+    .info-box a {
+        font-size: 1rem; /* Fonte menor para links */
+    }
+    .secBV3 h1 {
+        font-size: 1.5rem; /* Reduz ainda mais o tamanho do título principal */
+    }
+
+    .secBV3 h2 {
+        font-size: 1.2rem; /* Reduz o tamanho do subtítulo */
+    }
+
+    .secBV3 .texto-forum p {
+        font-size: 0.9rem; /* Reduz o tamanho do texto */
+    }
+    .aumentar img {
+        width: 100%; /* A imagem ocupará toda a largura do container */
+        height: auto; /* A altura será ajustada automaticamente para manter as proporções */
+        object-fit: contain;
+      }
+    .secBV3 .img-forum {
+        max-width: 90%; /* Ocupa até 90% da tela */
+        min-width: 250px; /* Define um tamanho mínimo */
+    }
+    .secBV5 .img-profissionais {
+        max-width: 90%; /* A imagem ocupa até 90% da largura da tela */
+        min-width: 250px; /* Define um tamanho mínimo menor */
+        height: auto; /* Mantém a proporção */
+    }
+
+    .secBV5 .texto-profissionais p {
+        font-size: 0.8rem; /* Reduz ainda mais o tamanho do texto */
+    }
+    .copyright {
+        position: absolute;
+        bottom: 10px; /* Posiciona 10px acima do rodapé */
+        left: 50%; /* Alinha o conteúdo ao centro horizontalmente */
+        transform: translateX(-50%); /* Ajusta o alinhamento, garantindo que fique centrado */
+        font-size: 0.8rem; /* Torna o texto menor */
+        color: white; /* Define a cor do texto para um tom mais suave */
+        text-align: center; /* Garante que o texto dentro do elemento esteja centralizado */
+        width: 100%;
+        padding: 0.5rem; /* Adiciona um pouco de espaçamento interno */
+    }
+    .paragPerson {
+        font-size: 0.8rem; /* Texto ainda menor para telas muito pequenas */
+        line-height: 1.3; /* Ajusta a altura da linha */
+        padding: 0 0.3rem; /* Reduz ainda mais o espaçamento interno */
+    }
+    .footerPrinc h4, .footerPrinc p {
+      
+        font-size: 0.8rem;
+    }
+    #redesSociais img {
+        width: 20px;
+        visibility: hidden;
+    }
+    .footerPrinc {
+        flex-direction: column;
+        text-align: center;
+        padding: 3rem;
+       height: 10rem;
+       margin-left: -10%;
+       max-width: 450px;
+       margin-right: -10%;
+       
+    }
+    .rsFooter{
+
+    
+        display: none;
+    }
+  
+        header {
+            display: flex;
+            flex-direction: column; /* Organiza os itens verticalmente */
+            position: relative; /* Fixa o header no topo da tela */
+            top: 0; /* Alinha no topo */
+            left: 0; /* Alinha à esquerda */
+            width: 100%; /* Garante que ocupe toda a largura */
+            z-index: 1000; /* Garante que fique acima de outros elementos */
+            background-color: white; /* Adiciona um fundo branco para contraste */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+          justify-items: flex-start;
+        }
+    
+        .logoNav {
+            width: 70px; /* Ajusta a largura da logo */
+            height: auto; /* Mantém a proporção */
+            margin: 0 auto; /* Centraliza a logo horizontalmente */
+            padding: 0.5rem 0; /* Adiciona espaçamento vertical */
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+    
+        .navPessoal {
+            display: flex;
+            justify-content: flex-start; /* Alinha os itens com espaço entre eles */
+            align-items: center; /* Centraliza verticalmente os itens */
+            padding: 0.5rem 1rem; /* Ajusta o espaçamento interno */
+            background-color: white; /* Fundo para contraste com o conteúdo */
+        }
+    
+        .navPessoal a {
+            font-size: 0.8rem; /* Ajusta o tamanho da fonte dos links */
+        }
+    
+        #profile-picture {
+            width: 40px; /* Ajusta o tamanho da imagem de perfil */
+            height: 40px; /* Mantém o tamanho proporcional */
+            border-radius: 50%; /* Torna a imagem circular */
+            align-items: flex-start;
+        }
+        .butEtp , .etapas,
+        .buttonPerson {
+          display: flex;
+          flex-direction: column;
+        height: auto;
+        width: auto;
+        align-items: center;
+        }
+        .scrollToTop {
+            bottom: 10px; /* Reduz a distância do fundo */
+            right: 10px; /* Reduz a distância da lateral */
+            font-size: 20px; /* Ajusta o tamanho da fonte */
+            padding: 8px; /* Ajusta o tamanho do botão */
+        }
+        .sec{
+            max-width: 300px;
+            overflow-x: hidden;
+          }
+          
+          .full-screen-menu {
+           
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%; /* Ocupa toda a largura */
+            height: 100%; /* Ocupa toda a altura */
+            background-color: rgba(0, 0, 0, 0.9); /* Fundo escuro */
+            color: white; /* Texto branco */
+            z-index: 1000;
+            flex-direction: column;
+            justify-content: space-between; /* Alinha o conteúdo verticalmente */
+            align-items: center; /* Centraliza horizontalmente */
+            padding: 20px 0; /* Espaçamento interno */
+        }
+        .menu-hamburguer {
+            height: 4px; /* Ajusta a altura em telas menores */
+            max-width: 30px; /* Reduz a largura máxima para telas pequenas */
+        }
+    }
+
+   
+
+
+@media (max-width: 380px){
+    #coomeço{
+        max-width: 450px;
+    }
+    body{
+          display: block;
+        top: 0; /* Garante que esteja no topo */
+        left: 0; /* Alinha à esquerda */
+        max-width: 380px; /* Ocupa toda a largura da tela */
+        display: flex; /* Permite o uso de flexbox para alinhamento */
+        flex-direction: column; /* Organiza o conteúdo em coluna */
+       
+        background-color: white; /* Define uma cor de fundo (opcional) */
+        z-index: 1000; /* Garante que fique acima de outros elementos */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil */
+        overflow-x: hidden; 
+    }
+    .headerBV img {
+    margin-left: -100px;
+    }
+    header {
+        
+        top: 0; /* Garante que esteja no topo */
+        left: 0; /* Alinha à esquerda */
+        max-width: 380px; /* Ocupa toda a largura da tela */
+        display: flex; /* Permite o uso de flexbox para alinhamento */
+        flex-direction: column; /* Organiza o conteúdo em coluna */
+        padding: 1rem; /* Ajusta o espaçamento interno */
+        background-color: white; /* Define uma cor de fundo (opcional) */
+        z-index: 1000; /* Garante que fique acima de outros elementos */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil */
+    }
+    .mainInicio h1, .tituloroxo {
+        font-size: 1.2rem;
+    }
+    .cardComuni img {
+        width: 50px; /* Reduz o tamanho dos ícones */
+    }
+    .footerPrinc {
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+        height: 10rem;
+       
+        width: auto;
+       
+       
+    }
+    .copyright {
+        width: 100%; /* Ocupa toda a largura disponível */
+        height: auto; /* Ajusta automaticamente a altura */
+        text-align: center; /* Centraliza o texto */
+        background-color: var(--azulfooter); /* Cor de fundo consistente */
+        color: var(--cinza); /* Cor do texto */
+        padding: 1rem; /* Espaçamento interno */
+        margin: 0; /* Remove margens externas */
+        box-sizing: border-box; /* Inclui padding e bordas na largura total */
+    }
+    
+    #email a {
+        font-size: 0.5rem;
+    }
+  
+
+    main{
+        margin-bottom: 20rem;
+        padding-bottom: 20rem;
+        margin-top: 10rem;
+    }
+    .secBV3 h1 {
+        font-size: 1.5rem; /* Reduz ainda mais o tamanho do título principal */
+    }
+
+    .secBV3 h2 {
+        font-size: 1.2rem; /* Reduz o tamanho do subtítulo */
+    }
+
+    .secBV3 .texto-forum p {
+        font-size: 0.9rem; /* Reduz o tamanho do texto */
+    }
+
+    .secBV3 .img-forum {
+        max-width: 90%; /* Ocupa até 90% da tela */
+        min-width: 250px; /* Define um tamanho mínimo */
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+     
+      .secBV5 h2 {
+        font-size: 1rem; /* Tamanho do subtítulo */
+        margin-bottom: 10%; /* Espaço abaixo do subtítulo */
+        color: #555; /* Cinza */
+    }
+     .sec{
+      max-width: 300px;
+      overflow-x: hidden;
+    }
+    .footerInicial {
+        max-width: 300px; /* Garante que ocupe toda a largura da tela */
+        height: auto;
+        background-color: var(--azulfooter);
+        color: var(--cinza);
+        display: flex;
+       
+        padding: 4rem 7rem;
+        align-items: flex-start;
+        margin: 0; /* Remove margens */
+        position: relative; /* Garante que seja posicionado dentro do fluxo */
+        left: -30px; /* Alinha ao lado esquerdo */
+        margin-right: 10%;
+    }
+    
+    #DepressaoBV {
+        display: flex; /* Torna o container flexível */
+        flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
+        justify-content: center; /* Centraliza os itens horizontalmente */
+        align-items: center; /* Centraliza os itens verticalmente */
+        margin: 0 auto; /* Remove margens laterais e centraliza o container */
+        padding: 1rem; /* Adiciona espaçamento interno */
+        max-width: 300px; /* Garante que não ultrapasse a largura da tela */
+        box-sizing: border-box; /* Inclui padding e bordas no tamanho total */
+       margin-right: 50%;
+       margin-left: -200px;
+
+      
+    }
+    section .cardbvorganiza{
+        display: block;
+        unicode-bidi: isolate;
+        margin-left: 200px;
+    }
+    .criarconta{
+        max-width: 200px;
+        max-height: 200px;
+    }
+    form {
+        display: block;
+        margin-top: 0rem;
+        unicode-bidi: isolate;
+        max-width: 200px;
+        max-height: 200px;
+    }
+    .full-screen-menu {
+      
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%; /* Ocupa toda a largura */
+        height: 100%; /* Ocupa toda a altura */
+        background-color: rgba(0, 0, 0, 0.9); /* Fundo escuro */
+        color: white; /* Texto branco */
+        z-index: 1000;
+        flex-direction: column;
+        justify-content: space-between; /* Alinha o conteúdo verticalmente */
+        align-items: center; /* Centraliza horizontalmente */
+        padding: 20px 0; /* Espaçamento interno */
+    }
 }

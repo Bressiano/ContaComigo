@@ -27,11 +27,11 @@
                     <div id="cmdExpandir">
                         <a href="cmdansiedade.html">Ansiedade</a>
                         <a href="cmddepressao.html">Depressão</a>
-                        <a href="cmdtdah.html">TDAH</a>
-                        <a href="cmdtea.html">TEA</a>
+                        <a href="cmdtdah.html">TDAH (Transtorno do déficit de atenção com hiperatividade)</a>
+                        <a href="cmdtea.html">TEA (Transtorno do Espectro Autista)</a>
                         <a href="cmdbipolaridade.html">Bipolaridade</a>
-                        <a href="cmdtpas.html">TPAS</a>
-                        <a href="cmdtpn.html">TPN</a>
+                        <a href="cmdtpas.html">TPAS (Transtorno de Personalidade Antissocial)</a>
+                        <a href="cmdtpn.html">TPN (Transtorno de Personalidade Narcisita)</a>
                     </div>
                 </div>
                 <a href="profissionais.html">Profissionais</a>
@@ -251,6 +251,23 @@
 daltonismoBtn.addEventListener('click', () => {
             document.body.classList.toggle('daltonismo')
         });
+        const widget = new window.VLibras.Widget('https://vlibras.gov.br/app');
+
+const toggleButton = document.getElementById('toggleVlibras');
+
+let vlibrasActive = false;
+
+toggleButton.addEventListener('click', () => {
+    const vlibrasElement = document.querySelector('[vw]');
+    if (vlibrasActive) {
+        vlibrasElement.style.display = 'none';
+        toggleButton.textContent = 'Ativar VLibras';
+    } else {
+        vlibrasElement.style.display = 'block';
+        toggleButton.textContent = 'Desativar VLibras';
+    }
+    vlibrasActive = !vlibrasActive;
+});
     </script>
 
     <!-- VLibras -->
